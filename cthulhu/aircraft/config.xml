@@ -1,0 +1,32 @@
+<?xml version='1.0'?>
+<xefis-config version='1.0'>
+	<settings>
+		<setting name='update-frequency' value='100 Hz'/>
+		<setting name='navaids.enable' value='false'/>
+	</settings>
+	<modules>
+		<include name='comm/link.xml'/>
+		<include name='comm/udp.xml'/>
+		<include name='sensors/ahrs.xml'/>
+		<include name='sensors/airspeed.xml'/>
+		<include name='sensors/bmp085.xml'/>
+		<include name='sensors/slip-skid.xml'/>
+		<include name='systems/adc.xml'/>
+		<include name='hardware/pwm.xml'/>
+	</modules>
+	<windows>
+		<window width='800' height='500' full-screen='false'>
+			<layout type='vertical'>
+				<item>
+					<instrument name='instruments/label'>
+						<label>AIRCRAFT COMPUTER</label>
+						<align>hcenter vcenter</align>
+						<color>#4bf</color>
+						<font-size>20</font-size>
+					</instrument>
+				</item>
+			</layout>
+		</window>
+	</windows>
+</xefis-config>
+
