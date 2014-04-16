@@ -16,7 +16,6 @@
 					<property bytes='4' path='/settings/cmd/vertical-speed' type='speed'/>
 					<property bytes='4' path='/settings/cmd/magnetic-heading-track' type='angle'/>
 					<property bytes='2' path='/sensors/aoa/alpha' type='angle'/>
-					<property bytes='2' path='/sensors/aoa/alpha.maximum' type='angle'/>
 					<property bytes='2' path='/sensors/ahrs/orientation/pitch' type='angle'/>
 					<property bytes='2' path='/sensors/ahrs/orientation/roll' type='angle'/>
 					<property bytes='2' path='/sensors/ahrs/orientation/magnetic-heading' type='angle'/>
@@ -45,6 +44,7 @@
 					<property bytes='2' path='/sensors/engines/2/epr' type='float'/>
 					<property bytes='2' path='/sensors/engines/2/pitch' type='angle'/>
 					<property bytes='2' path='/sensors/engines/2/temperature' type='temperature'/>
+					<property bytes='2' path='/systems/aoa/alpha.critical' type='angle'/>
 					<property bytes='2' path='/systems/fbw/stick/pitch' type='angle'/>
 					<property bytes='2' path='/systems/fbw/stick/roll' type='angle'/>
 					<property bytes='2' path='/systems/fd/pitch' type='angle'/>
@@ -85,6 +85,9 @@
 						<property path='/sensors/gear/right.down' type='boolean'/>
 						<!-- Other flags -->
 						<property path='/systems/altacq/flag' type='boolean'/>
+						<property path='/sensors/ahrs/flags/pitch-disagree' type='boolean'/>
+						<property path='/sensors/ahrs/flags/roll-disagree' type='boolean'/>
+						<property path='/sensors/ahrs/flags/failover' type='boolean'/>
 						<property path='/link/local/valid' type='boolean'/>
 					</bitfield>
 				</signature>

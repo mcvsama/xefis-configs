@@ -23,7 +23,6 @@
 					<property bytes='4' path='/aircraft/settings/cmd/vertical-speed' type='speed'/>
 					<property bytes='4' path='/aircraft/settings/cmd/magnetic-heading-track' type='angle'/>
 					<property bytes='2' path='/aircraft/sensors/aoa/alpha' type='angle'/>
-					<property bytes='2' path='/aircraft/sensors/aoa/alpha.maximum' type='angle'/>
 					<property bytes='2' path='/aircraft/sensors/ahrs/orientation/pitch' type='angle'/>
 					<property bytes='2' path='/aircraft/sensors/ahrs/orientation/roll' type='angle'/>
 					<property bytes='2' path='/aircraft/sensors/ahrs/orientation/magnetic-heading' type='angle'/>
@@ -52,6 +51,7 @@
 					<property bytes='2' path='/aircraft/sensors/engines/2/epr' type='float'/>
 					<property bytes='2' path='/aircraft/sensors/engines/2/pitch' type='angle'/>
 					<property bytes='2' path='/aircraft/sensors/engines/2/temperature' type='temperature'/>
+					<property bytes='2' path='/aircraft/systems/aoa/alpha.critical' type='angle'/>
 					<property bytes='2' path='/aircraft/systems/fbw/stick/pitch' type='angle'/>
 					<property bytes='2' path='/aircraft/systems/fbw/stick/roll' type='angle'/>
 					<property bytes='2' path='/aircraft/systems/fd/pitch' type='angle'/>
@@ -92,6 +92,9 @@
 						<property path='/aircraft/sensors/gear/right.down' type='boolean' retained='true'/>
 						<!-- Other flags -->
 						<property path='/aircraft/systems/altacq/flag' type='boolean'/>
+						<property path='/aircraft/sensors/ahrs/flags/pitch-disagree' type='boolean' retained='true'/>
+						<property path='/aircraft/sensors/ahrs/flags/roll-disagree' type='boolean' retained='true'/>
+						<property path='/aircraft/sensors/ahrs/flags/failover' type='boolean' retained='true'/>
 						<property path='/link/remote/valid' type='boolean'/>
 					</bitfield>
 				</signature>

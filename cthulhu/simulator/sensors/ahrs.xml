@@ -8,7 +8,7 @@
 			<setting name='sample-rate' value='50 Hz'/>
 		</settings>
 		<properties path='//sensors'>
-			<directory path='/ahrs'>
+			<directory path='/ahrs/primary'>
 				<property name='serviceable' path='/serviceable'/>
 				<property name='failures' path='/failures'/>
 				<property name='internal-temperature' path='/internal-temperature'/>

@@ -19,10 +19,10 @@
 					<property name='gps.serviceable' path='/gps/serviceable'/>
 					<property name='gps.source' path='/gps/source'/>
 					<!-- ahrs -->
-					<property name='ahrs.serviceable' path='/ahrs/serviceable'/>
-					<property name='ahrs.pitch' path='/ahrs/orientation/pitch'/>
-					<property name='ahrs.roll' path='/ahrs/orientation/roll'/>
-					<property name='ahrs.magnetic-heading' path='/ahrs/orientation/magnetic-heading'/>
+					<property name='ahrs.serviceable' path='/ahrs/primary/serviceable'/>
+					<property name='ahrs.pitch' path='/ahrs/primary/orientation/pitch'/>
+					<property name='ahrs.roll' path='/ahrs/primary/orientation/roll'/>
+					<property name='ahrs.magnetic-heading' path='/ahrs/primary/orientation/magnetic-heading'/>
 					<!-- airspeed -->
 					<property name='ias' path='/airspeed/ias'/>
 					<property name='ias.serviceable' path='/airspeed/serviceable'/>

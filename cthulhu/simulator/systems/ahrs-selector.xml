@@ -1,0 +1,37 @@
+<?xml version='1.0'?>
+<xefis-include>
+	<module name='helpers/ahrs-selector'>
+		<settings>
+			<setting name='pitch-disagree-threshold' value='5 deg'/>
+			<setting name='roll-disagree-threshold' value='5 deg'/>
+			<setting name='magnetic-heading-disagree-threshold' value='5 deg'/>
+		</settings>
+		<properties path='//sensors/ahrs'>
+			<directory path='/primary'>
+				<property name='input.0.serviceable' path='/serviceable'/>
+				<property name='input.0.orientation.pitch' path='/orientation/pitch'/>
+				<property name='input.0.orientation.roll' path='/orientation/roll'/>
+				<property name='input.0.orientation.magnetic-heading' path='/orientation/magnetic-heading'/>
+			</directory>
+			<directory path='/secondary'>
+				<property name='input.1.serviceable' path='/serviceable'/>
+				<property name='input.1.orientation.pitch' path='/orientation/pitch'/>
+				<property name='input.1.orientation.roll' path='/orientation/roll'/>
+				<property name='input.1.orientation.magnetic-heading' path='/orientation/magnetic-heading'/>
+			</directory>
+			<property name='output.serviceable' path='/serviceable'/>
+			<directory path='/orientation'>
+				<property name='output.orientation.pitch' path='/pitch'/>
+				<property name='output.orientation.roll' path='/roll'/>
+				<property name='output.orientation.magnetic-heading' path='/magnetic-heading'/>
+			</directory>
+			<directory path='/flags'>
+				<property name='output.flags.pitch-disagree' path='/pitch-disagree'/>
+				<property name='output.flags.roll-disagree' path='/roll-disagree'/>
+				<property name='output.flags.magnetic-heading-disagree' path='/magnetic-heading-disagree'/>
+				<property name='output.flags.failover' path='/failover'/>
+			</directory>
+		</properties>
+	</module>
+</xefis-include>
+

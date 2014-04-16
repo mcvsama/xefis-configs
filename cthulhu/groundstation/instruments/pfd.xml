@@ -47,7 +47,7 @@
 					<property name='slip-skid' path='/aircraft/sensors/slip-skid/slip-skid'/>
 					<property name='fpv.visible' path='/settings/efis/fpv-visible'/>
 					<property name='aoa.alpha' path='/aircraft/sensors/aoa/alpha'/>
-					<property name='aoa.alpha.maximum' path='/aircraft/sensors/aoa/alpha.maximum'/>
+					<property name='aoa.alpha.maximum' path='/aircraft/systems/aoa/alpha.critical'/>
 					<property name='aoa.alpha.visible' path='/settings/efis/aoa.alpha.visible' default='true'/>
 					<property name='altitude.amsl.serviceable' path='/systems/adc/altitude/amsl.serviceable'/>
 					<property name='altitude.amsl' path='/systems/adc/altitude/amsl'/>
@@ -108,8 +108,8 @@
 					<property name='tcas.resolution-advisory.vertical-speed.maximum' path='/systems/tcas/resolution-advisory/vertical-speed.maximum'/>
 					<property name='warning.novspd-flag' path='/settings/efis/flags/novspd-flag' default='false'/>
 					<property name='warning.ldgalt-flag' path='/settings/efis/flags/ldgalt-flag' default='false'/>
-					<property name='warning.pitch-disagree' path='/settings/efis/flags/pitch-disagree' default='false'/>
-					<property name='warning.roll-disagree' path='/settings/efis/flags/roll-disagree' default='false'/>
+					<property name='warning.pitch-disagree' path='/aircraft/sensors/ahrs/flags/pitch-disagree' default='false'/>
+					<property name='warning.roll-disagree' path='/aircraft/sensors/ahrs/flags/roll-disagree' default='false'/>
 					<property name='warning.ias-disagree' path='/settings/efis/flags/ias-disagree' default='false'/>
 					<property name='warning.altitude-disagree' path='/settings/efis/flags/altitude-disagree' default='false'/>
 					<property name='warning.roll' path='/settings/efis/flags/roll-warning'/>
