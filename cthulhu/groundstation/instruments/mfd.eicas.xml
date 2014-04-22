@@ -261,12 +261,20 @@
 			<layout type='vertical'>
 				<item stretch-factor='20'>
 					<instrument name='instruments/status'>
-						<properties path='/panels/eicas-status'>
-							<property name='button.cursor-up' path='/up'/>
-							<property name='button.cursor-down' path='/down'/>
-							<property name='button.cursor-del' path='/del'/>
-							<property name='button.recall' path='/recall'/>
-							<property name='button.clear' path='/clear'/>
+						<properties>
+							<directory path='/panels/eicas-status/button.'>
+								<property name='input.button.cursor-up' path='up'/>
+								<property name='input.button.cursor-down' path='down'/>
+								<property name='input.button.cursor-del' path='del'/>
+								<property name='input.button.recall' path='recall'/>
+								<property name='input.button.clear' path='clear'/>
+								<property name='input.button.master-caution' path='master-caution'/>
+								<property name='input.button.master-warning' path='master-warning'/>
+							</directory>
+							<directory path='/panels/eicas-status/led.'>
+								<property name='output.master-caution' path='master-caution'/>
+								<property name='output.master-warning' path='master-warning'/>
+							</directory>
 						</properties>
 						<messages>
 							<message message='LINK FAIL' severity='critical'>

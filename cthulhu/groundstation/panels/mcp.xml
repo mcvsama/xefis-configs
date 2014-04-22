@@ -312,6 +312,9 @@
 								<item>
 									<widget type='button' top-label='ELEC' click-property='/panels/mcp/mfd/button.elec' led-property='/panels/mcp/mfd/led.elec'/>
 								</item>
+								<item>
+									<widget type='button' top-label='FMS' click-property='/panels/mcp/mfd/button.fms' led-property='/panels/mcp/mfd/led.fms'/>
+								</item>
 								<stretch/>
 							</layout>
 						</item>

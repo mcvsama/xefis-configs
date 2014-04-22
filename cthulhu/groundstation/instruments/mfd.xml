@@ -13,6 +13,9 @@
 		<item>
 			<include name='mfd.elec.xml'/>
 		</item>
+		<item>
+			<include name='mfd.fms.xml'/>
+		</item>
 	</layout>
 </xefis-include>
 

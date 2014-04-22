@@ -1,0 +1,30 @@
+<?xml version='1.0'?>
+<xefis-include>
+	<layout type='vertical'>
+		<item>
+			<instrument name='instruments/fms'>
+				<pages>
+					<page id='main' title='FMS'>
+						<left>
+							<goto id='flight-settings'/>
+							<goto id='power-sources'/>
+						</left>
+					</page>
+					<page id='flight-settings' title='Flight settings'>
+						<left>
+							<setting title='' type='' path='' default='' permanent='true'/>
+							<empty/>
+							<page-switch name='power-source'/>
+						</left>
+						<right>
+						</right>
+					</page>
+					<page id='power-sources' title='Power sources'>
+						.
+					</page>
+				</pages>
+			</instrument>
+		</item>
+	</layout>
+</xefis-include>
+
