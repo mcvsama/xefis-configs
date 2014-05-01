@@ -17,7 +17,6 @@
 					<setting name='altitude.landing.warning.lo' value='500 ft'/>
 					<setting name='aoa.visibility-threshold' value='17.5 deg'/>
 					<setting name='show-mach-above' value='0.4'/>
-					<setting name='play-altacq-sound' value='true'/>
 				</settings>
 				<properties>
 					<property name='orientation.heading.numbers-visible' path='/settings/efis/heading-numbers-visible' default='true'/>
