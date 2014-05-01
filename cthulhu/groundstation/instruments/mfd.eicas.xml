@@ -277,28 +277,28 @@
 							</directory>
 						</properties>
 						<messages>
-							<message message='LINK FAIL' severity='critical'>
+							<message message='LINK HW FAIL' severity='warning'>
 								<observe path='/link/xbee/serviceable' fail-on='false'/>
 							</message>
-							<message message='LINK TX SYS' severity='critical'>
+							<message message='LINK AIRPLANE SYS' severity='warning'>
 								<observe path='/link/local/valid' fail-on='false'/>
 							</message>
-							<message message='LINK RX SYS' severity='critical'>
+							<message message='LINK GS SYS' severity='warning'>
 								<observe path='/link/remote/valid' fail-on='false'/>
 							</message>
-							<message message='ADC AMSL SYS' severity='critical'>
+							<message message='ADC AMSL SYS' severity='warning'>
 								<observe path='/aircraft/systems/adc/altitude/amsl.serviceable' fail-on='false'/>
 							</message>
-							<message message='ADC IAS SYS' severity='critical'>
+							<message message='ADC IAS SYS' severity='warning'>
 								<observe path='/aircraft/systems/adc/speed/ias.serviceable' fail-on='false'/>
 							</message>
-							<message message='ADC V/SPD SYS' severity='critical'>
+							<message message='ADC V/SPD SYS' severity='warning'>
 								<observe path='/aircraft/systems/adc/vertical-speed/serviceable' fail-on='false'/>
 							</message>
-							<message message='NC POS ACCURACY SYS' severity='critical'>
+							<message message='NC POS ACCURACY SYS' severity='warning'>
 								<observe path='/aircraft/systems/nc/position/accuracy.serviceable' fail-on='false'/>
 							</message>
-							<message message='FBW SYS' severity='critical'>
+							<message message='FBW SYS' severity='warning'>
 								<observe path='/aircraft/systems/fbw/serviceable' fail-on='false'/>
 							</message>
 							<message message='ADC ALT AMSL FAIL'>

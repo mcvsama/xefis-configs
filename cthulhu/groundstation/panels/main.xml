@@ -39,13 +39,13 @@
 				<group label='LIGHTS'>
 					<layout type='horizontal' spacing='10'>
 						<item>
-							<widget type='button' top-label='STRB' toggle-property='/settings/lights/strobe' led-property='/settings/lights/strobe' led-color='green'/>
+							<widget type='button' top-label='STRB' toggle-property='/settings/lights/strobe' led-property='/settings/lights/strobe' led-color='white'/>
 						</item>
 						<item>
-							<widget type='button' top-label='POS' toggle-property='/settings/lights/position' led-property='/settings/lights/position' led-color='green'/>
+							<widget type='button' top-label='POS' toggle-property='/settings/lights/position' led-property='/settings/lights/position' led-color='white'/>
 						</item>
 						<item>
-							<widget type='button' top-label='LAND' toggle-property='/settings/lights/landing' led-property='/settings/lights/landing' led-color='green'/>
+							<widget type='button' top-label='LAND' toggle-property='/settings/lights/landing' led-property='/settings/lights/landing' led-color='white'/>
 						</item>
 						<stretch/>
 					</layout>

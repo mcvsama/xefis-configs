@@ -27,6 +27,7 @@
 		<include name='helpers/fma.xml'/>
 		<include name='helpers/navaids.xml'/>
 		<include name='helpers/position.xml'/>
+		<include name='helpers/sound.xml'/>
 	</modules>
 	<windows>
 		<window width='1666' height='960' full-screen='false'>

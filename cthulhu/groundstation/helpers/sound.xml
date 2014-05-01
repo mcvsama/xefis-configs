@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+<xefis-include>
+	<module name='helpers/sound'>
+		<alarms>
+			<group>
+				<alarm sound='share/sounds/caution.wav' property-path='/panels/eicas-status/led.master-caution' priority='1' repeat-period='2 s'/>
+				<alarm sound='share/sounds/warning.wav' property-path='/panels/eicas-status/led.master-warning' priority='2' repeat-period='0 s'/>
+			</group>
+		</alarms>
+	</module>
+</xefis-include>
+
