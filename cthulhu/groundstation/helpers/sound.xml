@@ -6,6 +6,9 @@
 				<alarm sound='share/sounds/caution.wav' property-path='/panels/eicas-status/led.master-caution' priority='1' repeat-period='2 s'/>
 				<alarm sound='share/sounds/warning.wav' property-path='/panels/eicas-status/led.master-warning' priority='2' repeat-period='0 s'/>
 			</group>
+			<group>
+				<alarm sound='share/sounds/altacq.wav' property-path='/aircraft/systems/altacq/flag'/>
+			</group>
 		</alarms>
 	</module>
 </xefis-include>
