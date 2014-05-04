@@ -1,0 +1,78 @@
+<?xml version='1.0'?>
+<xefis-include>
+	<layout type='vertical'>
+		<item>
+			<instrument name='instruments/cdu'>
+				<pages default='index' rows='8'>
+					<page id='index' title='INDEX'>
+						<left>
+							<goto page-id='test' title='◂ TEST'/>
+							<fill/>
+							<goto page-id='takeoff' title='◂ TAKEOFF'/>
+						</left>
+						<right>
+							<goto page-id='efis' title='EFIS ▸'/>
+							<fill/>
+							<goto page-id='power' title='POWER ▸'/>
+							<goto page-id='approach' title='APPROACH ▸'/>
+						</right>
+					</page>
+					<page id='efis' title='EFIS'>
+						<left>
+							<setting title='PRE 787' path='/settings/efis/old-style'/>
+							<fill/>
+							<goto page-id='index' title='◂ INDEX'/>
+						</left>
+						<right>
+						</right>
+					</page>
+					<page id='takeoff' title='TAKEOFF'>
+						<left>
+							<fill/>
+							<goto page-id='index' title='◂ INDEX'/>
+						</left>
+						<right>
+						</right>
+					</page>
+					<page id='approach' title='APPROACH'>
+						<left>
+							<setting title='LDG ALT' path='/settings/landing.amsl' unit='ft' format='%.0f ft'/>
+							<setting title='MINIMUMS' path='/settings/minimums/setting' unit='ft' format='%.0f ft' on-false='' on-true=''/>
+							<fill/>
+							<goto page-id='index' title='◂ INDEX'/>
+						</left>
+						<right>
+						</right>
+					</page>
+					<page id='power' title='POWER SOURCES'>
+						<left>
+							<fill/>
+							<goto page-id='index' title='◂ INDEX'/>
+						</left>
+						<right>
+						</right>
+					</page>
+					<page id='test' title='TEST'>
+						<left>
+							<fill/>
+							<goto page-id='index' title='◂ INDEX'/>
+						</left>
+						<right>
+							<setting title='PRE 787' path='/settings/efis/old-style'/>
+							<setting title='F/D GUIDANCE' path='/settings/efis/cmd-guidance-visible'/><!-- bool -->
+							<setting title='INT' path='/systems/vor/left/type'/><!-- int -->
+							<setting title='FLOAT' path='/input/pedals/axis/0'/><!-- float -->
+							<setting title='STRING' path='/systems/vor/left/identifier'/><!-- string -->
+							<setting title='MINS' path='/settings/minimums/setting' unit='ft' format='%.0f ft'/><!-- si -->
+							<fill/>
+						</right>
+					</page>
+				</pages>
+				<properties>
+					<property name='time.utc' path='/system/time.utc'/>
+				</properties>
+			</instrument>
+		</item>
+	</layout>
+</xefis-include>
+

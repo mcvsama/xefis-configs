@@ -14,7 +14,7 @@
 			<include name='mfd.elec.xml'/>
 		</item>
 		<item>
-			<include name='mfd.fms.xml'/>
+			<include name='mfd.cdu.xml'/>
 		</item>
 	</layout>
 </xefis-include>
