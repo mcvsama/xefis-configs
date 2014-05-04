@@ -8,6 +8,7 @@
 						<left>
 							<goto page-id='test' title='◂ TEST'/>
 							<fill/>
+							<goto page-id='vor' title='◂ VOR'/>
 							<goto page-id='takeoff' title='◂ TAKEOFF'/>
 						</left>
 						<right>
@@ -19,15 +20,32 @@
 					</page>
 					<page id='efis' title='EFIS'>
 						<left>
-							<setting title='PRE 787' path='/settings/efis/old-style'/>
+							<setting title='PRE 787' path='/settings/efis/old-style' true-value='PRE 787' false-value='MODERN'/>
 							<fill/>
 							<goto page-id='index' title='◂ INDEX'/>
 						</left>
 						<right>
 						</right>
 					</page>
+					<page id='vor' title='VOR'>
+						<left>
+							<setting title='IDENT LEFT' path='/systems/vor/left/identifier'/>
+							<setting title='DISTANCE' path='/systems/vor/left/distance' unit='nm' format='%.1f nm' read-only='true'/>
+							<setting title='ETA' path='/systems/vor/left/eta' unit='min' format='%.0f min' read-only='true'/>
+							<fill/>
+							<goto page-id='index' title='◂ INDEX'/>
+						</left>
+						<right>
+							<setting title='RIGHT IDENT' path='/systems/vor/right/identifier'/>
+							<setting title='DISTANCE' path='/systems/vor/right/distance' unit='nm' format='%.1f nm' read-only='true'/>
+							<setting title='ETA' path='/systems/vor/right/eta' unit='min' format='%.0f min' read-only='true'/>
+						</right>
+					</page>
 					<page id='takeoff' title='TAKEOFF'>
 						<left>
+							<setting title='V1' path='/v1'/>
+							<setting title='VR' path='/vr'/>
+							<setting title='V2' path='/v2'/>
 							<fill/>
 							<goto page-id='index' title='◂ INDEX'/>
 						</left>
@@ -37,7 +55,7 @@
 					<page id='approach' title='APPROACH'>
 						<left>
 							<setting title='LDG ALT' path='/settings/landing.amsl' unit='ft' format='%.0f ft'/>
-							<setting title='MINIMUMS' path='/settings/minimums/setting' unit='ft' format='%.0f ft' on-false='' on-true=''/>
+							<setting title='MINIMUMS' path='/settings/minimums/setting' unit='ft' format='%.0f ft'/>
 							<fill/>
 							<goto page-id='index' title='◂ INDEX'/>
 						</left>
@@ -60,7 +78,7 @@
 						<right>
 							<setting title='PRE 787' path='/settings/efis/old-style'/>
 							<setting title='F/D GUIDANCE' path='/settings/efis/cmd-guidance-visible'/><!-- bool -->
-							<setting title='INT' path='/systems/vor/left/type'/><!-- int -->
+							<setting title='INT' path='/systems/vor/left/type' read-only='true'/><!-- int -->
 							<setting title='FLOAT' path='/input/pedals/axis/0'/><!-- float -->
 							<setting title='STRING' path='/systems/vor/left/identifier'/><!-- string -->
 							<setting title='MINS' path='/settings/minimums/setting' unit='ft' format='%.0f ft'/><!-- si -->
