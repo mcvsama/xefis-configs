@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<xefis-include>
+	<modules>
+		<module name='systems/imu-cff'>
+			<settings>
+				<setting name='smoothing-time' value='10 s'/>
+			</settings>
+			<properties>
+				<property name='input.rotation.x' path='/sensors/ahrs/primary/rotation/x'/>
+				<property name='input.rotation.y' path='/sensors/ahrs/primary/rotation/y'/>
+				<property name='input.rotation.z' path='/sensors/ahrs/primary/rotation/z'/>
+				<property name='input.ias.x' path='/sensors/airspeed/ias'/>
+				<property name='input.ias.y' path='/sensors/airspeed/ias.y' default='0 kt'/>
+				<property name='input.ias.z' path='/sensors/airspeed/ias.z' default='0 kt'/>
+				<property name='output.centrifugal-accel.x' path='/systems/imu-cff/centrifugal-accel/x'/>
+				<property name='output.centrifugal-accel.y' path='/systems/imu-cff/centrifugal-accel/y'/>
+				<property name='output.centrifugal-accel.z' path='/systems/imu-cff/centrifugal-accel/z'/>
+			</properties>
+		</module>
+	</modules>
+	<windows>
+		<window width='200' height='200'>
+			<layout type='vertical'>
+				<item>
+					<instrument name='instruments/debug-forces'>
+						<properties>
+							<property name='input.orientation.pitch' path='/sensors/ahrs/primary/orientation/pitch'/>
+							<property name='input.orientation.roll' path='/sensors/ahrs/primary/orientation/roll'/>
+							<property name='input.orientation.magnetic-heading' path='/sensors/ahrs/primary/orientation/magnetic-heading'/>
+							<property name='input.accel.measured.x' path='/sensors/ahrs/primary/acceleration/x'/>
+							<property name='input.accel.measured.y' path='/sensors/ahrs/primary/acceleration/y'/>
+							<property name='input.accel.measured.z' path='/sensors/ahrs/primary/acceleration/z'/>
+							<property name='input.accel.centrifugal.x' path='/systems/imu-cff/centrifugal-accel/x'/>
+							<property name='input.accel.centrifugal.y' path='/systems/imu-cff/centrifugal-accel/y'/>
+							<property name='input.accel.centrifugal.z' path='/systems/imu-cff/centrifugal-accel/z'/>
+						</properties>
+					</instrument>
+				</item>
+			</layout>
+		</window>
+	</windows>
+</xefis-include>

@@ -6,6 +6,14 @@
 			<port>9000</port>
 			<properties>
 				<directory path='/sensors'>
+					<!-- gyro -->
+					<property name='rotation.x' path='/ahrs/primary/rotation/x'/>
+					<property name='rotation.y' path='/ahrs/primary/rotation/y'/>
+					<property name='rotation.z' path='/ahrs/primary/rotation/z'/>
+					<!-- accel -->
+					<property name='acceleration.x' path='/ahrs/primary/acceleration/x'/>
+					<property name='acceleration.y' path='/ahrs/primary/acceleration/y'/>
+					<property name='acceleration.z' path='/ahrs/primary/acceleration/z'/>
 					<!-- aoa -->
 					<property name='aoa.alpha.maximum' path='/aoa/alpha.maximum'/>
 					<property name='aoa.alpha.minimum' path='/aoa/alpha.minimum'/>

@@ -40,5 +40,6 @@
 			</layout>
 		</window>
 	</windows>
+	<include name='test.xml'/>
 </xefis-config>
 
