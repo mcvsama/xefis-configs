@@ -6,82 +6,204 @@
 				<pages default='index' rows='8'>
 					<page id='index' title='INDEX'>
 						<left>
-							<goto page-id='test' title='◂ TEST'/>
 							<fill/>
 							<goto page-id='vor' title='◂ VOR'/>
+							<goto page-id='fbw' title='◂ FBW'/>
+							<goto page-id='cruise' title='◂ CRUISE'/>
 							<goto page-id='takeoff' title='◂ TAKEOFF'/>
 						</left>
 						<right>
 							<goto page-id='efis' title='EFIS ▸'/>
+							<goto page-id='home' title='HOME ▸'/>
+							<goto page-id='rth' title='RTH ▸'/>
+							<goto page-id='tcas' title='TCAS ▸'/>
+							<goto page-id='power' title='POWER SRC ▸'/>
 							<fill/>
-							<goto page-id='power' title='POWER ▸'/>
+							<goto page-id='autoland' title='AUTOLAND ▸'/>
 							<goto page-id='approach' title='APPROACH ▸'/>
 						</right>
 					</page>
 					<page id='efis' title='EFIS'>
 						<left>
-							<setting title='PRE 787' path='/settings/efis/old-style' true-value='PRE 787' false-value='MODERN'/>
+							<setting title='EFIS STYLE' path='/settings/efis/old-style' true-value='OLD' false-value='MODERN' default='false'/>
+							<setting title='ADI HDG NUMBERS' path='/settings/efis/heading-numbers-visible' default='false'/>
 							<fill/>
 							<goto page-id='index' title='◂ INDEX'/>
 						</left>
 						<right>
 						</right>
 					</page>
+					<page id='home' title='HOME'>
+						<left>
+							<setting title='IDENT' path='/systems/vor/home/identifier' default='HOME'/>
+							<setting title='LATITUDE' path='/systems/vor/home/latitude' unit='deg' format='%03.6f°'/>
+							<setting title='LONGITUDE' path='/systems/vor/home/longitude' unit='deg' format='%03.6f°'/>
+							<setting title='ALT AMSL' path='/systems/vor/home/altitude-amsl' unit='ft' format='%d ft'/>
+							<setting title='DISTANCE' path='/systems/vor/home/distance' unit='nm' format='%.1f nm' read-only='true'/>
+							<setting title='ETA' path='/systems/vor/home/eta' unit='min' format='%d min' read-only='true'/>
+							<fill/>
+							<goto page-id='index' title='◂ INDEX'/>
+						</left>
+					</page>
+					<page id='fbw' title='FBW'>
+						<left>
+							<setting title='BANK LIMIT' path='/_/fbw.bank-limit' unit='deg' format='%d°' default='30 deg'/>
+							<fill/>
+							<goto page-id='index' title='◂ INDEX'/>
+						</left>
+					</page>
+					<page id='takeoff' title='TAKEOFF'>
+						<left>
+							<setting title='TOTAL WEIGHT' path='/_/total-weight' unit='kg' format='%.3f kg'/>
+							<setting title='FLAPS' path='/_/takeoff.flaps.setting' unit='deg' format='%d°'/>
+							<setting title='THR REF' path='/_/takeoff.thr-ref' format='%d RPM'/>
+							<fill/>
+							<goto page-id='index' title='◂ INDEX'/>
+						</left>
+						<right>
+							<fill/>
+							<goto page-id='takeoff.trim' title='TRIM ▸'/>
+							<goto page-id='takeoff.vspd' title='V/SPD ▸'/>
+						</right>
+					</page>
+					<page id='takeoff.trim' title='T/O TRIM'>
+						<left>
+							<setting title='MIN' path='/_/trim.min' format='%d'/>
+							<setting title='REF' path='/_/trim.ref' format='%d'/>
+							<setting title='MAX' path='/_/trim.max' format='%d'/>
+							<fill/>
+							<goto page-id='takeoff' title='◂ TAKEOFF'/>
+						</left>
+					</page>
+					<page id='takeoff.vspd' title='T/O VSPD'>
+						<left>
+							<setting title='V1' path='/_/v1' unit='kt' format='%d kt'/>
+							<setting title='VR' path='/_/vr' unit='kt' format='%d kt'/>
+							<setting title='V2' path='/_/v2' unit='kt' format='%d kt'/>
+							<fill/>
+							<goto page-id='takeoff' title='◂ TAKEOFF'/>
+						</left>
+						<right>
+							<setting title='V-BE' path='/_/v.be' unit='kt' format='%d kt'/>
+							<setting title='V-BG' path='/_/v.bg' unit='kt' format='%d kt'/>
+							<setting title='V-BR' path='/_/v.br' unit='kt' format='%d kt'/>
+							<setting title='V-NE' path='/_/v.ne' unit='kt' format='%d kt'/>
+							<fill/>
+							<setting title='COMPUTE ▸' path='/_/compute-vspds'/>
+						</right>
+					</page>
+					<page id='cruise' title='CRUISE'>
+						<left>
+							<setting title='CRZ THR REF FL 5' path='/_/cruise.thr-ref-fl5' format='%d RPM'/>
+							<setting title='CRZ THR REF FL 5+' path='/_/cruise.thr-ref-fl5+' format='%d RPM'/>
+							<fill/>
+							<goto page-id='index' title='◂ INDEX'/>
+						</left>
+						<right>
+							<setting title='CLB THR REF FL 5' path='/_/cruise.thr-ref-fl5' format='%d RPM'/>
+						</right>
+					</page>
+					<page id='approach' title='APPROACH'>
+						<left>
+							<setting title='LDG ALT' path='/settings/landing.amsl' unit='ft' format='%d ft'/>
+							<setting title='MINIMUMS' path='/settings/minimums/setting' unit='ft' format='%d ft'/>
+							<setting title='LDG ALT RADIO' path='/_/approach.radio-altm-for-ldg-alt' true-value='RADIO' false-value='BARO' default='false'/>
+							<fill/>
+							<goto page-id='index' title='◂ INDEX'/>
+						</left>
+						<right>
+							<setting title='V REF' path='/_/approach.v.ref' unit='kt' format='%d kt'/>
+							<setting title='THR REF' path='/_/approach.thr-ref' format='%d RPM'/>
+							<setting title='FLAPS' path='/_/approach.flaps.setting' unit='deg' format='%d°'/>
+						</right>
+					</page>
+					<page id='autoland' title='AUTOLAND'>
+						<left>
+							<fill/>
+							<goto page-id='index' title='◂ INDEX'/>
+						</left>
+						<right>
+							<fill/>
+							<goto page-id='autoland.entrypt' title='ENTRY POINT ▸'/>
+							<goto page-id='autoland.touchdown' title='TOUCHDOWN ▸'/>
+							<goto page-id='autoland.runway' title='RUNWAY ▸'/>
+						</right>
+					</page>
+					<page id='autoland.entrypt' title='A/L ENTRY PT'>
+						<left>
+							<setting title='LATITUDE' path='/_/autoland.appr-entry-point.lat' unit='deg' format='%03.6f°'/>
+							<setting title='LONGITUDE' path='/_/autoland.appr-entry-point.lon' unit='deg' format='%03.6f°'/>
+							<setting title='ALTITUDE AMSL' path='/_/autoland.appr-entry-point.altitude-amsl' unit='ft' format='%d ft'/>
+							<fill/>
+							<goto page-id='autoland' title='◂ AUTOLAND'/>
+						</left>
+					</page>
+					<page id='autoland.touchdown' title='A/L TOUCHDOWN'>
+						<left>
+							<setting title='LATITUDE' path='/_/autoland.appr-touchdown.lat' unit='deg' format='%03.6f°'/>
+							<setting title='LONGITUDE' path='/_/autoland.appr-touchdown.lon' unit='deg' format='%03.6f°'/>
+							<setting title='ALTITUDE AMSL' path='/_/autoland.appr-touchdown.altitude-amsl' unit='ft' format='%d ft'/>
+							<fill/>
+							<goto page-id='autoland' title='◂ AUTOLAND'/>
+						</left>
+					</page>
+					<page id='autoland.runway' title='A/L RWY'>
+						<left>
+							<setting title='MAG HDG' path='/_/autoland.rwy-mag-hdg' unit='deg' format='%03d°'/>
+							<fill/>
+							<goto page-id='autoland' title='◂ AUTOLAND'/>
+						</left>
+					</page>
+					<page id='rth' title='RTH'>
+						<left>
+							<setting title='V REF' path='/_/rth.v-ref' unit='kt' format='%d kt'/>
+							<setting title='MIN GS' path='/_/rth.minimum-gs' unit='kt' format='%d kt'/>
+							<setting title='ALTITUDE' path='/_/rth.altitude' unit='ft' format='%d ft'/>
+							<setting title='HOME ALTITUDE' path='/_/rth.home-altitude' unit='ft' format='%d ft'/>
+							<setting title='HOME RADIUS' path='/_/rth.home-radius' unit='nm' format='%.1f nm'/>
+							<fill/>
+							<goto page-id='index' title='◂ INDEX'/>
+						</left>
+					</page>
+					<page id='tcas' title='TCAS'>
+						<left>
+							<setting title='RADIUS' path='/settings/tcas/range' unit='nm' format='%.1f nm'/>
+							<fill/>
+							<goto page-id='index' title='◂ INDEX'/>
+						</left>
+					</page>
 					<page id='vor' title='VOR'>
 						<left>
 							<setting title='IDENT LEFT' path='/systems/vor/left/identifier'/>
+							<setting title='LATITUDE' path='/systems/vor/left/latitude' unit='deg' format='%03.6f°'/>
+							<setting title='LONGITUDE' path='/systems/vor/left/longitude' unit='deg' format='%03.6f°'/>
 							<setting title='DISTANCE' path='/systems/vor/left/distance' unit='nm' format='%.1f nm' read-only='true'/>
-							<setting title='ETA' path='/systems/vor/left/eta' unit='min' format='%.0f min' read-only='true'/>
+							<setting title='ETA' path='/systems/vor/left/eta' unit='min' format='%d min' read-only='true'/>
 							<fill/>
 							<goto page-id='index' title='◂ INDEX'/>
 						</left>
 						<right>
 							<setting title='RIGHT IDENT' path='/systems/vor/right/identifier'/>
+							<setting title='LATITUDE' path='/systems/vor/right/latitude' unit='deg' format='%03.6f°'/>
+							<setting title='LONGITUDE' path='/systems/vor/right/longitude' unit='deg' format='%03.6f°'/>
 							<setting title='DISTANCE' path='/systems/vor/right/distance' unit='nm' format='%.1f nm' read-only='true'/>
-							<setting title='ETA' path='/systems/vor/right/eta' unit='min' format='%.0f min' read-only='true'/>
-						</right>
-					</page>
-					<page id='takeoff' title='TAKEOFF'>
-						<left>
-							<setting title='V1' path='/v1'/>
-							<setting title='VR' path='/vr'/>
-							<setting title='V2' path='/v2'/>
-							<fill/>
-							<goto page-id='index' title='◂ INDEX'/>
-						</left>
-						<right>
-						</right>
-					</page>
-					<page id='approach' title='APPROACH'>
-						<left>
-							<setting title='LDG ALT' path='/settings/landing.amsl' unit='ft' format='%.0f ft'/>
-							<setting title='MINIMUMS' path='/settings/minimums/setting' unit='ft' format='%.0f ft'/>
-							<fill/>
-							<goto page-id='index' title='◂ INDEX'/>
-						</left>
-						<right>
+							<setting title='ETA' path='/systems/vor/right/eta' unit='min' format='%d min' read-only='true'/>
 						</right>
 					</page>
 					<page id='power' title='POWER SOURCES'>
 						<left>
+							<setting title='L ENG BATT CAP' path='/_/battery.engine.left.capacity' unit='mah' format='%d mAh'/>
+							<setting title='VID BATT 1 CAP' path='/_/battery.video.1.capacity' unit='mah' format='%d mAh'/>
+							<setting title='LOGIC BATT 1 CAP' path='/_/battery.logic.1.capacity' unit='mah' format='%d mAh'/>
+							<setting title='SERVO BATT 1 CAP' path='/_/battery.servo.1.capacity' unit='mah' format='%d mAh'/>
 							<fill/>
 							<goto page-id='index' title='◂ INDEX'/>
 						</left>
 						<right>
-						</right>
-					</page>
-					<page id='test' title='TEST'>
-						<left>
-							<fill/>
-							<goto page-id='index' title='◂ INDEX'/>
-						</left>
-						<right>
-							<setting title='PRE 787' path='/settings/efis/old-style'/>
-							<setting title='F/D GUIDANCE' path='/settings/efis/cmd-guidance-visible'/><!-- bool -->
-							<setting title='INT' path='/systems/vor/left/type' read-only='true'/><!-- int -->
-							<setting title='FLOAT' path='/input/pedals/axis/0'/><!-- float -->
-							<setting title='STRING' path='/systems/vor/left/identifier'/><!-- string -->
-							<setting title='MINS' path='/settings/minimums/setting' unit='ft' format='%.0f ft'/><!-- si -->
+							<setting title='R ENG BATT CAP' path='/_/battery.engine.right.capacity' unit='mah' format='%d mAh'/>
+							<setting title='VID BATT 2 CAP' path='/_/battery.video.2.capacity' unit='mah' format='%d mAh'/>
+							<setting title='LOGIC BATT 2 CAP' path='/_/battery.logic.2.capacity' unit='mah' format='%d mAh'/>
+							<setting title='SERVO BATT 2 CAP' path='/_/battery.servo.2.capacity' unit='mah' format='%d mAh'/>
 							<fill/>
 						</right>
 					</page>
