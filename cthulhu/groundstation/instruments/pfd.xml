@@ -53,10 +53,10 @@
 					<property name='altitude.amsl.lookahead' path='/systems/adc/altitude/amsl.lookahead'/>
 					<property name='altitude.agl.serviceable' path='/aircraft/sensors/radar-altimeter/serviceable'/>
 					<property name='altitude.agl' path='/aircraft/sensors/radar-altimeter/altitude.agl'/>
-					<property name='altitude.minimums.type' path='/settings/minimums/type'/>
-					<property name='altitude.minimums.setting' path='/settings/minimums/setting'/>
-					<property name='altitude.minimums.amsl' path='/settings/minimums/amsl'/>
-					<property name='altitude.landing.amsl' path='/settings/landing.amsl'/>
+					<property name='altitude.minimums.type' path='/settings/approach/minimums/type'/>
+					<property name='altitude.minimums.setting' path='/settings/approach/minimums/setting'/>
+					<property name='altitude.minimums.amsl' path='/settings/approach/minimums/amsl'/>
+					<property name='altitude.landing.amsl' path='/settings/approach/landing-altitude-amsl'/>
 					<property name='vertical-speed.serviceable' path='/systems/adc/vertical-speed/serviceable'/>
 					<property name='vertical-speed' path='/systems/adc/vertical-speed/speed'/>
 					<property name='vertical-speed.variometer' path='/systems/pc/total-energy-variometer'/>

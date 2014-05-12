@@ -1,5 +1,62 @@
 <?xml version='1.0'?>
 <xefis-include>
 	<module name='private/state'/>
+	<module name='systems/state'>
+		<settings>
+			<setting name='file' path='./saved-state.xml'/>
+		</settings>
+		<state>
+			<variable id='efis.old-style' path='/settings/efis/old-style' type='boolean' default='false'/>
+			<variable id='efis.heading-numbers-visible' path='/settings/efis/heading-numbers-visible' type='boolean' default='false'/>
+			<variable id='fbw.bank-limit' path='/settings/fbw/bank-limit' type='angle' default='30 deg'/>
+			<variable id='airplane.total-weight' path='/settings/airplane/total-weight' type='weight' default='1.5 kg'/>
+			<variable id='takeoff.flaps-setting' path='/settings/takeoff/flaps-setting' type='angle' default='15 deg'/>
+			<variable id='takeoff.thrust-reference' path='/settings/takeoff/thrust-reference' type='float' default='3500'/>
+			<variable id='takeoff.trim.minimum' path='/settings/takeoff/trim.minimum' type='integer' default='-15'/>
+			<variable id='takeoff.trim.minimum' path='/settings/takeoff/trim.reference' type='integer' default='0'/>
+			<variable id='takeoff.trim.minimum' path='/settings/takeoff/trim.maximum' type='integer' default='+15'/>
+			<variable id='takeoff.vspd.v1' path='/settings/takeoff/vspd.v1' type='speed' default='10 kt'/>
+			<variable id='takeoff.vspd.vr' path='/settings/takeoff/vspd.vr' type='speed' default='12 kt'/>
+			<variable id='takeoff.vspd.v2' path='/settings/takeoff/vspd.v2' type='speed' default='15 kt'/>
+			<variable id='takeoff.vspd.ne' path='/settings/takeoff/vspd.ne' type='speed' default='20 kt'/>
+			<variable id='takeoff.vspd.be' path='/settings/takeoff/vspd.be' type='speed' default='20 kt'/>
+			<variable id='takeoff.vspd.bg' path='/settings/takeoff/vspd.bg' type='speed' default='20 kt'/>
+			<variable id='takeoff.vspd.br' path='/settings/takeoff/vspd.br' type='speed' default='20 kt'/>
+			<variable id='cruise.thrust-reference.fl5' path='/settings/cruise/thrust-reference.fl5' type='float' defualt='2500'/>
+			<variable id='cruise.thrust-reference.fl5+' path='/settings/cruise/thrust-reference.fl5+' type='float' defualt='3000'/>
+			<variable id='cruise.thrust-reference.climb' path='/settings/cruise/thrust-reference.climb' type='float' defualt='3500'/>
+			<variable id='cruise.thrust-reference.descent' path='/settings/cruise/thrust-reference.descent' type='float' defualt='200'/>
+			<variable id='approach.landing-altitude-amsl' path='/settings/approach/landing-altitude-amsl' type='length'/>
+			<variable id='approach.minimums-setting' path='/settings/approach/minimums-setting' type='length'/>
+			<variable id='approach.radio-altm-for-ldg-alt' path='/settings/approach/radio-altm-for-ldg-alt' type='boolean' default='false'/>
+			<variable id='approach.speed-reference' path='/settings/approach/speed-reference' type='speed' default='12 kt'/>
+			<variable id='approach.thrust-reference' path='/settings/approach/thrust-reference' type='float' default='600'/>
+			<variable id='approach.flaps-setting' path='/settings/approach/flaps-setting' type='angle' default='30 deg'/>
+			<variable id='rth.speed-reference' path='/settings/rth/speed-reference' type='speed'/>
+			<variable id='rth.minimum-groundspeed' path='/settings/rth/minimum-groundspeed' type='speed'/>
+			<variable id='rth.altitude' path='/settings/rth/altitude' type='length'/>
+			<variable id='rth.home-altitude' path='/settings/rth/home-altitude' type='length'/>
+			<variable id='rth.home-radius' path='/settings/rth/home-radius' type='length'/>
+			<variable id='home.identifier' path='/settings/vor/home/identifier' type='string' default='HOME'/>
+			<variable id='home.position.latitude' path='/settings/vor/home/latitude' type='angle'/>
+			<variable id='home.position.longitude' path='/settings/vor/home/longitude' type='angle'/>
+			<variable id='home.position.altitude-amsl' path='/settings/vor/home/altitude-amsl' type='length'/>
+			<variable id='tcas.range' path='/settings/tcas/range' type='length' default='0.5 nm'/>
+			<variable id='vor.left.identifier' path='/settings/vor/left/identifier' type='string'/>
+			<variable id='vor.left.latitude' path='/settings/vor/left/latitude' type='angle'/>
+			<variable id='vor.left.longitude' path='/settings/vor/left/longitude' type='angle'/>
+			<variable id='vor.right.identifier' path='/settings/vor/right/identifier' type='string'/>
+			<variable id='vor.right.latitude' path='/settings/vor/right/latitude' type='angle'/>
+			<variable id='vor.right.longitude' path='/settings/vor/right/longitude' type='angle'/>
+			<variable id='battery.engine.left' path='/settings/power/battery.engine.left.capacity' type='capacity'/>
+			<variable id='battery.vtx.1' path='/settings/power/battery.vtx.1.capacity' type='capacity'/>
+			<variable id='battery.logic.1' path='/settings/power/battery.logic.1.capacity' type='capacity'/>
+			<variable id='battery.servo.1' path='/settings/power/battery.servo.1.capacity' type='capacity'/>
+			<variable id='battery.engine.right' path='/settings/power/battery.engine.right.capacity' type='capacity'/>
+			<variable id='battery.vtx.2' path='/settings/power/battery.vtx.2.capacity' type='capacity'/>
+			<variable id='battery.logic.2' path='/settings/power/battery.logic.2.capacity' type='capacity'/>
+			<variable id='battery.servo.2' path='/settings/power/battery.servo.2.capacity' type='capacity'/>
+		</state>
+	</module>
 </xefis-include>
 
