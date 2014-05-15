@@ -3,7 +3,8 @@
 	<module name='private/state'/>
 	<module name='systems/state'>
 		<settings>
-			<setting name='file' path='./saved-state.xml'/>
+			<setting name='file' value='saved-state.xml'/>
+			<setting name='max-save-delay' value='2 s'/>
 		</settings>
 		<state>
 			<variable id='efis.old-style' path='/settings/efis/old-style' type='boolean' default='false'/>
@@ -32,6 +33,13 @@
 			<variable id='approach.speed-reference' path='/settings/approach/speed-reference' type='speed' default='12 kt'/>
 			<variable id='approach.thrust-reference' path='/settings/approach/thrust-reference' type='frequency' default='600 rpm'/>
 			<variable id='approach.flaps-setting' path='/settings/approach/flaps-setting' type='angle' default='30 deg'/>
+			<variable id='autoland.entry-point.latitude' path='/settings/autoland/entry-point/latitude' type='angle'/>
+			<variable id='autoland.entry-point.longitude' path='/settings/autoland/entry-point/longitude' type='angle'/>
+			<variable id='autoland.entry-point.altitude-amsl' path='/settings/autoland/entry-point/altitude-amsl' type='length'/>
+			<variable id='autoland.touchdown.latitude' path='/settings/autoland/touchdown/latitude' type='angle'/>
+			<variable id='autoland.touchdown.longitude' path='/settings/autoland/touchdown/longitude' type='angle'/>
+			<variable id='autoland.touchdown.altitude-amsl' path='/settings/autoland/touchdown/altitude-amsl' type='length'/>
+			<variable id='autoland.runway.heading-magnetic' path='/settings/autoland/runway/heading.magnetic' type='angle'/>
 			<variable id='rth.speed-reference' path='/settings/rth/speed-reference' type='speed'/>
 			<variable id='rth.minimum-groundspeed' path='/settings/rth/minimum-groundspeed' type='speed'/>
 			<variable id='rth.altitude' path='/settings/rth/altitude' type='length'/>
@@ -42,12 +50,14 @@
 			<variable id='home.position.longitude' path='/settings/vor/home/longitude' type='angle'/>
 			<variable id='home.position.altitude-amsl' path='/settings/vor/home/altitude-amsl' type='length'/>
 			<variable id='tcas.range' path='/settings/tcas/range' type='length' default='0.5 nm'/>
-			<variable id='vor.left.identifier' path='/settings/vor/left/identifier' type='string'/>
-			<variable id='vor.left.latitude' path='/settings/vor/left/latitude' type='angle'/>
-			<variable id='vor.left.longitude' path='/settings/vor/left/longitude' type='angle'/>
-			<variable id='vor.right.identifier' path='/settings/vor/right/identifier' type='string'/>
-			<variable id='vor.right.latitude' path='/settings/vor/right/latitude' type='angle'/>
-			<variable id='vor.right.longitude' path='/settings/vor/right/longitude' type='angle'/>
+			<variable id='vor.1.identifier' path='/settings/vor/1/identifier' type='string'/>
+			<variable id='vor.1.latitude' path='/settings/vor/1/latitude' type='angle'/>
+			<variable id='vor.1.longitude' path='/settings/vor/1/longitude' type='angle'/>
+			<variable id='vor.1.altitude-amsl' path='/settings/vor/1/altitude-amsl' type='length'/>
+			<variable id='vor.2.identifier' path='/settings/vor/2/identifier' type='string'/>
+			<variable id='vor.2.latitude' path='/settings/vor/2/latitude' type='angle'/>
+			<variable id='vor.2.longitude' path='/settings/vor/2/longitude' type='angle'/>
+			<variable id='vor.2.altitude-amsl' path='/settings/vor/2/altitude-amsl' type='length'/>
 			<variable id='battery.engine.left' path='/settings/power/battery.engine.left.capacity' type='capacity'/>
 			<variable id='battery.vtx.1' path='/settings/power/battery.vtx.1.capacity' type='capacity'/>
 			<variable id='battery.logic.1' path='/settings/power/battery.logic.1.capacity' type='capacity'/>

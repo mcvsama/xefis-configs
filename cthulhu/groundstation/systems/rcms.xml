@@ -9,10 +9,12 @@
 				<property name='position.altitude-amsl' path='/altitude.amsl'/>
 			</directory>
 			<!-- Output -->
-			<directory path='/systems/rcms/home'>
+			<directory path='/settings/vor/home'>
 				<property name='home.longitude' path='/longitude'/>
 				<property name='home.latitude' path='/latitude'/>
 				<property name='home.altitude-amsl' path='/altitude-amsl'/>
+			</directory>
+			<directory path='/systems/rcms/home'>
 				<property name='home.distance.vlos' path='/distance/vlos'/>
 				<property name='home.distance.ground' path='/distance/ground'/>
 				<property name='home.distance.vertical' path='/distance/vertical'/>

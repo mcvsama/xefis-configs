@@ -119,25 +119,25 @@
 					</page>
 					<page id='autoland.entrypt' title='A/L ENTRY PT'>
 						<left>
-							<setting title='LATITUDE' path='/settings/autoland/entry-point.lat' unit='deg' format='%03.6f°'/>
-							<setting title='LONGITUDE' path='/settings/autoland/entry-point.lon' unit='deg' format='%03.6f°'/>
-							<setting title='ALTITUDE AMSL' path='/settings/autoland/entry-point.altitude-amsl' unit='ft' format='%d ft'/>
+							<setting title='LATITUDE' path='/settings/autoland/entry-point/latitude' unit='deg' format='%03.6f°'/>
+							<setting title='LONGITUDE' path='/settings/autoland/entry-point/longitude' unit='deg' format='%03.6f°'/>
+							<setting title='ALTITUDE AMSL' path='/settings/autoland/entry-point/altitude-amsl' unit='ft' format='%d ft'/>
 							<fill/>
 							<goto page-id='autoland' title='◂ AUTOLAND'/>
 						</left>
 					</page>
 					<page id='autoland.touchdown' title='A/L TOUCHDOWN'>
 						<left>
-							<setting title='LATITUDE' path='/settings/autoland/touchdown.lat' unit='deg' format='%03.6f°'/>
-							<setting title='LONGITUDE' path='/settings/autoland/touchdown.lon' unit='deg' format='%03.6f°'/>
-							<setting title='ALTITUDE AMSL' path='/settings/autoland/touchdown.altitude-amsl' unit='ft' format='%d ft'/>
+							<setting title='LATITUDE' path='/settings/autoland/touchdown/latitude' unit='deg' format='%03.6f°'/>
+							<setting title='LONGITUDE' path='/settings/autoland/touchdown/longitude' unit='deg' format='%03.6f°'/>
+							<setting title='ALTITUDE AMSL' path='/settings/autoland/touchdown/altitude-amsl' unit='ft' format='%d ft'/>
 							<fill/>
 							<goto page-id='autoland' title='◂ AUTOLAND'/>
 						</left>
 					</page>
 					<page id='autoland.runway' title='A/L RWY'>
 						<left>
-							<setting title='MAG HDG' path='/settings/autoland/runway.mag-hdg' unit='deg' format='%03d°'/>
+							<setting title='MAG HDG' path='/settings/autoland/runway/heading.magnetic' unit='deg' format='%03d°'/>
 							<fill/>
 							<goto page-id='autoland' title='◂ AUTOLAND'/>
 						</left>
@@ -170,20 +170,20 @@
 					</page>
 					<page id='vor' title='VOR'>
 						<left>
-							<setting title='IDENT LEFT' path='/settings/vor/left/identifier'/>
-							<setting title='LATITUDE' path='/settings/vor/left/latitude' unit='deg' format='%03.6f°'/>
-							<setting title='LONGITUDE' path='/settings/vor/left/longitude' unit='deg' format='%03.6f°'/>
-							<setting title='DISTANCE' path='/systems/vor/left/distance' unit='nm' format='%.1f nm' read-only='true'/>
-							<setting title='ETA' path='/systems/vor/left/eta' unit='min' format='%d min' read-only='true'/>
+							<setting title='IDENT LEFT' path='/settings/vor/1/identifier'/>
+							<setting title='LATITUDE' path='/settings/vor/1/latitude' unit='deg' format='%03.6f°'/>
+							<setting title='LONGITUDE' path='/settings/vor/1/longitude' unit='deg' format='%03.6f°'/>
+							<setting title='DISTANCE' path='/systems/vor/1/distance' unit='nm' format='%.1f nm' read-only='true'/>
+							<setting title='ETA' path='/systems/vor/1/eta' unit='min' format='%d min' read-only='true'/>
 							<fill/>
 							<goto page-id='index' title='◂ INDEX'/>
 						</left>
 						<right>
-							<setting title='RIGHT IDENT' path='/settings/vor/right/identifier'/>
-							<setting title='LATITUDE' path='/settings/vor/right/latitude' unit='deg' format='%03.6f°'/>
-							<setting title='LONGITUDE' path='/settings/vor/right/longitude' unit='deg' format='%03.6f°'/>
-							<setting title='DISTANCE' path='/systems/vor/right/distance' unit='nm' format='%.1f nm' read-only='true'/>
-							<setting title='ETA' path='/systems/vor/right/eta' unit='min' format='%d min' read-only='true'/>
+							<setting title='RIGHT IDENT' path='/settings/vor/2/identifier'/>
+							<setting title='LATITUDE' path='/settings/vor/2/latitude' unit='deg' format='%03.6f°'/>
+							<setting title='LONGITUDE' path='/settings/vor/2/longitude' unit='deg' format='%03.6f°'/>
+							<setting title='DISTANCE' path='/systems/vor/2/distance' unit='nm' format='%.1f nm' read-only='true'/>
+							<setting title='ETA' path='/systems/vor/2/eta' unit='min' format='%d min' read-only='true'/>
 						</right>
 					</page>
 					<page id='power' title='POWER SOURCES'>

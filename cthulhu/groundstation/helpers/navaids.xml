@@ -63,10 +63,10 @@
 			<!-- Input -->
 			<property name='input.selected' path='/settings/navaid/selected-left'/>
 			<!-- Input:0 -->
-			<directory path='/systems/vor/left'>
+			<directory path='/systems/vor/1'>
 				<property name='input.0.type' path='/type' default='0'/>
 				<property name='input.0.reference' path='/reference' default='VOR 1'/>
-				<property name='input.0.identifier' path='/identifier' default='OSOB'/>
+				<property name='input.0.identifier' path='//settings/vor/1/identifier'/>
 				<property name='input.0.radial.magnetic' path='/radial.magnetic'/>
 				<property name='input.0.reciprocal.magnetic' path='/reciprocal.magnetic'/>
 				<property name='input.0.initial-bearing.magnetic' path='/initial-bearing.magnetic'/>
@@ -79,7 +79,7 @@
 			<directory path='/systems/vor/home'>
 				<property name='input.1.type' path='/type' default='1'/>
 				<property name='input.1.reference' path='/reference'/>
-				<property name='input.1.identifier' path='/identifier' default='HOME'/>
+				<property name='input.1.identifier' path='//settings/vor/home/identifier'/>
 				<property name='input.1.radial.magnetic' path='/radial.magnetic'/>
 				<property name='input.1.reciprocal.magnetic' path='/reciprocal.magnetic'/>
 				<property name='input.1.initial-bearing.magnetic' path='/initial-bearing.magnetic'/>
@@ -108,10 +108,10 @@
 			<!-- Input -->
 			<property name='input.selected' path='/settings/navaid/selected-right'/>
 			<!-- Input:0 -->
-			<directory path='/systems/vor/right'>
+			<directory path='/systems/vor/2'>
 				<property name='input.0.type' path='/type' default='0'/>
 				<property name='input.0.reference' path='/reference' default='VOR 2'/>
-				<property name='input.0.identifier' path='/identifier' default='POLA'/>
+				<property name='input.0.identifier' path='//settings/vor/2/identifier'/>
 				<property name='input.0.radial.magnetic' path='/radial.magnetic'/>
 				<property name='input.0.reciprocal.magnetic' path='/reciprocal.magnetic'/>
 				<property name='input.0.initial-bearing.magnetic' path='/initial-bearing.magnetic'/>
@@ -124,7 +124,7 @@
 			<directory path='/systems/vor/home'>
 				<property name='input.1.type' path='/type' default='1'/>
 				<property name='input.1.reference' path='/reference'/>
-				<property name='input.1.identifier' path='/identifier' default='HOME'/>
+				<property name='input.1.identifier' path='//settings/vor/home/identifier'/>
 				<property name='input.1.radial.magnetic' path='/radial.magnetic'/>
 				<property name='input.1.reciprocal.magnetic' path='/reciprocal.magnetic'/>
 				<property name='input.1.initial-bearing.magnetic' path='/initial-bearing.magnetic'/>
