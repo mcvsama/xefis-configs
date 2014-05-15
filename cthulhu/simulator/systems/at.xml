@@ -2,8 +2,8 @@
 <xefis-include>
 	<module name='systems/autothrottle'>
 		<settings>
-			<setting name='output.thrust.minimum' value='0.0'/>
-			<setting name='output.thrust.maximum' value='2500.0'/>
+			<setting name='output.thrust.minimum' value='0.0 rpm'/>
+			<setting name='output.thrust.maximum' value='2500.0 rpm'/>
 			<setting name='ias.pid.p' value='2.0'/>
 			<setting name='ias.pid.i' value='0.5'/>
 			<setting name='ias.pid.d' value='0.0'/>

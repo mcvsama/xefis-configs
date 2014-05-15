@@ -31,6 +31,7 @@
 											<setting name='value.maximum' value='3500'/>
 											<setting name='value.maximum.warning' value='3000'/>
 											<setting name='value.maximum.critical' value='3500'/>
+											<setting name='unit' value='rpm'/>
 										</settings>
 										<properties path='//aircraft/sensors/engines/1'>
 											<property name='value' path='/rpm'/>
@@ -131,6 +132,7 @@
 											<setting name='value.maximum' value='3500'/>
 											<setting name='value.maximum.warning' value='3000'/>
 											<setting name='value.maximum.critical' value='3500'/>
+											<setting name='unit' value='rpm'/>
 										</settings>
 										<properties path='//aircraft/sensors/engines/2'>
 											<property name='value' path='/rpm'/>
