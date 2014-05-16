@@ -264,9 +264,8 @@
 				<item stretch-factor='20'>
 					<instrument name='instruments/status'>
 						<properties>
+							<property name='input.cursor' path='/panels/eicas-status/cursor'/>
 							<directory path='/panels/eicas-status/button.'>
-								<property name='input.button.cursor-up' path='up'/>
-								<property name='input.button.cursor-down' path='down'/>
 								<property name='input.button.cursor-del' path='del'/>
 								<property name='input.button.recall' path='recall'/>
 								<property name='input.button.clear' path='clear'/>

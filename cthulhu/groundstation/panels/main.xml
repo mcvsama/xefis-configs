@@ -21,7 +21,7 @@
 						<item>
 							<layout type='vertical' spacing='10'>
 								<item>
-									<widget type='rotary-encoder' top-label='MSG' click-label='DEL' click-property='/panels/eicas-status/button.del' rotate-up-property='/panels/eicas-status/button.up' rotate-down-property='/panels/eicas-status/button.down'/>
+									<widget type='rotary-encoder' top-label='MSG' click-label='DEL' click-property='/panels/eicas-status/button.del' value-property='/panels/eicas-status/cursor'/>
 								</item>
 								<item>
 									<widget type='button' top-label='RECALL' click-property='/panels/eicas-status/button.recall'/>
