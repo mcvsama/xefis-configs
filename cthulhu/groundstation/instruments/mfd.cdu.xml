@@ -7,19 +7,19 @@
 					<page id='index' title='INDEX'>
 						<left>
 							<fill/>
-							<goto page-id='vor' title='◂ VOR'/>
-							<goto page-id='fbw' title='◂ FBW'/>
-							<goto page-id='cruise' title='◂ CRUISE'/>
 							<goto page-id='takeoff' title='◂ TAKEOFF'/>
+							<goto page-id='cruise' title='◂ CRUISE'/>
+							<goto page-id='approach' title='◂ APPROACH'/>
+							<goto page-id='autoland' title='◂ AUTOLAND'/>
 						</left>
 						<right>
+							<fill/>
+							<goto page-id='power' title='POWER SRC ▸'/>
 							<goto page-id='efis' title='EFIS ▸'/>
+							<goto page-id='vor' title='VOR ▸'/>
+							<goto page-id='fbw' title='FBW ▸'/>
 							<goto page-id='rth' title='RTH ▸'/>
 							<goto page-id='tcas' title='TCAS ▸'/>
-							<goto page-id='power' title='POWER SRC ▸'/>
-							<fill/>
-							<goto page-id='autoland' title='AUTOLAND ▸'/>
-							<goto page-id='approach' title='APPROACH ▸'/>
 						</right>
 					</page>
 					<page id='efis' title='EFIS'>
