@@ -17,9 +17,9 @@
 							<goto page-id='power' title='POWER SRC ▸'/>
 							<goto page-id='efis' title='EFIS ▸'/>
 							<goto page-id='vor' title='VOR ▸'/>
-							<goto page-id='fbw' title='FBW ▸'/>
 							<goto page-id='rth' title='RTH ▸'/>
 							<goto page-id='tcas' title='TCAS ▸'/>
+							<goto page-id='fbw' title='FBW ▸'/>
 						</right>
 					</page>
 					<page id='efis' title='EFIS'>
@@ -48,19 +48,12 @@
 							<goto page-id='index' title='◂ INDEX'/>
 						</left>
 						<right>
-							<fill/>
-							<goto page-id='takeoff.trim' title='TRIM ▸'/>
-							<goto page-id='takeoff.vspd' title='V/SPD ▸'/>
-						</right>
-					</page>
-					<page id='takeoff.trim' title='T/O TRIM'>
-						<left>
 							<setting title='MIN' path='/settings/takeoff/trim.minimum' format='%d'/>
 							<setting title='REF' path='/settings/takeoff/trim.reference' format='%d'/>
 							<setting title='MAX' path='/settings/takeoff/trim.maximum' format='%d'/>
 							<fill/>
-							<goto page-id='takeoff' title='◂ TAKEOFF'/>
-						</left>
+							<goto page-id='takeoff.vspd' title='V/SPD ▸'/>
+						</right>
 					</page>
 					<page id='takeoff.vspd' title='T/O VSPD'>
 						<left>
