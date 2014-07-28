@@ -2,9 +2,16 @@
 <xefis-include>
 	<instrument name='instruments/hsi' instance='mfd'>
 		<settings>
-			<setting name='arpt.runways-range-threshold' value='39 nm'/>
-			<setting name='arpt.map-range-threshold' value='0.5 nm'/>
-			<setting name='arpt.runway-extension-length' value='5 nm'/>
+			<setting name='arpt.runways-range-threshold' value='39 nmi'/>
+			<setting name='arpt.map-range-threshold' value='0.5 nmi'/>
+			<setting name='arpt.runway-extension-length' value='5 nmi'/>
+			<setting name='trend-vector.vertex.0.time' value='10 s'/>
+			<setting name='trend-vector.vertex.0.minimum-range' value='1 nmi'/>
+			<setting name='trend-vector.vertex.1.time' value='20 s'/>
+			<setting name='trend-vector.vertex.1.minimum-range' value='2 nmi'/>
+			<setting name='trend-vector.vertex.2.time' value='30 s'/>
+			<setting name='trend-vector.vertex.2.minimum-range' value='3 nmi'/>
+			<setting name='trend-vector.maximum-range' value='5 nmi'/>
 		</settings>
 		<properties>
 			<property name='display-mode' path='/settings/hsi/display-mode/mfd' default='0'/>
@@ -28,7 +35,6 @@
 			<property name='navaid.right.initial-bearing.magnetic' path='/systems/navaid/right/initial-bearing.magnetic'/>
 			<property name='navaid.right.distance' path='/systems/navaid/right/distance'/>
 			<property name='range' path='/settings/hsi/range'/>
-			<property name='trend-vector-range' path='/settings/hsi/trend-vector-range'/>
 			<property name='track.center-on-track' path='/settings/hsi/center-on-track'/>
 			<property name='track.visible' path='/settings/hsi/track-visible' default='true'/>
 			<property name='cmd.visible' path='/settings/efis/cmd-settings-visible'/>
@@ -46,17 +52,17 @@
 			<property name='home.distance.vlos' path='/systems/rcms/home/distance/vlos'/>
 			<property name='home.distance.ground' path='/systems/rcms/home/distance/ground'/>
 			<property name='home.distance.vertical' path='/systems/rcms/home/distance/vertical'/>
-			<property name='home.position.longitude' path='/systems/rcms/home/longitude'/>
-			<property name='home.position.latitude' path='/systems/rcms/home/latitude'/>
+			<property name='home.position.longitude' path='/settings/vor/home/longitude'/>
+			<property name='home.position.latitude' path='/settings/vor/home/latitude'/>
 			<property name='position.latitude' path='/systems/nc/position/latitude'/>
 			<property name='position.longitude' path='/systems/nc/position/longitude'/>
 			<property name='position.source' path='/systems/nc/position/source'/>
 			<property name='track.lateral.magnetic' path='/systems/nc/track/lateral/magnetic'/>
-			<property name='track.lateral.delta' path='/systems/nc/track/lateral/delta'/>
+			<property name='track.lateral.rotation' path='/systems/nc/track/lateral/rotation'/>
 			<property name='wind.from.magnetic' path='/systems/pc/wind/from/magnetic'/>
 			<property name='wind.tas' path='/systems/pc/wind/speed/tas'/>
 			<property name='tcas.on' path='/settings/tcas/on'/>
-			<property name='tcas.range' path='/settings/tcas/range' default='0.2 nm'/>
+			<property name='tcas.range' path='/settings/tcas/range' default='0.2 nmi'/>
 			<property name='features.fix' path='/settings/hsi/show-wpt'/>
 			<property name='features.vor' path='/settings/hsi/show-sta'/>
 			<property name='features.dme' path='/settings/hsi/show-sta'/>

@@ -5,14 +5,28 @@
 			<setting name='default.speed' value='112 kt'/>
 			<setting name='default.heading' value='0 deg'/>
 			<setting name='default.altitude' value='3000 ft'/>
+			<setting name='mcp-speed-format.kias' value='%4d'/>
+			<setting name='mcp-speed-format.mach' value=''/>
+			<setting name='mcp-heading-format' value='%03d'/>
+			<setting name='mcp-altitude-format' value='%5d'/>
+			<setting name='mcp-vspd-format.vs' value='%5d'/>
+			<setting name='mcp-vspd-format.fpa' value='%+6.1f'/>
+			<setting name='altitude-hold-threshold-vs' value='100 fpm'/>
 		</settings>
 		<properties>
+			<property name='input.heading.magnetic' path='/systems/nc/orientation/heading/magnetic'/>
+			<property name='input.track.lateral.magnetic' path='/systems/nc/track/lateral/magnetic'/>
+			<property name='input.track.vertical' path='/systems/nc/track/vertical'/>
+			<property name='input.altitude-amsl' path='/systems/adc/altitude/amsl'/>
+			<property name='input.vertical-speed' path='/systems/adc/vertical-speed/speed'/>
+			<property name='input.spd-ref-for-approach' path='/settings/approach/speed-reference'/>
+			<property name='input.spd-ref-for-cruise' path='/settings/cruise/speed-reference'/>
+			<property name='input.thr-ref-for-climb' path='/settings/cruise/thrust-reference.climb'/>
+			<property name='input.thr-ref-for-cruise' path='/settings/cruise/thrust-reference.cruise'/>
+			<property name='input.thr-ref-for-descent' path='/settings/cruise/thrust-reference.descent'/>
 			<directory path='/panels/mcp/afcs'>
 				<property name='button.ap' path='/button.ap'/>
 				<property name='button.at' path='/button.at'/>
-				<property name='button.prot' path='/button.prot'/>
-				<property name='button.tac' path='/button.tac'/>
-				<property name='button.att' path='/button.att'/>
 				<property name='button.yd' path='/button.yd'/>
 				<property name='button.speed.ias-mach' path='/button.speed-ias-mach'/>
 				<property name='button.speed.sel' path='/button.speed-sel'/>
@@ -44,7 +58,6 @@
 				<property name='led.ap' path='/led.ap'/>
 				<property name='led.at' path='/led.at'/>
 				<property name='led.yd' path='/led.yd'/>
-				<property name='led.att' path='/led.att'/>
 				<property name='led.speed.sel' path='/led.speed-sel'/>
 				<property name='led.speed.hold' path='/led.speed-hold'/>
 				<property name='led.heading.sel' path='/led.heading-sel'/>
@@ -58,19 +71,29 @@
 				<property name='led.vertical-speed.clb-con' path='/led.vspd-clb-con'/>
 			</directory>
 			<directory path='/settings/cmd'>
-				<property name='cmd.roll-mode' path='/roll-mode'/>
-				<property name='cmd.pitch-mode' path='/pitch-mode'/>
-				<property name='cmd.ias' path='/ias'/>
-				<property name='cmd.magnetic-heading-track' path='/magnetic-heading-track'/>
-				<property name='cmd.altitude' path='/altitude'/>
-				<property name='cmd.vertical-speed' path='/vertical-speed'/>
-				<property name='cmd.fpa' path='/fpa'/>
+				<property name='output.roll-mode' path='/roll-mode'/>
+				<property name='output.pitch-mode' path='/pitch-mode'/>
+				<property name='output.ias' path='/ias'/>
+				<property name='output.mach' path='/mach'/>
+				<property name='output.magnetic-heading-track' path='/magnetic-heading-track'/>
+				<property name='output.altitude' path='/altitude'/>
+				<property name='output.vertical-speed' path='/vertical-speed'/>
+				<property name='output.fpa' path='/fpa'/>
+				<property name='output.spd-ref' path='/spd-ref'/>
+				<property name='output.thr-ref' path='/thr-ref'/>
 			</directory>
-			<directory path='/systems/afcs'>
-				<property name='fbw.attitude-mode' path='/fbw-attitude-mode'/>
-				<property name='fbw.throttle-mode' path='/fbw-throttle-mode'/>
-				<property name='flight-mode' path='/flight-mode'/>
-				<property name='yaw-damper-enabled' path='//settings/yaw-damper/enabled'/>
+			<directory path='/systems/afcs/fma'>
+				<property name='output.flight-mode-hint' path='/flight-mode-hint'/>
+				<property name='output.flight-mode-speed-hint' path='/speed-mode-hint'/>
+				<property name='output.flight-mode-roll-hint' path='/roll-mode-hint'/>
+				<property name='output.flight-mode-pitch-hint' path='/pitch-mode-hint'/>
+				<property name='output.yaw-damper-enabled' path='//settings/afcs/eac/yd/enabled'/>
+			</directory>
+			<directory path='/systems/afcs/mcp/formats'>
+				<property name='output.mcp-speed-format' path='/speed-format'/>
+				<property name='output.mcp-heading-format' path='/heading-format'/>
+				<property name='output.mcp-altitude-format' path='/altitude-format'/>
+				<property name='output.mcp-vspd-format' path='/vspd-format'/>
 			</directory>
 		</properties>
 	</module>

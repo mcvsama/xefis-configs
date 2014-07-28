@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 <xefis-include>
-	<module name='systems/autothrottle'>
+	<module name='systems/afcs-at'>
 		<settings>
 			<setting name='output.thrust.minimum' value='0.0 rpm'/>
 			<setting name='output.thrust.maximum' value='2500.0 rpm'/>

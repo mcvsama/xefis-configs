@@ -125,7 +125,7 @@
 						<item>
 							<layout type='vertical' spacing='10'>
 								<item>
-									<widget type='numeric-display' digits='3' pad-with-zeros='true' value-property='/settings/course/magnetic.integer'/>
+									<widget type='numeric-display' digits='3' format='%03d' value-property='/settings/course/magnetic.integer'/>
 								</item>
 								<item>
 									<widget type='rotary-encoder' click-label='─┼' top-label='HIDE' value-property='/panels/mcp/course' click-property='/panels/mcp/course-hide'/>
@@ -143,7 +143,7 @@
 			<separator/>
 			<stretch/>
 			<item>
-				<group label='FBW'>
+				<group label='EAC'>
 					<layout type='horizontal' spacing='10'>
 						<item>
 							<layout type='vertical' spacing='10'>
@@ -155,9 +155,6 @@
 									<widget type='button' top-label='YD' click-property='/panels/mcp/afcs/button.yd' led-property='/panels/mcp/afcs/led.yd' led-color='amber'/>
 								</item>
 								<stretch/>
-								<item>
-									<widget type='button' top-label='ATT✶' click-property='/panels/mcp/afcs/button.att' led-property='/panels/mcp/afcs/led.att' led-color='amber'/>
-								</item>
 							</layout>
 						</item>
 						<item>
@@ -178,115 +175,10 @@
 					</layout>
 				</group>
 			</item>
-			<item>
-				<group label='SPEED'>
-					<layout type='vertical' spacing='10'>
-						<item>
-							<widget type='numeric-display' digits='4' value-property='/panels/mcp/afcs/display.speed'/>
-						</item>
-						<item>
-							<widget type='rotary-encoder' top-label='IAS • MACH' value-property='/panels/mcp/afcs/rotary-encoder.speed' click-property='/panels/mcp/afcs/rotary-encoder.speed-ias-mach'/>
-						</item>
-						<stretch/>
-						<item>
-							<layout type='horizontal' spacing='10'>
-								<item>
-									<widget type='button' top-label='SPD SEL' click-property='/panels/mcp/afcs/button.speed-sel' led-property='/panels/mcp/afcs/led.speed-sel' led-color='amber'/>
-								</item>
-								<item>
-									<widget type='button' top-label='HOLD' click-property='/panels/mcp/afcs/button.speed-hold' led-property='/panels/mcp/afcs/led.speed-hold' led-color='amber'/>
-								</item>
-							</layout>
-						</item>
-					</layout>
-				</group>
-			</item>
-			<item>
-				<group label='HEADING'>
-					<layout type='vertical' spacing='10'>
-						<item>
-							<widget type='numeric-display' digits='3' pad-with-zeros='true' value-property='/panels/mcp/afcs/display.heading'/>
-						</item>
-						<item>
-							<widget type='rotary-encoder' top-label='HDG • TRK' value-property='/panels/mcp/afcs/rotary-encoder.heading' click-property='/panels/mcp/afcs/rotary-encoder.heading-hdg-trk'/>
-						</item>
-						<stretch/>
-						<item>
-							<layout type='horizontal' spacing='10'>
-								<item>
-									<widget type='button' top-label='HDG SEL' click-property='/panels/mcp/afcs/button.heading-sel' led-property='/panels/mcp/afcs/led.heading-sel' led-color='amber'/>
-								</item>
-								<item>
-									<widget type='button' top-label='HOLD' click-property='/panels/mcp/afcs/button.heading-hold' led-property='/panels/mcp/afcs/led.heading-hold' led-color='amber'/>
-								</item>
-							</layout>
-						</item>
-					</layout>
-				</group>
-			</item>
-			<item>
-				<group>
-					<layout type='vertical' spacing='10'>
-						<item>
-							<widget type='button' top-label='VNAV' click-property='/panels/mcp/afcs/button.vnav' led-property='/panels/mcp/afcs/led.vnav' led-color='amber'/>
-						</item>
-						<stretch/>
-						<item>
-							<widget type='button' top-label='LNAV' click-property='/panels/mcp/afcs/button.lnav' led-property='/panels/mcp/afcs/led.lnav' led-color='amber'/>
-						</item>
-						<stretch/>
-						<item>
-							<widget type='button' top-label='APP' click-property='/panels/mcp/afcs/button.app' led-property='/panels/mcp/afcs/led.app' led-color='amber'/>
-						</item>
-					</layout>
-				</group>
-			</item>
-			<item>
-				<group label='ALTITUDE'>
-					<layout type='vertical' spacing='10'>
-						<item>
-							<widget type='numeric-display' digits='5' value-property='/panels/mcp/afcs/display.altitude'/>
-						</item>
-						<item>
-							<widget type='rotary-encoder' top-label='10 • 100' value-property='/panels/mcp/afcs/rotary-encoder.altitude' click-property='/panels/mcp/afcs/rotary-encoder.altitude-stepch'/>
-						</item>
-						<stretch/>
-						<item>
-							<layout type='horizontal' spacing='10'>
-								<item>
-									<widget type='button' top-label='FLCH' click-property='/panels/mcp/afcs/button.altitude-flch' led-property='/panels/mcp/afcs/led.altitude-flch' led-color='amber'/>
-								</item>
-								<item>
-									<widget type='button' top-label='HOLD' click-property='/panels/mcp/afcs/button.altitude-hold' led-property='/panels/mcp/afcs/led.altitude-hold' led-color='amber'/>
-								</item>
-							</layout>
-						</item>
-					</layout>
-				</group>
-			</item>
-			<item>
-				<group label='VERTICAL SPEED'>
-					<layout type='vertical' spacing='10'>
-						<item>
-							<widget type='numeric-display' digits='5' value-property='/panels/mcp/afcs/display.vertical-speed'/>
-						</item>
-						<item>
-							<widget type='rotary-encoder' top-label='V/S • FPA' value-property='/panels/mcp/afcs/rotary-encoder.vspd' click-property='/panels/mcp/afcs/rotary-encoder.vspd-vs-fpa'/>
-						</item>
-						<stretch/>
-						<item>
-							<layout type='horizontal' spacing='10'>
-								<item>
-									<widget type='button' top-label='VS/FPA' click-property='/panels/mcp/afcs/button.vspd-sel' led-property='/panels/mcp/afcs/led.vspd-sel' led-color='amber'/>
-								</item>
-								<item>
-									<widget type='button' top-label='CLB/CON' click-property='/panels/mcp/afcs/button.vspd-clb-con' led-property='/panels/mcp/afcs/led.vspd-clb-con' led-color='amber'/>
-								</item>
-							</layout>
-						</item>
-					</layout>
-				</group>
-			</item>
+			<stretch/>
+			<separator/>
+			<stretch/>
+			<include name='mcp.fd.xml'/>
 			<stretch/>
 			<separator/>
 			<stretch/>

@@ -7,13 +7,13 @@
 			<properties>
 				<directory path='/sensors'>
 					<!-- gyro -->
-					<property name='rotation.x' path='/ahrs/primary/rotation/x'/>
-					<property name='rotation.y' path='/ahrs/primary/rotation/y'/>
-					<property name='rotation.z' path='/ahrs/primary/rotation/z'/>
+					<property name='rotation.x' path='/ahrs/rotation/x'/>
+					<property name='rotation.y' path='/ahrs/rotation/y'/>
+					<property name='rotation.z' path='/ahrs/rotation/z'/>
 					<!-- accel -->
-					<property name='acceleration.x' path='/ahrs/primary/acceleration/x'/>
-					<property name='acceleration.y' path='/ahrs/primary/acceleration/y'/>
-					<property name='acceleration.z' path='/ahrs/primary/acceleration/z'/>
+					<property name='acceleration.x' path='/ahrs/acceleration/x'/>
+					<property name='acceleration.y' path='/ahrs/acceleration/y'/>
+					<property name='acceleration.z' path='/ahrs/acceleration/z'/>
 					<!-- aoa -->
 					<property name='aoa.alpha.maximum' path='/aoa/alpha.maximum'/>
 					<property name='aoa.alpha.minimum' path='/aoa/alpha.minimum'/>
@@ -27,10 +27,10 @@
 					<property name='gps.serviceable' path='/gps/serviceable'/>
 					<property name='gps.source' path='/gps/source'/>
 					<!-- ahrs -->
-					<property name='ahrs.serviceable' path='/ahrs/primary/serviceable'/>
-					<property name='ahrs.pitch' path='/ahrs/primary/orientation/pitch'/>
-					<property name='ahrs.roll' path='/ahrs/primary/orientation/roll'/>
-					<property name='ahrs.magnetic-heading' path='/ahrs/primary/orientation/magnetic-heading'/>
+					<property name='ahrs.serviceable' path='/ahrs/serviceable'/>
+					<property name='ahrs.pitch' path='/ahrs/orientation/pitch'/>
+					<property name='ahrs.roll' path='/ahrs/orientation/roll'/>
+					<property name='ahrs.magnetic-heading' path='/ahrs/orientation/magnetic-heading'/>
 					<!-- airspeed -->
 					<property name='ias' path='/airspeed/ias'/>
 					<property name='ias.serviceable' path='/airspeed/serviceable'/>
@@ -96,12 +96,12 @@
 		<output disabled='false'>
 			<host>127.0.0.1</host>
 			<port>9001</port>
-			<properties path='/systems/fbw'>
+			<properties path='/controls'>
 				<property name='ailerons' path='/ailerons'/>
 				<property name='elevator' path='/elevator'/>
-				<property name='throttle.1' path='//controls/throttle-left'/>
-				<property name='throttle.2' path='//controls/throttle-right'/>
-				<property name='rudder' path='//controls/coordinated-rudder'/>
+				<property name='throttle.1' path='/throttle-left'/>
+				<property name='throttle.2' path='/throttle-right'/>
+				<property name='rudder' path='/coordinated-rudder'/>
 			</properties>
 		</output>
 	</module>

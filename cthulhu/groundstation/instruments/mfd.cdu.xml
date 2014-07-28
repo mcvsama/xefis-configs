@@ -34,16 +34,15 @@
 					</page>
 					<page id='fbw' title='FBW'>
 						<left>
-							<setting title='BANK LIMIT' path='/settings/fbw/bank-limit' unit='deg' format='%d°'/>
+							<setting title='BANK LIMIT' path='/settings/afcs/ap/bank-limit' unit='deg' format='%d°'/>
 							<fill/>
 							<goto page-id='index' title='◂ INDEX'/>
 						</left>
 					</page>
 					<page id='takeoff' title='TAKEOFF'>
 						<left>
-							<setting title='TOTAL WEIGHT' path='/settings/airplane/total-weight' unit='kg' format='%.3f kg'/>
+							<setting title='TOTAL WEIGHT' path='/settings/aircraft/total-weight' unit='kg' format='%.3f kg'/>
 							<setting title='FLAPS' path='/settings/takeoff/flaps-setting' unit='deg' format='%d°'/>
-							<setting title='THR REF' path='/settings/takeoff/thrust-reference' unit='rpm' format='%d RPM'/>
 							<fill/>
 							<goto page-id='index' title='◂ INDEX'/>
 						</left>
@@ -74,8 +73,8 @@
 					</page>
 					<page id='cruise' title='CRUISE'>
 						<left>
-							<setting title='CRZ THR REF FL 5' path='/settings/cruise/thrust-reference.fl5' unit='rpm' format='%d RPM'/>
-							<setting title='CRZ THR REF FL 5+' path='/settings/cruise/thrust-reference.fl5+' unit='rpm' format='%d RPM'/>
+							<setting title='CRZ THR REF' path='/settings/cruise/thrust-reference.cruise' unit='rpm' format='%d RPM'/>
+							<setting title='CRZ SPD REF' path='/settings/cruise/speed-reference' unit='kt' format='%d kt'/>
 							<fill/>
 							<goto page-id='index' title='◂ INDEX'/>
 						</left>
@@ -94,7 +93,6 @@
 						</left>
 						<right>
 							<setting title='SPD REF' path='/settings/approach/speed-reference' unit='kt' format='%d kt'/>
-							<setting title='THR REF' path='/settings/approach/thrust-reference' unit='rpm' format='%d RPM'/>
 							<setting title='FLAPS' path='/settings/approach/flaps-setting' unit='deg' format='%d°'/>
 						</right>
 					</page>
@@ -141,7 +139,7 @@
 							<setting title='MIN GS' path='/settings/rth/minimum-groundspeed' unit='kt' format='%d kt'/>
 							<setting title='ALTITUDE' path='/settings/rth/altitude' unit='ft' format='%d ft'/>
 							<setting title='HOME ALTITUDE' path='/settings/rth/home-altitude' unit='ft' format='%d ft'/>
-							<setting title='HOME RADIUS' path='/settings/rth/home-radius' unit='nm' format='%.1f nm'/>
+							<setting title='HOME RADIUS' path='/settings/rth/home-radius' unit='nmi' format='%.1f nmi'/>
 							<fill/>
 							<goto page-id='index' title='◂ INDEX'/>
 						</left>
@@ -150,13 +148,13 @@
 							<setting title='LATITUDE' path='/settings/vor/home/latitude' unit='deg' format='%03.6f°'/>
 							<setting title='LONGITUDE' path='/settings/vor/home/longitude' unit='deg' format='%03.6f°'/>
 							<setting title='ALT AMSL' path='/settings/vor/home/altitude-amsl' unit='ft' format='%d ft'/>
-							<setting title='DISTANCE' path='/systems/vor/home/distance' unit='nm' format='%.1f nm' read-only='true'/>
+							<setting title='DISTANCE' path='/systems/vor/home/distance' unit='nmi' format='%.1f nmi' read-only='true'/>
 							<setting title='ETA' path='/systems/vor/home/eta' unit='min' format='%d min' read-only='true'/>
 						</right>
 					</page>
 					<page id='tcas' title='TCAS'>
 						<left>
-							<setting title='RADIUS' path='/settings/tcas/range' unit='nm' format='%.1f nm'/>
+							<setting title='RADIUS' path='/settings/tcas/range' unit='nmi' format='%.1f nmi'/>
 							<fill/>
 							<goto page-id='index' title='◂ INDEX'/>
 						</left>
@@ -166,7 +164,7 @@
 							<setting title='IDENT LEFT' path='/settings/vor/1/identifier'/>
 							<setting title='LATITUDE' path='/settings/vor/1/latitude' unit='deg' format='%03.6f°'/>
 							<setting title='LONGITUDE' path='/settings/vor/1/longitude' unit='deg' format='%03.6f°'/>
-							<setting title='DISTANCE' path='/systems/vor/1/distance' unit='nm' format='%.1f nm' read-only='true'/>
+							<setting title='DISTANCE' path='/systems/vor/1/distance' unit='nmi' format='%.1f nmi' read-only='true'/>
 							<setting title='ETA' path='/systems/vor/1/eta' unit='min' format='%d min' read-only='true'/>
 							<fill/>
 							<goto page-id='index' title='◂ INDEX'/>
@@ -175,7 +173,7 @@
 							<setting title='RIGHT IDENT' path='/settings/vor/2/identifier'/>
 							<setting title='LATITUDE' path='/settings/vor/2/latitude' unit='deg' format='%03.6f°'/>
 							<setting title='LONGITUDE' path='/settings/vor/2/longitude' unit='deg' format='%03.6f°'/>
-							<setting title='DISTANCE' path='/systems/vor/2/distance' unit='nm' format='%.1f nm' read-only='true'/>
+							<setting title='DISTANCE' path='/systems/vor/2/distance' unit='nmi' format='%.1f nmi' read-only='true'/>
 							<setting title='ETA' path='/systems/vor/2/eta' unit='min' format='%d min' read-only='true'/>
 						</right>
 					</page>

@@ -27,7 +27,7 @@
 				<property name='track.vertical' path='/track/vertical'/>
 				<property name='track.lateral.magnetic' path='/track/lateral/magnetic'/>
 				<property name='track.lateral.true' path='/track/lateral/true'/>
-				<property name='track.lateral.delta' path='/track/lateral/delta'/>
+				<property name='track.lateral.rotation' path='/track/lateral/rotation'/>
 				<property name='track.ground-speed' path='/track/ground-speed'/>
 				<property name='magnetic.declination' path='/magnetic/declination'/>
 				<property name='magnetic.inclination' path='/magnetic/inclination'/>

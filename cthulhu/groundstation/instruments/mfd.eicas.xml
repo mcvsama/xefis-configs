@@ -15,6 +15,7 @@
 											<setting name='value.maximum' value='1'/>
 											<setting name='value.maximum.warning' value='0.9'/>
 											<setting name='value.maximum.critical' value='1'/>
+											<setting name='unit' value='N'/>
 										</settings>
 										<properties path='//aircraft/sensors/engines/1'>
 											<property name='value' path='/thrust'/>
@@ -116,6 +117,7 @@
 											<setting name='value.maximum' value='1'/>
 											<setting name='value.maximum.warning' value='0.9'/>
 											<setting name='value.maximum.critical' value='1'/>
+											<setting name='unit' value='N'/>
 										</settings>
 										<properties path='//aircraft/sensors/engines/2'>
 											<property name='value' path='/thrust'/>
@@ -281,10 +283,10 @@
 							<message message='LINK HW FAIL' severity='warning'>
 								<observe path='/link/xbee/serviceable' fail-on='false'/>
 							</message>
-							<message message='LINK AIRPLANE SYS' severity='warning'>
+							<message message='DOWNLINK FAIL' severity='warning'>
 								<observe path='/link/local/valid' fail-on='false'/>
 							</message>
-							<message message='LINK GS SYS' severity='warning'>
+							<message message='UPLINK FAIL' severity='warning'>
 								<observe path='/link/remote/valid' fail-on='false'/>
 							</message>
 							<message message='ADC AMSL SYS' severity='warning'>
@@ -299,8 +301,8 @@
 							<message message='NC POS ACCURACY SYS' severity='warning'>
 								<observe path='/aircraft/systems/nc/position/accuracy.serviceable' fail-on='false'/>
 							</message>
-							<message message='FBW SYS' severity='warning'>
-								<observe path='/aircraft/systems/fbw/serviceable' fail-on='false'/>
+							<message message='AP SYS' severity='warning'>
+								<observe path='/aircraft/systems/afcs/ap/serviceable' fail-on='false'/>
 							</message>
 							<message message='ADC ALT AMSL FAIL'>
 								<observe path='/systems/adc/altitude/amsl.serviceable' fail-on='false'/>
@@ -312,7 +314,7 @@
 								<observe path='/systems/adc/vertical-speed/serviceable' fail-on='false'/>
 							</message>
 							<message message='FD SYS FAIL'>
-								<observe path='/systems/fd/serviceable' fail-on='false'/>
+								<observe path='/systems/afcs/fd/serviceable' fail-on='false'/>
 							</message>
 							<message message='AHRS FAIL'>
 								<observe path='/aircraft/sensors/ahrs/serviceable' fail-on='false'/>
@@ -425,11 +427,11 @@
 									</row>
 									<row>
 										<label>TAT</label>
-										<value path='/aircraft/sensors/air-temperature/total' unit='degC' format='%.0f °C' nil='-- °C'/>
+										<value path='/aircraft/sensors/air-temperature/total' unit='degC' format='%+.0f °C' nil='-- °C'/>
 									</row>
 									<row>
 										<label>SAT</label>
-										<value path='/systems/adc/air-temperature/static' unit='degC' format='%.0f °C' nil='-- °C'/>
+										<value path='/systems/adc/air-temperature/static' unit='degC' format='%+.0f °C' nil='-- °C'/>
 									</row>
 									<row>
 										<label>LDG ALT</label>

@@ -33,6 +33,7 @@
 				<property name='vertical-speed.serviceable' path='/vertical-speed/serviceable'/>
 				<property name='vertical-speed' path='/vertical-speed/speed'/>
 				<property name='air-temperature.static' path='/air-temperature/static'/>
+				<property name='air-density-static' path='/air-density/static'/>
 			</directory>
 		</properties>
 	</module>

@@ -9,10 +9,9 @@
 		<state>
 			<variable id='efis.old-style' path='/settings/efis/old-style' type='boolean' default='false'/>
 			<variable id='efis.heading-numbers-visible' path='/settings/efis/heading-numbers-visible' type='boolean' default='false'/>
-			<variable id='fbw.bank-limit' path='/settings/fbw/bank-limit' type='angle' default='30 deg'/>
-			<variable id='airplane.total-weight' path='/settings/airplane/total-weight' type='weight' default='1.5 kg'/>
+			<variable id='fbw.bank-limit' path='/settings/afcs/ap/bank-limit' type='angle' default='30 deg'/>
+			<variable id='aircraft.total-weight' path='/settings/aircraft/total-weight' type='weight' default='1.5 kg'/>
 			<variable id='takeoff.flaps-setting' path='/settings/takeoff/flaps-setting' type='angle' default='15 deg'/>
-			<variable id='takeoff.thrust-reference' path='/settings/takeoff/thrust-reference' type='frequency' default='3500 rpm'/>
 			<variable id='takeoff.trim.minimum' path='/settings/takeoff/trim.minimum' type='integer' default='-15'/>
 			<variable id='takeoff.trim.minimum' path='/settings/takeoff/trim.reference' type='integer' default='0'/>
 			<variable id='takeoff.trim.minimum' path='/settings/takeoff/trim.maximum' type='integer' default='+15'/>
@@ -23,15 +22,13 @@
 			<variable id='takeoff.vspd.be' path='/settings/takeoff/vspd.be' type='speed' default='20 kt'/>
 			<variable id='takeoff.vspd.bg' path='/settings/takeoff/vspd.bg' type='speed' default='20 kt'/>
 			<variable id='takeoff.vspd.br' path='/settings/takeoff/vspd.br' type='speed' default='20 kt'/>
-			<variable id='cruise.thrust-reference.fl5' path='/settings/cruise/thrust-reference.fl5' type='frequency' default='2500 rpm'/>
-			<variable id='cruise.thrust-reference.fl5+' path='/settings/cruise/thrust-reference.fl5+' type='frequency' default='3000 rpm'/>
+			<variable id='cruise.thrust-reference' path='/settings/cruise/thrust-reference.cruise' type='frequency' default='2500 rpm'/>
 			<variable id='cruise.thrust-reference.climb' path='/settings/cruise/thrust-reference.climb' type='frequency' default='3500 rpm'/>
 			<variable id='cruise.thrust-reference.descent' path='/settings/cruise/thrust-reference.descent' type='frequency' default='200 rpm'/>
 			<variable id='approach.landing-altitude-amsl' path='/settings/approach/landing-altitude-amsl' type='length'/>
 			<variable id='approach.minimums-setting' path='/settings/approach/minimums-setting' type='length'/>
 			<variable id='approach.radio-altm-for-ldg-alt' path='/settings/approach/radio-altm-for-ldg-alt' type='boolean' default='false'/>
 			<variable id='approach.speed-reference' path='/settings/approach/speed-reference' type='speed' default='12 kt'/>
-			<variable id='approach.thrust-reference' path='/settings/approach/thrust-reference' type='frequency' default='600 rpm'/>
 			<variable id='approach.flaps-setting' path='/settings/approach/flaps-setting' type='angle' default='30 deg'/>
 			<variable id='autoland.entry-point.latitude' path='/settings/autoland/entry-point/latitude' type='angle'/>
 			<variable id='autoland.entry-point.longitude' path='/settings/autoland/entry-point/longitude' type='angle'/>
@@ -49,7 +46,7 @@
 			<variable id='home.position.latitude' path='/settings/vor/home/latitude' type='angle'/>
 			<variable id='home.position.longitude' path='/settings/vor/home/longitude' type='angle'/>
 			<variable id='home.position.altitude-amsl' path='/settings/vor/home/altitude-amsl' type='length'/>
-			<variable id='tcas.range' path='/settings/tcas/range' type='length' default='0.5 nm'/>
+			<variable id='tcas.range' path='/settings/tcas/range' type='length' default='0.5 nmi'/>
 			<variable id='vor.1.identifier' path='/settings/vor/1/identifier' type='string'/>
 			<variable id='vor.1.latitude' path='/settings/vor/1/latitude' type='angle'/>
 			<variable id='vor.1.longitude' path='/settings/vor/1/longitude' type='angle'/>

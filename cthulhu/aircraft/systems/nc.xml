@@ -36,7 +36,7 @@
 					<property name='track.vertical' path='/vertical'/>
 					<property name='track.lateral.magnetic' path='/lateral.magnetic'/>
 					<property name='track.lateral.true' path='/lateral.true'/>
-					<property name='track.lateral.delta' path='/lateral.delta'/>
+					<property name='track.lateral.rotation' path='/lateral.rotation'/>
 					<property name='track.ground-speed' path='/ground-speed'/>
 				</directory>
 				<directory path='/magnetic'>

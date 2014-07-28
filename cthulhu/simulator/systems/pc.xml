@@ -6,21 +6,43 @@
 		</settings>
 		<properties>
 			<!-- Input -->
-			<property name='speed.ias' path='/systems/adc/speed/ias'/>
-			<property name='speed.tas' path='/systems/adc/speed/tas'/>
-			<property name='speed.gs' path='/systems/nc/track/ground-speed'/>
-			<property name='vertical-speed' path='/systems/adc/vertical-speed/speed'/>
-			<property name='altitude.amsl.std' path='/systems/adc/altitude/amsl.std'/>
-			<property name='track.lateral.true' path='/systems/nc/track/lateral/true'/>
-			<property name='orientation.heading.true' path='/systems/nc/orientation/heading/true'/>
-			<property name='magnetic.declination' path='/systems/nc/magnetic/declination'/>
+			<property name='input.speed.ias' path='/systems/adc/speed/ias'/>
+			<property name='input.speed.tas' path='/systems/adc/speed/tas'/>
+			<property name='input.speed.gs' path='/systems/nc/track/ground-speed'/>
+			<property name='input.vertical-speed' path='/systems/adc/vertical-speed/speed'/>
+			<property name='input.altitude.amsl.std' path='/systems/adc/altitude/amsl.std'/>
+			<property name='input.track.lateral.true' path='/systems/nc/track/lateral/true'/>
+			<property name='input.orientation.heading.true' path='/systems/nc/orientation/heading/true'/>
+			<property name='input.magnetic.declination' path='/systems/nc/magnetic/declination'/>
+			<property name='input.air-density-static' path='/systems/adc/air-density/static'/>
+			<property name='input.aircraft-weight' path='/settings/aircraft/total-weight'/>
+			<property name='input.flaps-angle' path='/systems/flaps/current'/>
+			<property name='input.spoilers-angle' path='/systems/spoilers/current'/>
+			<property name='input.aoa.alpha' path='/sensors/aoa/alpha'/>
+			<property name='input.density-altitude' path='/systems/adc/density-altitude'/>
+			<property name='input.load' path='/sensors/ahrs/acceleration/z'/>
+			<property name='input.bank-angle' path='/aircraft/sensors/ahrs/orientation/roll'/>
 			<!-- Output -->
 			<directory path='/systems/pc'>
-				<property name='wind.from.true' path='/wind/from/true'/>
-				<property name='wind.from.magnetic' path='/wind/from/magnetic'/>
-				<property name='wind.speed.tas' path='/wind/speed/tas'/>
-				<property name='glide-ratio' path='/glide-ratio'/>
-				<property name='total-energy-variometer' path='/total-energy-variometer'/>
+				<property name='output.wind.from.true' path='/wind/from/true'/>
+				<property name='output.wind.from.magnetic' path='/wind/from/magnetic'/>
+				<property name='output.wind.speed.tas' path='/wind/speed/tas'/>
+				<property name='output.glide-ratio' path='/glide-ratio'/>
+				<property name='output.total-energy-variometer' path='/total-energy-variometer'/>
+				<property name='output.v-approach' path='/speeds/v-approach'/>
+				<property name='output.v-r' path='/speeds/v-r'/>
+				<property name='output.v-s' path='/speeds/v-s'/>
+				<property name='output.v-a' path='/speeds/v-a'/>
+				<property name='output.v-s.0_deg' path='/speeds/v-s-0_deg'/>
+				<property name='output.v-s.5_deg' path='/speeds/v-s-5_deg'/>
+				<property name='output.v-s.30_deg' path='/speeds/v-s-30_deg'/>
+				<property name='output.critical-aoa' path='/aoa.alpha.critical'/>
+				<property name='output.lift-coefficient' path='/lift-coefficient'/>
+				<property name='output.stall' path='/stall'/>
+				<property name='output.estimated-ias' path='/estimated/ias'/>
+				<property name='output.estimated-ias.error' path='/estimated/ias.error'/>
+				<property name='output.estimated-aoa' path='/estimated/aoa'/>
+				<property name='output.estimated-aoa.error' path='/estimated/aoa.error'/>
 			</directory>
 		</properties>
 	</module>

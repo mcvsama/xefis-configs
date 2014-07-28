@@ -1,0 +1,16 @@
+<?xml version='1.0'?>
+<xefis-include>
+	<module name='systems/afcs-roll-autotrim'>
+		<settings>
+			<setting name='airspeed-coefficient' value='1.0'/>
+			<setting name='engine-torque-coefficient' value='0.005'/>
+			<setting name='total-coefficient' value='1.0'/>
+		</settings>
+		<properties>
+			<property name='input.ias' path='/systems/adc/speed/ias'/>
+			<property name='input.engine-torque' path='/systems/engine/torque'/>
+			<property name='output.ailerons-correction' path='/systems/afcs/roll-autotrim/ailerons-correction'/>
+		</properties>
+	</module>
+</xefis-include>
+

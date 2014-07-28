@@ -3,6 +3,7 @@
 	<module name='systems/speeds'>
 		<properties>
 			<property name='input.flaps-angle' path='/systems/flaps/current'/>
+			<property name='input.stall-speed' path='/systems/pc/speeds/v-s-5_deg'/>
 			<property name='output.speed.minimum' path='/systems/speeds/minimum'/>
 			<property name='output.speed.minimum-maneuver' path='/systems/speeds/minimum-maneuver'/>
 			<property name='output.speed.maximum-maneuver' path='/systems/speeds/maximum-maneuver'/>

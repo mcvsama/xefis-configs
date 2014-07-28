@@ -44,11 +44,9 @@
 					<property bytes='2' path='/sensors/engines/2/epr' type='float'/>
 					<property bytes='2' path='/sensors/engines/2/pitch' type='angle'/>
 					<property bytes='2' path='/sensors/engines/2/temperature' type='temperature'/>
-					<property bytes='2' path='/systems/aoa/alpha.critical' type='angle'/>
-					<property bytes='2' path='/systems/fbw/stick/pitch' type='angle'/>
-					<property bytes='2' path='/systems/fbw/stick/roll' type='angle'/>
-					<property bytes='2' path='/systems/fd/pitch' type='angle'/>
-					<property bytes='2' path='/systems/fd/roll' type='angle'/>
+					<property bytes='2' path='/systems/pc/aoa.alpha.critical' type='angle'/>
+					<property bytes='2' path='/systems/afcs/fd/pitch' type='angle'/>
+					<property bytes='2' path='/systems/afcs/fd/roll' type='angle'/>
 					<property bytes='2' path='/systems/flaps/setting' type='angle'/>
 					<property bytes='2' path='/systems/flaps/current' type='angle'/>
 					<property bytes='2' path='/systems/speeds/minimum' type='speed'/>
@@ -66,15 +64,12 @@
 						<property path='/systems/adc/altitude/amsl.serviceable' type='boolean'/>
 						<property path='/systems/adc/speed/ias.serviceable' type='boolean'/>
 						<property path='/systems/adc/vertical-speed/serviceable' type='boolean'/>
-						<property path='/systems/fbw/serviceable' type='boolean'/>
 						<!-- CMD modes -->
 						<property path='/settings/cmd/speed-mode' type='integer' bits='4'/>
 						<property path='/settings/cmd/roll-mode' type='integer' bits='3'/>
 						<property path='/settings/cmd/pitch-mode' type='integer' bits='4'/>
 						<!-- AP/AT/FBW modes -->
-						<property path='/settings/fbw/attitude-mode' type='integer' bits='2'/>
-						<property path='/settings/fbw/throttle-mode' type='integer' bits='1'/>
-						<property path='/settings/yaw-damper/enabled' type='boolean'/>
+						<property path='/settings/afcs/eac/yd/enabled' type='boolean'/>
 						<!-- Gear -->
 						<property path='/sensors/gear/setting.down' type='boolean'/>
 						<property path='/sensors/gear/nose.up' type='boolean'/>
@@ -132,16 +127,14 @@
 						<property path='/settings/lights/strobe' type='boolean' retained='true'/>
 						<property path='/settings/lights/position' type='boolean' retained='true'/>
 						<property path='/settings/lights/landing' type='boolean' retained='true'/>
-						<property path='/settings/yaw-damper/enabled' type='boolean'/>
-						<property path='/settings/fbw/attitude-mode' type='integer' bits='2' retained='true'/>
-						<property path='/settings/fbw/throttle-mode' type='integer' bits='1' retained='true'/>
+						<property path='/settings/afcs/eac/yd/enabled' type='boolean'/>
 					</bitfield>
 				</signature>
 			</packet>
 			<packet magic='a3:80'>
 				<signature random-bytes='2' signature-bytes='4' key='cc:dd:ee:ff'>
-					<property bytes='8' path='/settings/home/latitude' type='angle' retained='true'/>
-					<property bytes='8' path='/settings/home/longitude' type='angle' retained='true'/>
+					<property bytes='8' path='/settings/vor/home/latitude' type='angle' retained='true'/>
+					<property bytes='8' path='/settings/vor/home/longitude' type='angle' retained='true'/>
 				</signature>
 			</packet>
 		</protocol>

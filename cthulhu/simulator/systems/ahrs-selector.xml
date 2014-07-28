@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 <xefis-include>
-	<module name='helpers/ahrs-selector'>
+	<module name='helpers/ahrs-selector' disabled='true'>
 		<settings>
 			<setting name='pitch-disagree-threshold' value='5 deg'/>
 			<setting name='roll-disagree-threshold' value='5 deg'/>

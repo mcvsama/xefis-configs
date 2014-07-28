@@ -26,6 +26,7 @@
 					<property bytes='2' path='/aircraft/sensors/ahrs/orientation/pitch' type='angle'/>
 					<property bytes='2' path='/aircraft/sensors/ahrs/orientation/roll' type='angle'/>
 					<property bytes='2' path='/aircraft/sensors/ahrs/orientation/magnetic-heading' type='angle'/>
+					<property bytes='2' path='/aircraft/sensors/ahrs/acceleration/z' type='acceleration'/>
 					<property bytes='8' path='/aircraft/sensors/gps/latitude' type='angle' retained='true'/>
 					<property bytes='8' path='/aircraft/sensors/gps/longitude' type='angle' retained='true'/>
 					<property bytes='4' path='/aircraft/sensors/gps/altitude-amsl' type='length'/>
@@ -37,25 +38,23 @@
 					<property bytes='4' path='/aircraft/sensors/air-temperature/total' type='temperature'/>
 					<property bytes='4' path='/aircraft/sensors/radar-altimeter/altitude.agl' type='length'/>
 					<property bytes='2' path='/aircraft/sensors/slip-skid/slip-skid' type='float'/>
-					<property bytes='2' path='/aircraft/sensors/engines/1/thrust' type='weight'/>
+					<property bytes='2' path='/aircraft/sensors/engines/1/thrust' type='force'/>
 					<property bytes='2' path='/aircraft/sensors/engines/1/rpm' type='frequency'/>
 					<property bytes='2' path='/aircraft/sensors/engines/1/n1' type='float'/>
 					<property bytes='2' path='/aircraft/sensors/engines/1/n2' type='float'/>
 					<property bytes='2' path='/aircraft/sensors/engines/1/epr' type='float'/>
 					<property bytes='2' path='/aircraft/sensors/engines/1/pitch' type='angle'/>
 					<property bytes='2' path='/aircraft/sensors/engines/1/temperature' type='temperature'/>
-					<property bytes='2' path='/aircraft/sensors/engines/2/thrust' type='weight'/>
+					<property bytes='2' path='/aircraft/sensors/engines/2/thrust' type='force'/>
 					<property bytes='2' path='/aircraft/sensors/engines/2/rpm' type='frequency'/>
 					<property bytes='2' path='/aircraft/sensors/engines/2/n1' type='float'/>
 					<property bytes='2' path='/aircraft/sensors/engines/2/n2' type='float'/>
 					<property bytes='2' path='/aircraft/sensors/engines/2/epr' type='float'/>
 					<property bytes='2' path='/aircraft/sensors/engines/2/pitch' type='angle'/>
 					<property bytes='2' path='/aircraft/sensors/engines/2/temperature' type='temperature'/>
-					<property bytes='2' path='/aircraft/systems/aoa/alpha.critical' type='angle'/>
-					<property bytes='2' path='/aircraft/systems/fbw/stick/pitch' type='angle'/>
-					<property bytes='2' path='/aircraft/systems/fbw/stick/roll' type='angle'/>
-					<property bytes='2' path='/aircraft/systems/fd/pitch' type='angle'/>
-					<property bytes='2' path='/aircraft/systems/fd/roll' type='angle'/>
+					<property bytes='2' path='/aircraft/systems/pc/aoa.alpha.critical' type='angle'/>
+					<property bytes='2' path='/aircraft/systems/afcs/fd/pitch' type='angle'/>
+					<property bytes='2' path='/aircraft/systems/afcs/fd/roll' type='angle'/>
 					<property bytes='2' path='/aircraft/systems/flaps/setting' type='angle' retained='true'/>
 					<property bytes='2' path='/aircraft/systems/flaps/current' type='angle'/>
 					<property bytes='2' path='/aircraft/systems/speeds/minimum' type='speed'/>
@@ -73,15 +72,12 @@
 						<property path='/aircraft/systems/adc/altitude/amsl.serviceable' type='boolean' retained='true'/>
 						<property path='/aircraft/systems/adc/speed/ias.serviceable' type='boolean' retained='true'/>
 						<property path='/aircraft/systems/adc/vertical-speed/serviceable' type='boolean' retained='true'/>
-						<property path='/aircraft/systems/fbw/serviceable' type='boolean' retained='true'/>
 						<!-- CMD modes -->
 						<property path='/aircraft/settings/cmd/speed-mode' type='integer' bits='4'/>
 						<property path='/aircraft/settings/cmd/roll-mode' type='integer' bits='3'/>
 						<property path='/aircraft/settings/cmd/pitch-mode' type='integer' bits='4'/>
 						<!-- AP/AT/FBW modes -->
-						<property path='/aircraft/settings/fbw/attitude-mode' type='integer' bits='2'/>
-						<property path='/aircraft/settings/fbw/throttle-mode' type='integer' bits='1'/>
-						<property path='/aircraft/settings/yaw-damper/enabled' type='boolean'/>
+						<property path='/aircraft/settings/afcs/eac/yd/enabled' type='boolean'/>
 						<!-- Gear -->
 						<property path='/aircraft/sensors/gear/setting.down' type='boolean' retained='true'/>
 						<property path='/aircraft/sensors/gear/nose.up' type='boolean' retained='true'/>
@@ -132,16 +128,14 @@
 						<property path='/settings/lights/strobe' type='boolean'/>
 						<property path='/settings/lights/position' type='boolean'/>
 						<property path='/settings/lights/landing' type='boolean'/>
-						<property path='/settings/yaw-damper/enabled' type='boolean'/>
-						<property path='/systems/afcs/fbw-attitude-mode' type='integer' bits='2'/>
-						<property path='/systems/afcs/fbw-throttle-mode' type='integer' bits='1'/>
+						<property path='/settings/afcs/eac/yd/enabled' type='boolean'/>
 					</bitfield>
 				</signature>
 			</packet>
 			<packet magic='a3:80' send-every='1000' send-offset='0'>
 				<signature random-bytes='2' signature-bytes='4' key='cc:dd:ee:ff'>
-					<property bytes='8' path='/settings/home/latitude' type='angle'/>
-					<property bytes='8' path='/settings/home/longitude' type='angle'/>
+					<property bytes='8' path='/settings/vor/home/latitude' type='angle'/>
+					<property bytes='8' path='/settings/vor/home/longitude' type='angle'/>
 				</signature>
 			</packet>
 		</protocol>

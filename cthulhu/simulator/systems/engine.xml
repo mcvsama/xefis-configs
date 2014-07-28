@@ -1,0 +1,16 @@
+<?xml version='1.0'?>
+<xefis-include>
+	<module name='systems/engine-torque'>
+		<settings>
+			<setting name='linear-coefficient' value='1.0'/>
+			<setting name='derivative-coefficient' value='1.0'/>
+			<setting name='total-coefficient' value='1.0'/>
+		</settings>
+		<properties>
+			<property name='input.engine-rpm' path='/sensors/engines/1/rpm'/>
+			<property name='output.engine-torque' path='/systems/engine/torque'/>
+		</properties>
+	</module>
+</xefis-include>
+
+

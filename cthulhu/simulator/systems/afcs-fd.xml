@@ -1,9 +1,9 @@
 <?xml version='1.0'?>
 <xefis-include>
-	<module name='systems/flight-director'>
+	<module name='systems/afcs-fd'>
 		<properties>
-			<property name='disengage-ap' path='/systems/fd/disengage-ap'/>
-			<directory path='/systems/fd'>
+			<property name='output.operative' path='/systems/afcs/fd/operative'/>
+			<directory path='/systems/afcs/fd'>
 				<property name='output.pitch' path='/pitch'/>
 				<property name='output.roll' path='/roll'/>
 			</directory>
