@@ -2,11 +2,12 @@
 <xefis-include>
 	<module name='systems/afcs'>
 		<settings>
-			<setting name='default.speed' value='112 kt'/>
+			<setting name='default.ias' value='112 kt'/>
+			<setting name='default.mach' value='0.2'/>
 			<setting name='default.heading' value='0 deg'/>
 			<setting name='default.altitude' value='3000 ft'/>
 			<setting name='mcp-speed-format.kias' value='%4d'/>
-			<setting name='mcp-speed-format.mach' value=''/>
+			<setting name='mcp-speed-format.mach' value='%4.3f'/>
 			<setting name='mcp-heading-format' value='%03d'/>
 			<setting name='mcp-altitude-format' value='%5d'/>
 			<setting name='mcp-vspd-format.vs' value='%5d'/>

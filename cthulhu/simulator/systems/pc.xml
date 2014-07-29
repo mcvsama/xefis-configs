@@ -21,7 +21,7 @@
 			<property name='input.aoa.alpha' path='/sensors/aoa/alpha'/>
 			<property name='input.density-altitude' path='/systems/adc/density-altitude'/>
 			<property name='input.load' path='/sensors/ahrs/acceleration/z'/>
-			<property name='input.bank-angle' path='/aircraft/sensors/ahrs/orientation/roll'/>
+			<property name='input.bank-angle' path='/sensors/ahrs/orientation/roll'/>
 			<!-- Output -->
 			<directory path='/systems/pc'>
 				<property name='output.wind.from.true' path='/wind/from/true'/>

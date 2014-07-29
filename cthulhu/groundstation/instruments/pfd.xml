@@ -65,6 +65,7 @@
 					<property name='pressure.use-std' path='/settings/pressure/use-std'/>
 					<property name='flight-director.cmd.visible' path='/settings/efis/cmd-settings-visible' default='true'/>
 					<property name='flight-director.cmd.ias' path='/aircraft/settings/cmd/ias'/>
+					<property name='flight-director.cmd.mach' path='/aircraft/settings/cmd/mach'/>
 					<property name='flight-director.cmd.altitude' path='/aircraft/settings/cmd/altitude'/>
 					<property name='flight-director.cmd.altitude.acquired' path='/aircraft/systems/altacq/flag'/>
 					<property name='flight-director.cmd.vertical-speed' path='/aircraft/settings/cmd/vertical-speed'/>
