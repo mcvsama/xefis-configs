@@ -2,21 +2,31 @@
 <xefis-include>
 	<item>
 		<group label='SPEED'>
-			<layout type='vertical' spacing='10'>
+			<layout type='vertical' spacing='5'>
 				<item>
 					<widget type='numeric-display' digits='4' format-property='/systems/afcs/mcp/formats/speed-format' value-property='/panels/mcp/afcs/display.speed'/>
 				</item>
 				<item>
-					<widget type='rotary-encoder' top-label='IAS • MACH' value-property='/panels/mcp/afcs/rotary-encoder.speed' click-property='/panels/mcp/afcs/button.speed-ias-mach'/>
+					<layout type='horizontal' spacing='5'>
+						<item>
+							<widget type='button' top-label='IAS ↔ Ma' click-property='/panels/mcp/afcs/button.xchg-ias-mach'/>
+						</item>
+						<item>
+							<widget type='rotary-encoder' top-label='SPEED' value-property='/panels/mcp/afcs/rotary-encoder.speed'/>
+						</item>
+					</layout>
 				</item>
 				<stretch/>
 				<item>
-					<layout type='horizontal' spacing='10'>
+					<layout type='horizontal' spacing='5'>
 						<item>
-							<widget type='button' top-label='SPD SEL' click-property='/panels/mcp/afcs/button.speed-sel' led-property='/panels/mcp/afcs/led.speed-sel' led-color='amber'/>
+							<widget type='button' top-label='TO/GA' click-property='/panels/mcp/afcs/button.toga'/>
 						</item>
 						<item>
-							<widget type='button' top-label='HOLD' click-property='/panels/mcp/afcs/button.speed-hold' led-property='/panels/mcp/afcs/led.speed-hold' led-color='amber'/>
+							<widget type='button' top-label='SPD SEL' click-property='/panels/mcp/afcs/button.spd-sel'/>
+						</item>
+						<item>
+							<widget type='button' top-label='HOLD' click-property='/panels/mcp/afcs/button.spd-hold'/>
 						</item>
 					</layout>
 				</item>
@@ -25,21 +35,38 @@
 	</item>
 	<item>
 		<group label='HEADING'>
-			<layout type='vertical' spacing='10'>
+			<layout type='horizontal' spacing='5'>
 				<item>
-					<widget type='numeric-display' digits='3' format-property='/systems/afcs/mcp/formats/heading-format' value-property='/panels/mcp/afcs/display.heading'/>
-				</item>
-				<item>
-					<widget type='rotary-encoder' top-label='HDG • TRK' value-property='/panels/mcp/afcs/rotary-encoder.heading' click-property='/panels/mcp/afcs/button.heading-hdg-trk'/>
-				</item>
-				<stretch/>
-				<item>
-					<layout type='horizontal' spacing='10'>
+					<layout type='vertical' spacing='0'>
 						<item>
-							<widget type='button' top-label='HDG SEL' click-property='/panels/mcp/afcs/button.heading-sel' led-property='/panels/mcp/afcs/led.heading-sel' led-color='amber'/>
+							<widget type='button' top-label='HDG ↔ TRK' click-property='/panels/mcp/afcs/button.xchg-hdg-trk'/>
 						</item>
 						<item>
-							<widget type='button' top-label='HOLD' click-property='/panels/mcp/afcs/button.heading-hold' led-property='/panels/mcp/afcs/led.heading-hold' led-color='amber'/>
+							<widget type='button' top-label='WLV' click-property='/panels/mcp/afcs/button.wng-lvl'/>
+						</item>
+						<item>
+							<widget type='button' top-label='LOC' click-property='/panels/mcp/afcs/button.loc'/>
+						</item>
+						<item>
+							<widget type='button' top-label='HOLD' click-property='/panels/mcp/afcs/button.hdgtrk-hold'/>
+						</item>
+					</layout>
+				</item>
+				<item>
+					<layout type='vertical' spacing='5'>
+						<item>
+							<widget type='numeric-display' digits='3' format-property='/systems/afcs/mcp/formats/heading-format' value-property='/panels/mcp/afcs/display.heading'/>
+						</item>
+						<item>
+							<layout type='horizontal' spacing='5'>
+								<item>
+									<widget type='rotary-encoder' top-label='1° ↔ 10°' value-property='/panels/mcp/afcs/rotary-encoder.heading' click-property='/panels/mcp/afcs/button.xchg-heading-step'/>
+								</item>
+							</layout>
+						</item>
+						<stretch/>
+						<item>
+							<widget type='button' top-label='HDG SEL' click-property='/panels/mcp/afcs/button.hdgtrk-sel'/>
 						</item>
 					</layout>
 				</item>
@@ -48,38 +75,60 @@
 	</item>
 	<item>
 		<group>
-			<layout type='vertical' spacing='10'>
+			<layout type='horizontal' spacing='5'>
 				<item>
-					<widget type='button' top-label='VNAV' click-property='/panels/mcp/afcs/button.vnav' led-property='/panels/mcp/afcs/led.vnav' led-color='amber'/>
+					<layout type='vertical' spacing='5'>
+						<item>
+							<widget type='button' top-label='VNAV' click-property='/panels/mcp/afcs/button.vnav'/>
+						</item>
+						<item>
+							<widget type='button' top-label='LNAV' click-property='/panels/mcp/afcs/button.lnav'/>
+						</item>
+						<item>
+							<widget type='button' top-label='ILS' click-property='/panels/mcp/afcs/button.ils'/>
+						</item>
+						<stretch/>
+					</layout>
 				</item>
-				<stretch/>
 				<item>
-					<widget type='button' top-label='LNAV' click-property='/panels/mcp/afcs/button.lnav' led-property='/panels/mcp/afcs/led.lnav' led-color='amber'/>
-				</item>
-				<stretch/>
-				<item>
-					<widget type='button' top-label='APP' click-property='/panels/mcp/afcs/button.app' led-property='/panels/mcp/afcs/led.app' led-color='amber'/>
+					<layout type='vertical' spacing='5'>
+						<item>
+							<widget type='button' top-label='T/O' click-property='/panels/mcp/afcs/button.to'/>
+						</item>
+						<item>
+							<widget type='button' top-label='CRZ' click-property='/panels/mcp/afcs/button.crz'/>
+						</item>
+						<item>
+							<widget type='button' top-label='APP' click-property='/panels/mcp/afcs/button.app'/>
+						</item>
+						<item>
+							<widget type='button' top-label='LVL ALL' click-property='/panels/mcp/afcs/button.lvl-all'/>
+						</item>
+					</layout>
 				</item>
 			</layout>
 		</group>
 	</item>
 	<item>
 		<group label='ALTITUDE'>
-			<layout type='vertical' spacing='10'>
+			<layout type='vertical' spacing='5'>
 				<item>
 					<widget type='numeric-display' digits='5' format-property='/systems/afcs/mcp/formats/altitude-format' value-property='/panels/mcp/afcs/display.altitude'/>
 				</item>
 				<item>
-					<widget type='rotary-encoder' top-label='10 • 100' value-property='/panels/mcp/afcs/rotary-encoder.altitude' click-property='/panels/mcp/afcs/button.altitude-stepch'/>
+					<widget type='rotary-encoder' top-label='10 ↔ 100' value-property='/panels/mcp/afcs/rotary-encoder.altitude' click-property='/panels/mcp/afcs/button.xchg-altitude-step'/>
 				</item>
 				<stretch/>
 				<item>
-					<layout type='horizontal' spacing='10'>
+					<layout type='horizontal' spacing='5'>
 						<item>
-							<widget type='button' top-label='FLCH' click-property='/panels/mcp/afcs/button.altitude-flch' led-property='/panels/mcp/afcs/led.altitude-flch' led-color='amber'/>
+							<widget type='button' top-label='FLCH' click-property='/panels/mcp/afcs/button.flch'/>
 						</item>
 						<item>
-							<widget type='button' top-label='HOLD' click-property='/panels/mcp/afcs/button.altitude-hold' led-property='/panels/mcp/afcs/led.altitude-hold' led-color='amber'/>
+							<widget type='button' top-label='HOLD' click-property='/panels/mcp/afcs/button.altitude-hold'/>
+						</item>
+						<item>
+							<widget type='button' top-label='G/S' click-property='/panels/mcp/afcs/button.gs'/>
 						</item>
 					</layout>
 				</item>
@@ -88,24 +137,35 @@
 	</item>
 	<item>
 		<group label='VERTICAL SPEED'>
-			<layout type='vertical' spacing='10'>
+			<layout type='vertical' spacing='5'>
 				<item>
-					<widget type='numeric-display' digits='5' format-property='/systems/afcs/mcp/formats/vspd-format' value-property='/panels/mcp/afcs/display.vertical-speed'/>
+					<widget type='numeric-display' digits='5' format-property='/systems/afcs/mcp/formats/vertical-format' value-property='/panels/mcp/afcs/display.vertical-speed'/>
 				</item>
 				<item>
-					<widget type='rotary-encoder' top-label='V/S • FPA' value-property='/panels/mcp/afcs/rotary-encoder.vspd' click-property='/panels/mcp/afcs/button.vspd-vs-fpa'/>
-				</item>
-				<stretch/>
-				<item>
-					<layout type='horizontal' spacing='10'>
+					<layout type='horizontal' spacing='5'>
 						<item>
-							<widget type='button' top-label='VS/FPA' click-property='/panels/mcp/afcs/button.vspd-sel' led-property='/panels/mcp/afcs/led.vspd-sel' led-color='amber'/>
+							<layout type='vertical' spacing='5'>
+								<item>
+									<widget type='button' top-label='V/S ↔ FPA' click-property='/panels/mcp/afcs/button.xchg-vs-fpa'/>
+								</item>
+								<item>
+									<widget type='button' top-label='CLB/CON' click-property='/panels/mcp/afcs/button.clb-con'/>
+								</item>
+								<item>
+									<widget type='button' top-label='VS HOLD' click-property='/panels/mcp/afcs/button.vs-hold'/>
+								</item>
+							</layout>
 						</item>
 						<item>
-							<widget type='button' top-label='VS HOLD' click-property='/panels/mcp/afcs/button.vs-hold' led-property='/panels/mcp/afcs/led.vs-hold' led-color='amber'/>
-						</item>
-						<item>
-							<widget type='button' top-label='CLB/CON' click-property='/panels/mcp/afcs/button.vspd-clb-con' led-property='/panels/mcp/afcs/led.vspd-clb-con' led-color='amber'/>
+							<layout type='vertical' spacing='5'>
+								<item>
+									<widget type='rotary-encoder' top-label='OFF' value-property='/panels/mcp/afcs/rotary-encoder.vertical' click-property='/panels/mcp/afcs/button.vertical-enable'/>
+								</item>
+								<stretch/>
+								<item>
+									<widget type='button' top-label='VS/FPA' click-property='/panels/mcp/afcs/button.vertical-sel'/>
+								</item>
+							</layout>
 						</item>
 					</layout>
 				</item>

@@ -22,9 +22,9 @@
 			<variable id='takeoff.vspd.be' path='/settings/takeoff/vspd.be' type='speed' default='20 kt'/>
 			<variable id='takeoff.vspd.bg' path='/settings/takeoff/vspd.bg' type='speed' default='20 kt'/>
 			<variable id='takeoff.vspd.br' path='/settings/takeoff/vspd.br' type='speed' default='20 kt'/>
-			<variable id='cruise.thrust-reference' path='/settings/cruise/thrust-reference.cruise' type='frequency' default='2500 rpm'/>
-			<variable id='cruise.thrust-reference.climb' path='/settings/cruise/thrust-reference.climb' type='frequency' default='3500 rpm'/>
-			<variable id='cruise.thrust-reference.descent' path='/settings/cruise/thrust-reference.descent' type='frequency' default='200 rpm'/>
+			<variable id='cruise.thrust-reference' path='/settings/cruise/thrust-reference.cruise' type='force' default='10 N'/>
+			<variable id='cruise.thrust-reference.climb' path='/settings/cruise/thrust-reference.climb' type='force' default='15 N'/>
+			<variable id='cruise.thrust-reference.descent' path='/settings/cruise/thrust-reference.descent' type='force' default='2 N'/>
 			<variable id='approach.landing-altitude-amsl' path='/settings/approach/landing-altitude-amsl' type='length'/>
 			<variable id='approach.minimums-setting' path='/settings/approach/minimums-setting' type='length'/>
 			<variable id='approach.radio-altm-for-ldg-alt' path='/settings/approach/radio-altm-for-ldg-alt' type='boolean' default='false'/>

@@ -4,9 +4,9 @@
 		<layout type='vertical' spacing='5'>
 			<item>
 				<group label='EICAS'>
-					<layout type='horizontal' spacing='10'>
+					<layout type='horizontal' spacing='5'>
 						<item>
-							<layout type='vertical' spacing='10'>
+							<layout type='vertical' spacing='5'>
 								<item>
 									<widget type='button' top-label='MASTER CAUTION' click-property='/panels/eicas-status/button.master-caution' led-property='/panels/eicas-status/led.master-caution' led-color='amber'/>
 								</item>
@@ -19,7 +19,7 @@
 							</layout>
 						</item>
 						<item>
-							<layout type='vertical' spacing='10'>
+							<layout type='vertical' spacing='5'>
 								<item>
 									<widget type='rotary-encoder' top-label='MSG' click-label='DEL' click-property='/panels/eicas-status/button.del' value-property='/panels/eicas-status/cursor'/>
 								</item>
@@ -37,7 +37,7 @@
 			<separator/>
 			<item>
 				<group label='LIGHTS'>
-					<layout type='horizontal' spacing='10'>
+					<layout type='horizontal' spacing='5'>
 						<item>
 							<widget type='button' top-label='STRB' toggle-property='/settings/lights/strobe' led-property='/settings/lights/strobe' led-color='white'/>
 						</item>
@@ -54,7 +54,7 @@
 			<separator/>
 			<item>
 				<group label='GPWS'>
-					<layout type='horizontal' spacing='10'>
+					<layout type='horizontal' spacing='5'>
 						<item>
 							<widget type='button' top-label='ON' toggle-property='/settings/gpws/enabled' led-property='/settings/gpws/enabled' led-color='green'/>
 						</item>
@@ -73,7 +73,7 @@
 			</item>
 			<item>
 				<group label='TCAS'>
-					<layout type='horizontal' spacing='10'>
+					<layout type='horizontal' spacing='5'>
 						<item>
 							<widget type='button' top-label='ON' toggle-property='/settings/tcas/on' led-property='/settings/tcas/on' led-color='green'/>
 						</item>
@@ -83,7 +83,7 @@
 			</item>
 			<item>
 				<group label='PITOT'>
-					<layout type='horizontal' spacing='10'>
+					<layout type='horizontal' spacing='5'>
 						<item>
 							<widget type='button' top-label='CAL' toggle-property='/' led-property='/' led-color='amber'/>
 						</item>
@@ -93,7 +93,7 @@
 			</item>
 			<item>
 				<group label='AHRS'>
-					<layout type='horizontal' spacing='10'>
+					<layout type='horizontal' spacing='5'>
 						<item>
 							<widget type='button' top-label='ALIGN' toggle-property='/' led-property='/' led-color='amber'/>
 						</item>
@@ -103,7 +103,7 @@
 			</item>
 			<item>
 				<group label='ND'>
-					<layout type='horizontal' spacing='10'>
+					<layout type='horizontal' spacing='5'>
 						<item>
 							<widget type='button' top-label='TERR' toggle-property='/settings/hsi/show-terr' led-property='/settings/hsi/show-terr' led-color='green'/>
 						</item>

@@ -2,34 +2,34 @@
 <xefis-include>
 	<module name='systems/mixer' instance='anti-adverse-yaw'>
 		<settings>
-			<setting name='input-a-factor' value='1.0'/>
-			<setting name='input-b-factor' value='0.2'/>
+			<setting name='input.0.factor' value='1.0'/>
+			<setting name='input.1.factor' value='0.2'/>
 		</settings>
 		<properties>
-			<property name='input.a.value' path='/controls/rudder'/>
-			<property name='input.b.value' path='/controls/ailerons'/>
+			<property name='input.0.value' path='/controls/rudder'/>
+			<property name='input.1.value' path='/controls/ailerons'/>
 			<property name='output.value' path='/controls/rudder-anti-adverse-yaw'/>
 		</properties>
 	</module>
 	<module name='systems/mixer' instance='afcs-eac-yd'>
 		<settings>
-			<setting name='input-a-factor' value='1.0'/>
-			<setting name='input-b-factor' value='1.0'/>
+			<setting name='input.0.factor' value='1.0'/>
+			<setting name='input.1.factor' value='1.0'/>
 		</settings>
 		<properties>
-			<property name='input.a.value' path='/controls/rudder-anti-adverse-yaw'/>
-			<property name='input.b.value' path='/systems/afcs/eac/yd/rudder'/>
+			<property name='input.0.value' path='/controls/rudder-anti-adverse-yaw'/>
+			<property name='input.1.value' path='/systems/afcs/eac/yd/rudder'/>
 			<property name='output.value' path='/controls/coordinated-rudder'/>
 		</properties>
 	</module>
 	<module name='systems/mixer' instance='roll-autotrim'>
 		<settings>
-			<setting name='input-a-factor' value='1.0'/>
-			<setting name='input-b-factor' value='1.0'/>
+			<setting name='input.0.factor' value='1.0'/>
+			<setting name='input.1.factor' value='1.0'/>
 		</settings>
 		<properties>
-			<property name='input.a.value' path='/controls/ailerons'/>
-			<property name='input.b.value' path='/systems/afcs/roll-autotrim/ailerons-correction'/>
+			<property name='input.0.value' path='/controls/ailerons'/>
+			<property name='input.1.value' path='/systems/afcs/roll-autotrim/ailerons-correction'/>
 			<property name='output.value' path='/controls/ailerons-with-autotrim'/>
 		</properties>
 	</module>

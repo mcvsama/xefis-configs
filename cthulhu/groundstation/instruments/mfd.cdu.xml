@@ -73,14 +73,14 @@
 					</page>
 					<page id='cruise' title='CRUISE'>
 						<left>
-							<setting title='CRZ THR REF' path='/settings/cruise/thrust-reference.cruise' unit='rpm' format='%d RPM'/>
+							<setting title='CRZ THR REF' path='/settings/cruise/thrust-reference.cruise' unit='N' format='%d N'/>
 							<setting title='CRZ SPD REF' path='/settings/cruise/speed-reference' unit='kt' format='%d kt'/>
 							<fill/>
 							<goto page-id='index' title='◂ INDEX'/>
 						</left>
 						<right>
-							<setting title='CLB THR REF' path='/settings/cruise/thrust-reference.climb' unit='rpm' format='%d RPM'/>
-							<setting title='DSC THR REF' path='/settings/cruise/thrust-reference.descent' unit='rpm' format='%d RPM'/>
+							<setting title='CLB THR REF' path='/settings/cruise/thrust-reference.climb' unit='N' format='%d N'/>
+							<setting title='DSC THR REF' path='/settings/cruise/thrust-reference.descent' unit='N' format='%d N'/>
 						</right>
 					</page>
 					<page id='approach' title='APPROACH'>

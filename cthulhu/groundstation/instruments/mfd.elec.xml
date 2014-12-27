@@ -17,7 +17,7 @@
 							<item>
 								<instrument name='instruments/datatable' instance='elec-sys-bus'>
 									<settings>
-										<setting name='label-color' value='#0df'/>
+										<setting name='label-color' value='#0cf'/>
 										<setting name='value-color' value='#fff'/>
 										<setting name='label-font-size' value='16'/>
 										<setting name='value-font-size' value='18'/>
@@ -67,7 +67,7 @@
 							<item>
 								<instrument name='instruments/datatable' instance='elec-fctl-bus'>
 									<settings>
-										<setting name='label-color' value='#0df'/>
+										<setting name='label-color' value='#0cf'/>
 										<setting name='value-color' value='#fff'/>
 										<setting name='label-font-size' value='16'/>
 										<setting name='value-font-size' value='18'/>
@@ -121,7 +121,7 @@
 							<item>
 								<instrument name='instruments/datatable' instance='elec-engine-bus-l'>
 									<settings>
-										<setting name='label-color' value='#0df'/>
+										<setting name='label-color' value='#0cf'/>
 										<setting name='value-color' value='#fff'/>
 										<setting name='label-font-size' value='16'/>
 										<setting name='value-font-size' value='18'/>
@@ -150,7 +150,7 @@
 							<item>
 								<instrument name='instruments/datatable' instance='elec-engine-bus-r'>
 									<settings>
-										<setting name='label-color' value='#0df'/>
+										<setting name='label-color' value='#0cf'/>
 										<setting name='value-color' value='#fff'/>
 										<setting name='label-font-size' value='16'/>
 										<setting name='value-font-size' value='18'/>

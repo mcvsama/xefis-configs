@@ -2,99 +2,107 @@
 <xefis-include>
 	<module name='systems/afcs'>
 		<settings>
-			<setting name='default.ias' value='112 kt'/>
-			<setting name='default.mach' value='0.2'/>
-			<setting name='default.heading' value='0 deg'/>
-			<setting name='default.altitude' value='3000 ft'/>
-			<setting name='mcp-speed-format.kias' value='%4d'/>
-			<setting name='mcp-speed-format.mach' value='%4.3f'/>
-			<setting name='mcp-heading-format' value='%03d'/>
-			<setting name='mcp-altitude-format' value='%5d'/>
-			<setting name='mcp-vspd-format.vs' value='%5d'/>
-			<setting name='mcp-vspd-format.fpa' value='%+6.1f'/>
-			<setting name='altitude-hold-threshold-vs' value='100 fpm'/>
+			<setting name='mcp.default.ias' value='100 kt'/>
+			<setting name='mcp.default.mach' value='0.2'/>
+			<setting name='mcp.default.heading' value='0 deg'/>
+			<setting name='mcp.default.altitude' value='3000 ft'/>
+			<setting name='mcp.speed-format.kias' value='%4d'/>
+			<setting name='mcp.speed-format.mach' value='%4.3f'/>
+			<setting name='mcp.heading-format' value='%03d'/>
+			<setting name='mcp.altitude-format' value='%5d'/>
+			<setting name='mcp.vertical-format.vs' value='%5d'/>
+			<setting name='mcp.vertical-format.fpa' value='%+6.1f'/>
+			<setting name='vs-rounding' value='100 fpm'/>
+			<setting name='fpa-rounding' value='0.1 deg'/>
 		</settings>
 		<properties>
-			<property name='input.heading.magnetic' path='/systems/nc/orientation/heading/magnetic'/>
-			<property name='input.track.lateral.magnetic' path='/systems/nc/track/lateral/magnetic'/>
-			<property name='input.track.vertical' path='/systems/nc/track/vertical'/>
-			<property name='input.altitude-amsl' path='/systems/adc/altitude/amsl'/>
-			<property name='input.vertical-speed' path='/systems/adc/vertical-speed/speed'/>
-			<property name='input.spd-ref-for-approach' path='/settings/approach/speed-reference'/>
-			<property name='input.spd-ref-for-cruise' path='/settings/cruise/speed-reference'/>
-			<property name='input.thr-ref-for-climb' path='/settings/cruise/thrust-reference.climb'/>
-			<property name='input.thr-ref-for-cruise' path='/settings/cruise/thrust-reference.cruise'/>
-			<property name='input.thr-ref-for-descent' path='/settings/cruise/thrust-reference.descent'/>
+			<property name='input.ias' path='/systems/adc/speed/ias'/>
+			<property name='input.mach' path='/systems/adc/speed/mach'/>
+			<property name='input.heading' path='/systems/nc/orientation/heading/magnetic'/>
+			<property name='input.track' path='/systems/nc/track/lateral/magnetic'/>
+			<property name='input.altitude.amsl' path='/systems/adc/altitude/amsl'/>
+			<property name='input.vs' path='/systems/adc/vertical-speed/speed'/>
+			<property name='input.fpa' path='/systems/nc/track/vertical'/>
+			<property name='input.thr-ref.toga' path='/settings/cruise/thrust-reference.climb'/>
+			<property name='input.thr-ref.cont' path='/settings/cruise/thrust-reference.climb'/>
+			<property name='input.thr-ref.cruise' path='/settings/cruise/thrust-reference.cruise'/>
+			<property name='input.thr-ref.descent' path='/settings/cruise/thrust-reference.descent'/>
+			<property name='input.spd-ref.climbout' path='/settings/cruise/speed-reference'/>
+			<property name='input.spd-ref.cruise' path='/settings/cruise/speed-reference'/>
+			<property name='input.spd-ref.approach' path='/settings/approach/speed-reference'/>
+			<!-- TODO synchronize naming from here to MCP -->
 			<directory path='/panels/mcp/afcs'>
-				<property name='button.ap' path='/button.ap'/>
-				<property name='button.at' path='/button.at'/>
-				<property name='button.yd' path='/button.yd'/>
-				<property name='button.speed.ias-mach' path='/button.speed-ias-mach'/>
-				<property name='button.speed.sel' path='/button.speed-sel'/>
-				<property name='button.speed.hold' path='/button.speed-hold'/>
-				<property name='button.heading.hdg-trk' path='/button.heading-hdg-trk'/>
-				<property name='button.heading.sel' path='/button.heading-sel'/>
-				<property name='button.heading.hold' path='/button.heading-hold'/>
-				<property name='button.vnav' path='/button.vnav'/>
-				<property name='button.lnav' path='/button.lnav'/>
-				<property name='button.app' path='/button.app'/>
-				<property name='button.altitude.stepch' path='/button.altitude-stepch'/>
-				<property name='button.altitude.flch' path='/button.altitude-flch'/>
-				<property name='button.altitude.hold' path='/button.altitude-hold'/>
-				<property name='button.vertical-speed.vs-fpa' path='/button.vspd-vs-fpa'/>
-				<property name='button.vertical-speed.sel' path='/button.vspd-sel'/>
-				<property name='button.vertical-speed.clb-con' path='/button.vspd-clb-con'/>
-				<property name='rotary-encoder.speed' path='/rotary-encoder.speed'/>
-				<property name='rotary-encoder.heading' path='/rotary-encoder.heading'/>
-				<property name='rotary-encoder.altitude' path='/rotary-encoder.altitude'/>
-				<property name='rotary-encoder.vertical-speed' path='/rotary-encoder.vspd'/>
+				<property name='input.mcp.button.ap' path='/button.ap'/>
+				<property name='input.mcp.button.at' path='/button.at'/>
+				<property name='input.mcp.button.yd' path='/button.yd'/>
+				<property name='input.mcp.button.xchg-ias-mach' path='/button.xchg-ias-mach'/>
+				<property name='input.mcp.button.toga' path='/button.toga'/>
+				<property name='input.mcp.button.spd-sel' path='/button.spd-sel'/>
+				<property name='input.mcp.button.spd-hold' path='/button.spd-hold'/>
+				<property name='input.mcp.button.xchg-heading-step' path='/button.xchg-heading-step'/>
+				<property name='input.mcp.button.xchg-hdg-trk' path='/button.heading-hdg-trk'/>
+				<property name='input.mcp.button.hdgtrk-sel' path='/button.hdgtrk-sel'/>
+				<property name='input.mcp.button.hdgtrk-hold' path='/button.hdgtrk-hold'/>
+				<property name='input.mcp.button.wng-lvl' path='/button.wng-lvl'/>
+				<property name='input.mcp.button.loc' path='/button.loc'/>
+				<property name='input.mcp.button.lnav' path='/button.lnav'/>
+				<property name='input.mcp.button.vnav' path='/button.vnav'/>
+				<property name='input.mcp.button.lvl-all' path='button.lvl-all'/>
+				<property name='input.mcp.button.to' path='/button.to'/>
+				<property name='input.mcp.button.crz' path='/button.crz'/>
+				<property name='input.mcp.button.app' path='/button.app'/>
+				<property name='input.mcp.button.ils' path='/button.ils'/>
+				<property name='input.mcp.button.xchg-altitude-step' path='/button.xchg-altitude-step'/>
+				<property name='input.mcp.button.flch' path='/button.flch'/>
+				<property name='input.mcp.button.altitude-hold' path='/button.altitude-hold'/>
+				<property name='input.mcp.button.gs' path='/button.gs'/>
+				<property name='input.mcp.button.xchg-vs-fpa' path='/button.xchg-vs-fpa'/>
+				<property name='input.mcp.button.vertical-enable' path='/button.vertical-enable'/>
+				<property name='input.mcp.button.vertical-sel' path='/button.vertical-sel'/>
+				<property name='input.mcp.button.clb-con' path='/button.clb-con'/>
+				<property name='input.mcp.rotary-encoder.speed' path='/rotary-encoder.speed'/>
+				<property name='input.mcp.rotary-encoder.heading' path='/rotary-encoder.heading'/>
+				<property name='input.mcp.rotary-encoder.altitude' path='/rotary-encoder.altitude'/>
+				<property name='input.mcp.rotary-encoder.vertical' path='/rotary-encoder.vertical'/>
 			</directory>
 			<directory path='/panels/mcp/afcs'>
-				<property name='display.speed' path='/display.speed'/>
-				<property name='display.heading' path='/display.heading'/>
-				<property name='display.altitude' path='/display.altitude'/>
-				<property name='display.vertical-speed' path='/display.vertical-speed'/>
-			</directory>
-			<directory path='/panels/mcp/afcs'>
-				<property name='led.ap' path='/led.ap'/>
-				<property name='led.at' path='/led.at'/>
-				<property name='led.yd' path='/led.yd'/>
-				<property name='led.speed.sel' path='/led.speed-sel'/>
-				<property name='led.speed.hold' path='/led.speed-hold'/>
-				<property name='led.heading.sel' path='/led.heading-sel'/>
-				<property name='led.heading.hold' path='/led.heading-hold'/>
-				<property name='led.vnav' path='/led.vnav'/>
-				<property name='led.lnav' path='/led.lnav'/>
-				<property name='led.app' path='/led.app'/>
-				<property name='led.altitude.flch' path='/led.altitude-flch'/>
-				<property name='led.altitude.hold' path='/led.altitude-hold'/>
-				<property name='led.vertical-speed.sel' path='/led.vspd-sel'/>
-				<property name='led.vertical-speed.clb-con' path='/led.vspd-clb-con'/>
-			</directory>
-			<directory path='/settings/cmd'>
-				<property name='output.roll-mode' path='/roll-mode'/>
-				<property name='output.pitch-mode' path='/pitch-mode'/>
-				<property name='output.ias' path='/ias'/>
-				<property name='output.mach' path='/mach'/>
-				<property name='output.magnetic-heading-track' path='/magnetic-heading-track'/>
-				<property name='output.altitude' path='/altitude'/>
-				<property name='output.vertical-speed' path='/vertical-speed'/>
-				<property name='output.fpa' path='/fpa'/>
-				<property name='output.spd-ref' path='/spd-ref'/>
-				<property name='output.thr-ref' path='/thr-ref'/>
-			</directory>
-			<directory path='/systems/afcs/fma'>
-				<property name='output.flight-mode-hint' path='/flight-mode-hint'/>
-				<property name='output.flight-mode-speed-hint' path='/speed-mode-hint'/>
-				<property name='output.flight-mode-roll-hint' path='/roll-mode-hint'/>
-				<property name='output.flight-mode-pitch-hint' path='/pitch-mode-hint'/>
-				<property name='output.yaw-damper-enabled' path='//settings/afcs/eac/yd/enabled'/>
+				<property name='output.mcp.speed-display' path='/display.speed'/>
+				<property name='output.mcp.heading-display' path='/display.heading'/>
+				<property name='output.mcp.altitude-display' path='/display.altitude'/>
+				<property name='output.mcp.vertical-display' path='/display.vertical-speed'/>
 			</directory>
 			<directory path='/systems/afcs/mcp/formats'>
-				<property name='output.mcp-speed-format' path='/speed-format'/>
-				<property name='output.mcp-heading-format' path='/heading-format'/>
-				<property name='output.mcp-altitude-format' path='/altitude-format'/>
-				<property name='output.mcp-vspd-format' path='/vspd-format'/>
+				<property name='output.mcp.speed-format' path='/speed-format'/>
+				<property name='output.mcp.heading-format' path='/heading-format'/>
+				<property name='output.mcp.altitude-format' path='/altitude-format'/>
+				<property name='output.mcp.vertical-format' path='/vertical-format'/>
+			</directory>
+			<directory path='/panels/mcp/afcs'>
+				<property name='output.mcp.led-ap' path='/led.ap'/>
+				<property name='output.mcp.led-at' path='/led.at'/>
+				<property name='output.mcp.led-yd' path='/led.yd'/>
+			</directory>
+			<directory path='/settings/cmd'>
+				<property name='output.cmd.thrust-mode' path='/thrust-mode'/>
+				<property name='output.cmd.roll-mode' path='/roll-mode'/>
+				<property name='output.cmd.pitch-mode' path='/pitch-mode'/>
+				<property name='output.cmd.ias' path='/ias'/>
+				<property name='output.cmd.mach' path='/mach'/>
+				<property name='output.cmd.heading' path='/heading'/>
+				<property name='output.cmd.track' path='/track'/>
+				<property name='output.cmd.altitude' path='/altitude'/>
+				<property name='output.cmd.vs' path='/vertical-speed'/>
+				<property name='output.cmd.fpa' path='/fpa'/>
+				<property name='output.thr-ref' path='/thr-ref'/>
+				<property name='output.spd-ref' path='/spd-ref'/>
+			</directory>
+			<directory path='/systems/afcs/fma'>
+				<property name='output.fma.hint' path='/flight-mode-hint'/>
+				<property name='output.fma.speed-hint' path='/thrust-mode-hint'/>
+				<property name='output.fma.roll-hint' path='/roll-mode-hint'/>
+				<property name='output.fma.roll-armed-hint' path='/armed-roll-mode-hint'/>
+				<property name='output.fma.pitch-hint' path='/pitch-mode-hint'/>
+				<property name='output.fma.pitch-armed-hint' path='/armed-pitch-mode-hint'/>
 			</directory>
 		</properties>
 	</module>

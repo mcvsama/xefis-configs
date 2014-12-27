@@ -5,7 +5,7 @@
 			<stretch/>
 			<item>
 				<group label='PFD &amp; ND'>
-					<layout type='horizontal' spacing='20'>
+					<layout type='horizontal' spacing='5'>
 						<item>
 							<layout type='vertical' spacing='10'>
 								<item>
@@ -21,7 +21,7 @@
 							</layout>
 						</item>
 						<item>
-							<layout type='vertical' spacing='10'>
+							<layout type='vertical' spacing='5'>
 								<item>
 									<widget type='rotary-encoder' top-label='PFD RNG' value-property='/panels/mcp/pfd-range'/>
 								</item>
@@ -35,7 +35,7 @@
 							</layout>
 						</item>
 						<item>
-							<layout type='vertical' spacing='10'>
+							<layout type='vertical' spacing='5'>
 								<item>
 									<widget type='rotary-encoder' top-label='ALTM' click-label='hPa' value-property='/panels/mcp/qnh' click-property='/panels/mcp/qnh-hpa'/>
 								</item>
@@ -49,7 +49,7 @@
 							</layout>
 						</item>
 						<item>
-							<layout type='vertical' spacing='10'>
+							<layout type='vertical' spacing='5'>
 								<item>
 									<widget type='rotary-encoder' top-label='RANGE' click-label='CTR' value-property='/panels/mcp/range' click-property='/panels/mcp/range-ctr'/>
 								</item>
@@ -70,7 +70,7 @@
 			<stretch/>
 			<item>
 				<group label='NAVAID L/R'>
-					<layout type='horizontal' spacing='10'>
+					<layout type='horizontal' spacing='5'>
 						<item>
 							<layout type='vertical' spacing='5'>
 								<item>
@@ -106,7 +106,7 @@
 			</item>
 			<item>
 				<group label='COURSE'>
-					<layout type='horizontal' spacing='15'>
+					<layout type='horizontal' spacing='5'>
 						<item>
 							<layout type='vertical' spacing='5'>
 								<item>
@@ -123,7 +123,7 @@
 							</layout>
 						</item>
 						<item>
-							<layout type='vertical' spacing='10'>
+							<layout type='vertical' spacing='5'>
 								<item>
 									<widget type='numeric-display' digits='3' format='%03d' value-property='/settings/course/magnetic.integer'/>
 								</item>
@@ -144,32 +144,30 @@
 			<stretch/>
 			<item>
 				<group label='EAC'>
-					<layout type='horizontal' spacing='10'>
+					<layout type='horizontal' spacing='5'>
 						<item>
-							<layout type='vertical' spacing='10'>
+							<layout type='vertical' spacing='5'>
 								<item>
 									<widget type='button' top-label='A/P' click-property='/panels/mcp/afcs/button.ap' led-property='/panels/mcp/afcs/led.ap' led-color='amber'/>
 								</item>
-								<stretch/>
 								<item>
-									<widget type='button' top-label='YD' click-property='/panels/mcp/afcs/button.yd' led-property='/panels/mcp/afcs/led.yd' led-color='amber'/>
+									<widget type='button' top-label='A/T' click-property='/panels/mcp/afcs/button.at' led-property='/panels/mcp/afcs/led.at' led-color='amber'/>
 								</item>
 								<stretch/>
 							</layout>
 						</item>
 						<item>
-							<layout type='vertical' spacing='10'>
-								<item>
-									<widget type='button' top-label='A/T' click-property='/panels/mcp/afcs/button.at' led-property='/panels/mcp/afcs/led.at' led-color='amber'/>
-								</item>
-								<stretch/>
+							<layout type='vertical' spacing='5'>
 								<item>
 									<widget type='button' top-label='PROT' click-property='/panels/mcp/afcs/button.prot' led-property='/panels/mcp/afcs/led.prot' led-color='amber'/>
 								</item>
-								<stretch/>
+								<item>
+									<widget type='button' top-label='YD' click-property='/panels/mcp/afcs/button.yd' led-property='/panels/mcp/afcs/led.yd' led-color='amber'/>
+								</item>
 								<item>
 									<widget type='button' top-label='TAC' click-property='/panels/mcp/afcs/button.tac' led-property='/panels/mcp/afcs/led.tac' led-color='amber'/>
 								</item>
+								<stretch/>
 							</layout>
 						</item>
 					</layout>
@@ -184,7 +182,7 @@
 			<stretch/>
 			<item>
 				<group label='MFD'>
-					<layout type='horizontal' spacing='10'>
+					<layout type='horizontal' spacing='5'>
 						<item>
 							<layout type='vertical' spacing='5'>
 								<item>

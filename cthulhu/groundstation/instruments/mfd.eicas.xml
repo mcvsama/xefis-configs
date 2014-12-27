@@ -76,7 +76,7 @@
 									<instrument name='instruments/label' instance='engine-THR'>
 										<label>THR</label>
 										<align>hcenter bottom</align>
-										<color>#0df</color>
+										<color>#0cf</color>
 										<font-size>11</font-size>
 									</instrument>
 								</item>
@@ -84,7 +84,7 @@
 									<instrument name='instruments/label' instance='engine-RPM'>
 										<label>RPM</label>
 										<align>hcenter bottom</align>
-										<color>#0df</color>
+										<color>#0cf</color>
 										<font-size>11</font-size>
 									</instrument>
 								</item>
@@ -92,7 +92,7 @@
 									<instrument name='instruments/label' instance='engine-TEMP'>
 										<label>TEMP</label>
 										<align>hcenter bottom</align>
-										<color>#0df</color>
+										<color>#0cf</color>
 										<font-size>11</font-size>
 									</instrument>
 								</item>
@@ -101,7 +101,7 @@
 									<instrument name='instruments/label' instance='engine-ESC-PITCH'>
 										<label>PTCH</label>
 										<align>hcenter vcenter</align>
-										<color>#0df</color>
+										<color>#0cf</color>
 										<font-size>11</font-size>
 									</instrument>
 								</item>
@@ -195,7 +195,7 @@
 								<instrument name='instruments/label' instance='signal-air'>
 									<label>RSSI</label>
 									<align>hcenter vcenter</align>
-									<color>#0df</color>
+									<color>#0cf</color>
 									<font-size>11</font-size>
 								</instrument>
 							</item>
@@ -222,7 +222,7 @@
 							<item>
 								<instrument name='instruments/datatable' instance='gps-info'>
 									<settings>
-										<setting name='label-color' value='#0df'/>
+										<setting name='label-color' value='#0cf'/>
 										<setting name='value-color' value='#fff'/>
 										<setting name='label-font-size' value='16'/>
 										<setting name='value-font-size' value='18'/>
@@ -407,7 +407,7 @@
 						<item stretch-factor='5' margin='20 0 0 0'>
 							<instrument name='instruments/datatable' instance='general'>
 								<settings>
-									<setting name='label-color' value='#0df'/>
+									<setting name='label-color' value='#0cf'/>
 									<setting name='value-color' value='#fff'/>
 									<setting name='label-font-size' value='16'/>
 									<setting name='value-font-size' value='18'/>

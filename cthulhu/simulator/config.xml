@@ -16,6 +16,7 @@
 		<include name='systems/afcs-fd.xml'/>
 		<include name='systems/afcs-ap.xml'/>
 		<include name='systems/afcs-eac-yd.xml'/>
+		<include name='systems/afcs-prot.xml'/>
 		<include name='systems/afcs-roll-autotrim.xml'/>
 		<include name='systems/ahrs-selector.xml'/>
 		<include name='systems/altacq.xml'/>

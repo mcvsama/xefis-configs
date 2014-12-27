@@ -45,6 +45,7 @@
 					<property name='track.vertical' path='/systems/nc/track/vertical'/>
 					<property name='slip-skid' path='/aircraft/sensors/slip-skid/slip-skid'/>
 					<property name='fpv.visible' path='/settings/efis/fpv-visible'/>
+					<property name='weight-on-wheels' path='/settings/efis/weight-on-wheels'/>
 					<property name='aoa.alpha' path='/aircraft/sensors/aoa/alpha'/>
 					<property name='aoa.alpha.maximum' path='/aircraft/systems/pc/aoa.alpha.critical'/>
 					<property name='aoa.alpha.visible' path='/settings/efis/aoa.alpha.visible' default='true'/>
@@ -93,8 +94,8 @@
 					<property name='flight-mode.fma.visible' path='/settings/efis/fma-visible' default='true'/>
 					<directory path='/systems/afcs/fma'>
 						<property name='flight-mode.hint' path='/flight-mode-hint'/>
-						<property name='flight-mode.fma.speed-hint' path='/speed-mode-hint'/>
-						<property name='flight-mode.fma.speed-small-hint' path='/armed-speed-mode-hint'/>
+						<property name='flight-mode.fma.speed-hint' path='/thrust-mode-hint'/>
+						<property name='flight-mode.fma.speed-small-hint' path='/armed-thrust-mode-hint'/>
 						<property name='flight-mode.fma.lateral-hint' path='/roll-mode-hint'/>
 						<property name='flight-mode.fma.lateral-small-hint' path='/armed-roll-mode-hint'/>
 						<property name='flight-mode.fma.vertical-hint' path='/pitch-mode-hint'/>
