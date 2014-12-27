@@ -69,7 +69,7 @@
 						<property path='/systems/adc/vertical-speed/serviceable' type='boolean'/>
 						<!-- CMD modes -->
 						<property path='/settings/cmd/speed-mode' type='integer' bits='4'/>
-						<property path='/settings/cmd/roll-mode' type='integer' bits='3'/>
+						<property path='/settings/cmd/roll-mode' type='integer' bits='4'/>
 						<property path='/settings/cmd/pitch-mode' type='integer' bits='4'/>
 						<!-- AP/AT/FBW modes -->
 						<property path='/settings/afcs/eac/yd/enabled' type='boolean'/>

@@ -75,8 +75,8 @@
 						<property path='/aircraft/systems/adc/speed/ias.serviceable' type='boolean' retained='true'/>
 						<property path='/aircraft/systems/adc/vertical-speed/serviceable' type='boolean' retained='true'/>
 						<!-- CMD modes -->
-						<property path='/aircraft/settings/cmd/speed-mode' type='integer' bits='4'/>
-						<property path='/aircraft/settings/cmd/roll-mode' type='integer' bits='3'/>
+						<property path='/aircraft/settings/cmd/thrust-mode' type='integer' bits='4'/>
+						<property path='/aircraft/settings/cmd/roll-mode' type='integer' bits='4'/>
 						<property path='/aircraft/settings/cmd/pitch-mode' type='integer' bits='4'/>
 						<!-- AP/AT/FBW modes -->
 						<property path='/aircraft/settings/afcs/eac/yd/enabled' type='boolean'/>
