@@ -14,7 +14,7 @@
 			<directory path='//sensors/ahrs'>
 				<property name='orientation.input.pitch' path='/pitch'/>
 				<property name='orientation.input.roll' path='/roll'/>
-				<property name='orientation.input.heading.magnetic' path='/magnetic-heading'/>
+				<property name='orientation.input.heading.magnetic' path='/heading.magnetic'/>
 			</directory>
 			<!-- Output -->
 			<directory path='//systems/nc'>

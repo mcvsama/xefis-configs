@@ -1,0 +1,87 @@
+<?xml version='1.0'?>
+<xefis-include>
+	<packet magic='ca:fe'>
+		<signature random-bytes='1' signature-bytes='2' key='00:11:22:33'>
+			<property bytes='2' type='integer' path-gs='/link/remote/failsafes' path-aircraft='/link/local/failsafes' retained='true'/>
+			<property bytes='2' type='speed' path-gs='/aircraft/settings/cmd/ias' path-aircraft='/settings/cmd/ias'/>
+			<property bytes='2' type='float' path-gs='/aircraft/settings/cmd/mach' path-aircraft='/settings/cmd/mach'/>
+			<property bytes='2' type='angle' path-gs='/aircraft/settings/cmd/heading.magnetic' path-aircraft='/settings/cmd/heading.magnetic'/>
+			<property bytes='2' type='angle' path-gs='/aircraft/settings/cmd/track.magnetic' path-aircraft='/settings/cmd/track.magnetic'/>
+			<property bytes='4' type='length' path-gs='/aircraft/settings/cmd/altitude' path-aircraft='/settings/cmd/altitude'/>
+			<property bytes='4' type='speed' path-gs='/aircraft/settings/cmd/vertical-speed' path-aircraft='/settings/cmd/vertical-speed'/>
+			<property bytes='2' type='angle' path-gs='/aircraft/settings/cmd/fpa' path-aircraft='/settings/cmd/fpa'/>
+			<property bytes='2' type='angle' path-gs='/aircraft/sensors/aoa/alpha' path-aircraft='/sensors/aoa/alpha'/>
+			<property bytes='2' type='angle' path-gs='/aircraft/sensors/ahrs/orientation/pitch' path-aircraft='/sensors/ahrs/orientation/pitch'/>
+			<property bytes='2' type='angle' path-gs='/aircraft/sensors/ahrs/orientation/roll' path-aircraft='/sensors/ahrs/orientation/roll'/>
+			<property bytes='2' type='angle' path-gs='/aircraft/sensors/ahrs/orientation/heading.magnetic' path-aircraft='/sensors/ahrs/orientation/heading.magnetic'/>
+			<property bytes='2' type='acceleration' path-gs='/aircraft/sensors/ahrs/acceleration/z' path-aircraft='/sensors/ahrs/acceleration/z'/>
+			<property bytes='8' type='angle' path-gs='/aircraft/sensors/gps/latitude' path-aircraft='/sensors/gps/latitude' retained='true'/>
+			<property bytes='8' type='angle' path-gs='/aircraft/sensors/gps/longitude' path-aircraft='/sensors/gps/longitude' retained='true'/>
+			<property bytes='4' type='length' path-gs='/aircraft/sensors/gps/altitude-amsl' path-aircraft='/sensors/gps/altitude-amsl'/>
+			<property bytes='2' type='length' path-gs='/aircraft/sensors/gps/accuracy.lateral' path-aircraft='/sensors/gps/accuracy.lateral'/>
+			<property bytes='2' type='length' path-gs='/aircraft/sensors/gps/accuracy.vertical' path-aircraft='/sensors/gps/accuracy.vertical'/>
+			<property bytes='4' type='pressure' path-gs='/aircraft/sensors/pressure/static' path-aircraft='/sensors/pressure/static'/>
+			<property bytes='4' type='pressure' path-gs='/aircraft/sensors/pressure/total' path-aircraft='/sensors/pressure/total'/>
+			<property bytes='4' type='speed' path-gs='/aircraft/sensors/airspeed/ias' path-aircraft='/sensors/airspeed/ias'/>
+			<property bytes='4' type='temperature' path-gs='/aircraft/sensors/air-temperature/total' path-aircraft='/sensors/air-temperature/total'/>
+			<property bytes='4' type='length' path-gs='/aircraft/sensors/radar-altimeter/altitude.agl' path-aircraft='/sensors/radar-altimeter/altitude.agl'/>
+			<property bytes='2' type='float' path-gs='/aircraft/sensors/slip-skid/slip-skid' path-aircraft='/sensors/slip-skid/slip-skid'/>
+			<property bytes='2' type='force' path-gs='/aircraft/sensors/engines/1/thrust' path-aircraft='/sensors/engines/1/thrust'/>
+			<property bytes='2' type='frequency' path-gs='/aircraft/sensors/engines/1/rpm' path-aircraft='/sensors/engines/1/rpm'/>
+			<property bytes='2' type='float' path-gs='/aircraft/sensors/engines/1/n1' path-aircraft='/sensors/engines/1/n1'/>
+			<property bytes='2' type='float' path-gs='/aircraft/sensors/engines/1/n2' path-aircraft='/sensors/engines/1/n2'/>
+			<property bytes='2' type='float' path-gs='/aircraft/sensors/engines/1/epr' path-aircraft='/sensors/engines/1/epr'/>
+			<property bytes='2' type='angle' path-gs='/aircraft/sensors/engines/1/pitch' path-aircraft='/sensors/engines/1/pitch'/>
+			<property bytes='2' type='temperature' path-gs='/aircraft/sensors/engines/1/temperature' path-aircraft='/sensors/engines/1/temperature'/>
+			<property bytes='2' type='force' path-gs='/aircraft/sensors/engines/2/thrust' path-aircraft='/sensors/engines/2/thrust'/>
+			<property bytes='2' type='frequency' path-gs='/aircraft/sensors/engines/2/rpm' path-aircraft='/sensors/engines/2/rpm'/>
+			<property bytes='2' type='float' path-gs='/aircraft/sensors/engines/2/n1' path-aircraft='/sensors/engines/2/n1'/>
+			<property bytes='2' type='float' path-gs='/aircraft/sensors/engines/2/n2' path-aircraft='/sensors/engines/2/n2'/>
+			<property bytes='2' type='float' path-gs='/aircraft/sensors/engines/2/epr' path-aircraft='/sensors/engines/2/epr'/>
+			<property bytes='2' type='angle' path-gs='/aircraft/sensors/engines/2/pitch' path-aircraft='/sensors/engines/2/pitch'/>
+			<property bytes='2' type='temperature' path-gs='/aircraft/sensors/engines/2/temperature' path-aircraft='/sensors/engines/2/temperature'/>
+			<property bytes='2' type='angle' path-gs='/aircraft/systems/pc/aoa.alpha.critical' path-aircraft='/systems/pc/aoa.alpha.critical'/>
+			<property bytes='2' type='angle' path-gs='/aircraft/systems/afcs/fd-roll/pitch' path-aircraft='/systems/afcs/fd-pitch/pitch'/>
+			<property bytes='2' type='angle' path-gs='/aircraft/systems/afcs/fd-roll/roll' path-aircraft='/systems/afcs/fd-roll/roll'/>
+			<property bytes='2' type='angle' path-gs='/aircraft/systems/flaps/setting' path-aircraft='/systems/flaps/setting' retained='true'/>
+			<property bytes='2' type='angle' path-gs='/aircraft/systems/flaps/current' path-aircraft='/systems/flaps/current'/>
+			<property bytes='2' type='speed' path-gs='/aircraft/systems/speeds/minimum' path-aircraft='/systems/speeds/minimum'/>
+			<property bytes='2' type='speed' path-gs='/aircraft/systems/speeds/minimum-maneuver' path-aircraft='/systems/speeds/minimum-maneuver'/>
+			<property bytes='2' type='speed' path-gs='/aircraft/systems/speeds/maximum-maneuver' path-aircraft='/systems/speeds/maximum-maneuver'/>
+			<property bytes='2' type='speed' path-gs='/aircraft/systems/speeds/maximum' path-aircraft='/systems/speeds/maximum'/>
+			<bitfield>
+				<!-- Sensors - sensors -->
+				<property type='boolean' path-gs='/aircraft/sensors/ahrs/serviceable' path-aircraft='/sensors/ahrs/serviceable' retained='true'/>
+				<property type='boolean' path-gs='/aircraft/sensors/airspeed/serviceable' path-aircraft='/sensors/airspeed/serviceable' retained='true'/>
+				<property type='boolean' path-gs='/aircraft/sensors/pressure/serviceable' path-aircraft='/sensors/pressure/serviceable' retained='true'/>
+				<property type='boolean' path-gs='/aircraft/sensors/gps/serviceable' path-aircraft='/sensors/gps/serviceable' retained='true'/>
+				<property type='boolean' path-gs='/aircraft/sensors/radar-altimeter/serviceable' path-aircraft='/sensors/radar-altimeter/serviceable' retained='true'/>
+				<!-- Serviceable - computers -->
+				<property type='boolean' path-gs='/aircraft/systems/adc/altitude/amsl.serviceable' path-aircraft='/systems/adc/altitude/amsl.serviceable' retained='true'/>
+				<property type='boolean' path-gs='/aircraft/systems/adc/speed/ias.serviceable' path-aircraft='/systems/adc/speed/ias.serviceable' retained='true'/>
+				<property type='boolean' path-gs='/aircraft/systems/adc/vertical-speed/serviceable' path-aircraft='/systems/adc/vertical-speed/serviceable' retained='true'/>
+				<!-- CMD modes -->
+				<property type='integer' bits='4' path-gs='/aircraft/settings/cmd/thrust-mode' path-aircraft='/settings/cmd/speed-mode'/>
+				<property type='integer' bits='4' path-gs='/aircraft/settings/cmd/roll-mode' path-aircraft='/settings/cmd/roll-mode'/>
+				<property type='integer' bits='4' path-gs='/aircraft/settings/cmd/pitch-mode' path-aircraft='/settings/cmd/pitch-mode'/>
+				<!-- AP/AT/FBW modes -->
+				<property type='boolean' path-gs='/aircraft/settings/afcs/eac/yd/enabled' path-aircraft='/settings/afcs/eac/yd/enabled'/>
+				<!-- Gear -->
+				<property type='boolean' path-gs='/aircraft/sensors/gear/setting.down' path-aircraft='/sensors/gear/setting.down' retained='true'/>
+				<property type='boolean' path-gs='/aircraft/sensors/gear/nose.up' path-aircraft='/sensors/gear/nose.up' retained='true'/>
+				<property type='boolean' path-gs='/aircraft/sensors/gear/nose.down' path-aircraft='/sensors/gear/nose.down' retained='true'/>
+				<property type='boolean' path-gs='/aircraft/sensors/gear/left.up' path-aircraft='/sensors/gear/left.up' retained='true'/>
+				<property type='boolean' path-gs='/aircraft/sensors/gear/left.down' path-aircraft='/sensors/gear/left.down' retained='true'/>
+				<property type='boolean' path-gs='/aircraft/sensors/gear/right.up' path-aircraft='/sensors/gear/right.up' retained='true'/>
+				<property type='boolean' path-gs='/aircraft/sensors/gear/right.down' path-aircraft='/sensors/gear/right.down' retained='true'/>
+				<!-- Other flags -->
+				<property type='boolean' path-gs='/aircraft/systems/altacq/flag' path-aircraft='/systems/altacq/flag'/>
+				<property type='boolean' path-gs='/aircraft/sensors/ahrs/flags/pitch-disagree' path-aircraft='/sensors/ahrs/flags/pitch-disagree' retained='true'/>
+				<property type='boolean' path-gs='/aircraft/sensors/ahrs/flags/roll-disagree' path-aircraft='/sensors/ahrs/flags/roll-disagree' retained='true'/>
+				<property type='boolean' path-gs='/aircraft/sensors/ahrs/flags/failover' path-aircraft='/sensors/ahrs/flags/failover' retained='true'/>
+				<property type='boolean' path-gs='/link/remote/valid' path-aircraft='/link/local/valid'/>
+			</bitfield>
+		</signature>
+	</packet>
+</xefis-include>
+

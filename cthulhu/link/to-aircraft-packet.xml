@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<xefis-include>
+	<packet magic='e4:40'>
+		<signature random-bytes='2' signature-bytes='4' key='88:99:aa:bb'>
+			<property bytes='2' type='float' path-gs='/controls/elevator-stick' path-aircraft='/controls/elevator-stick'/>
+			<property bytes='2' type='float' path-gs='/controls/ailerons-stick' path-aircraft='/controls/ailerons-stick'/>
+			<property bytes='2' type='float' path-gs='/controls/rudder-pedals' path-aircraft='/controls/rudder-pedals'/>
+			<property bytes='2' type='float' path-gs='/controls/throttle-left' path-aircraft='/controls/throttle-left'/>
+			<property bytes='2' type='float' path-gs='/controls/throttle-right' path-aircraft='/controls/throttle-right'/>
+			<property bytes='2' type='float' path-gs='/systems/trim-control/elevator-trim' path-aircraft='/controls/elevator-trim' retained='true'/>
+			<property bytes='2' type='float' path-gs='/systems/trim-control/ailerons-trim' path-aircraft='/controls/ailerons-trim' retained='true'/>
+			<property bytes='2' type='float' path-gs='/systems/trim-control/rudder-trim' path-aircraft='/controls/rudder-trim' retained='true'/>
+			<property bytes='4' type='pressure' path-gs='/settings/pressure/qnh' path-aircraft='/settings/pressure/qnh' retained='true'/>
+			<property bytes='4' type='angle' path-gs='/settings/course/magnetic' path-aircraft='/settings/course/magnetic' retained='true'/>
+			<property bytes='2' type='speed' path-gs='/settings/cmd/ias' path-aircraft='/settings/cmd/ias' retained='true'/>
+			<property bytes='2' type='float' path-gs='/settings/cmd/mach' path-aircraft='/settings/cmd/mach' retained='true'/>
+			<property bytes='4' type='angle' path-gs='/settings/cmd/heading.magnetic' path-aircraft='/settings/cmd/heading.magnetic' retained='true'/>
+			<property bytes='4' type='angle' path-gs='/settings/cmd/track.magnetic' path-aircraft='/settings/cmd/track.magnetic' retained='true'/>
+			<property bytes='4' type='length' path-gs='/settings/cmd/altitude' path-aircraft='/settings/cmd/altitude' retained='true'/>
+			<property bytes='4' type='speed' path-gs='/settings/cmd/vertical-speed' path-aircraft='/settings/cmd/vertical-speed' retained='true'/>
+			<property bytes='4' type='angle' path-gs='/settings/cmd/fpa' path-aircraft='/settings/cmd/fpa' retained='true'/>
+			<property bytes='2' type='angle' path-gs='/settings/flaps/setting' path-aircraft='/settings/flaps/setting' retained='true'/>
+			<bitfield>
+				<property type='boolean' path-gs='/settings/pressure/use-std' path-aircraft='/settings/pressure/use-std' retained='true'/>
+				<property type='boolean' path-gs='/settings/lights/strobe' path-aircraft='/settings/lights/strobe' retained='true'/>
+				<property type='boolean' path-gs='/settings/lights/position' path-aircraft='/settings/lights/position' retained='true'/>
+				<property type='boolean' path-gs='/settings/lights/landing' path-aircraft='/settings/lights/landing' retained='true'/>
+				<property type='boolean' path-gs='/settings/afcs/eac/yd/enabled' path-aircraft='/settings/afcs/eac/yd/enabled'/>
+				<!-- CMD modes -->
+				<property type='integer' bits='4' path-gs='/settings/cmd/thrust-mode' path-aircraft='/settings/cmd/speed-mode'/>
+				<property type='integer' bits='4' path-gs='/settings/cmd/roll-mode' path-aircraft='/settings/cmd/roll-mode'/>
+				<property type='integer' bits='4' path-gs='/settings/cmd/pitch-mode' path-aircraft='/settings/cmd/pitch-mode'/>
+			</bitfield>
+		</signature>
+	</packet>
+	<packet magic='a3:80' send-every='1000' send-offset='0'>
+		<signature random-bytes='2' signature-bytes='4' key='cc:dd:ee:ff'>
+			<property bytes='8' type='angle' path-gs='/settings/vor/home/latitude' path-aircraft='/settings/vor/home/latitude' retained='true'/>
+			<property bytes='8' type='angle' path-gs='/settings/vor/home/longitude' path-aircraft='/settings/vor/home/longitude' retained='true'/>
+		</signature>
+	</packet>
+</xefis-include>
+

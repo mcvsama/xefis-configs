@@ -31,8 +31,10 @@
 				<property name='output.ailerons' path='/ailerons'/>
 				<property name='output.serviceable' path='/serviceable'/>
 			</directory>
-			<directory path='/systems/fd'>
+			<directory path='/systems/fd-pitch'>
 				<property name='input.pitch' path='/pitch'/>
+			</directory>
+			<directory path='/systems/fd-roll'>
 				<property name='input.roll' path='/roll'/>
 			</directory>
 			<directory path='/systems/nc'>

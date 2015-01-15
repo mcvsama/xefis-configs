@@ -26,7 +26,7 @@
 						<properties>
 							<property name='input.orientation.pitch' path='/sensors/ahrs/primary/orientation/pitch'/>
 							<property name='input.orientation.roll' path='/sensors/ahrs/primary/orientation/roll'/>
-							<property name='input.orientation.magnetic-heading' path='/sensors/ahrs/primary/orientation/magnetic-heading'/>
+							<property name='input.orientation.heading.magnetic' path='/sensors/ahrs/primary/orientation/heading.magnetic'/>
 							<property name='input.accel.measured.x' path='/sensors/ahrs/primary/acceleration/x'/>
 							<property name='input.accel.measured.y' path='/sensors/ahrs/primary/acceleration/y'/>
 							<property name='input.accel.measured.z' path='/sensors/ahrs/primary/acceleration/z'/>

@@ -38,8 +38,10 @@
 			<property name='track.center-on-track' path='/settings/hsi/center-on-track'/>
 			<property name='track.visible' path='/settings/hsi/track-visible' default='true'/>
 			<property name='cmd.visible' path='/settings/efis/cmd-settings-visible'/>
-			<property name='cmd.track-visible' path='/settings/efis/cmd-guidance-visible'/>
-			<property name='cmd.heading' path='/aircraft/settings/cmd/magnetic-heading-track'/>
+			<property name='cmd.line-visible' path='/settings/efis/cmd-guidance-visible'/>
+			<property name='cmd.heading.magnetic' path='/aircraft/settings/cmd/heading.magnetic'/>
+			<property name='cmd.track.magnetic' path='/aircraft/settings/cmd/track.magnetic'/>
+			<property name='cmd.use-trk' path='/settings/cmd/use-trk'/>
 			<property name='altitude.target.reach-distance' path='/systems/altacq/distance'/>
 			<property name='orientation.display-true-heading' path='/settings/hsi/display-true-heading'/>
 			<property name='localizer-id' path='/settings/hsi/localizer-id'/>

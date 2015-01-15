@@ -72,8 +72,8 @@
 					<property name='flight-director.cmd.vertical-speed' path='/aircraft/settings/cmd/vertical-speed'/>
 					<property name='flight-director.cmd.fpa' path='/aircraft/settings/cmd/fpa'/>
 					<property name='flight-director.guidance.visible' path='/settings/efis/cmd-guidance-visible'/>
-					<property name='flight-director.guidance.pitch' path='/aircraft/systems/afcs/fd/pitch'/>
-					<property name='flight-director.guidance.roll' path='/aircraft/systems/afcs/fd/roll'/>
+					<property name='flight-director.guidance.pitch' path='/aircraft/systems/afcs/fd-pitch/pitch'/>
+					<property name='flight-director.guidance.roll' path='/aircraft/systems/afcs/fd-roll/roll'/>
 					<property name='navaid.reference-visible' path='/settings/efis/approach-reference-visible'/>
 					<property name='navaid.course.magnetic' path='/settings/course/magnetic'/>
 					<property name='navaid.type-hint' path='/systems/navaid/selected/reference'/>
@@ -157,8 +157,10 @@
 					<property name='track.center-on-track' path='/settings/hsi/center-on-track'/>
 					<property name='track.visible' path='/settings/hsi/track-visible'/>
 					<property name='cmd.visible' path='/settings/efis/cmd-settings-visible'/>
-					<property name='cmd.track-visible' path='/settings/efis/cmd-guidance-visible'/>
-					<property name='cmd.heading' path='/aircraft/settings/cmd/magnetic-heading-track'/>
+					<property name='cmd.line-visible' path='/settings/efis/cmd-guidance-visible'/>
+					<property name='cmd.heading.magnetic' path='/aircraft/settings/cmd/heading.magnetic'/>
+					<property name='cmd.track.magnetic' path='/aircraft/settings/cmd/track.magnetic'/>
+					<property name='cmd.use-trk' path='/settings/cmd/use-trk'/>
 					<property name='altitude.target.reach-distance' path='/systems/altacq/distance'/>
 					<property name='orientation.display-true-heading' path='/settings/hsi/display-true-heading'/>
 					<property name='localizer-id' path='/settings/hsi/localizer-id'/>

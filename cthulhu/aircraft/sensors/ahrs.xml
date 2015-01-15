@@ -15,7 +15,7 @@
 				<directory path='/orientation'>
 					<property name='orientation.pitch' path='/pitch'/>
 					<property name='orientation.roll' path='/roll'/>
-					<property name='orientation.magnetic-heading' path='/magnetic-heading'/>
+					<property name='orientation.heading.magnetic' path='/heading.magnetic'/>
 				</directory>
 			</directory>
 			<directory path='/imu'>

@@ -11,19 +11,19 @@
 				<property name='input.0.serviceable' path='/serviceable'/>
 				<property name='input.0.orientation.pitch' path='/orientation/pitch'/>
 				<property name='input.0.orientation.roll' path='/orientation/roll'/>
-				<property name='input.0.orientation.magnetic-heading' path='/orientation/magnetic-heading'/>
+				<property name='input.0.orientation.heading.magnetic' path='/orientation/heading.magnetic'/>
 			</directory>
 			<directory path='/secondary'>
 				<property name='input.1.serviceable' path='/serviceable'/>
 				<property name='input.1.orientation.pitch' path='/orientation/pitch'/>
 				<property name='input.1.orientation.roll' path='/orientation/roll'/>
-				<property name='input.1.orientation.magnetic-heading' path='/orientation/magnetic-heading'/>
+				<property name='input.1.orientation.heading.magnetic' path='/orientation/heading.magnetic'/>
 			</directory>
 			<property name='output.serviceable' path='/serviceable'/>
 			<directory path='/orientation'>
 				<property name='output.orientation.pitch' path='/pitch'/>
 				<property name='output.orientation.roll' path='/roll'/>
-				<property name='output.orientation.magnetic-heading' path='/magnetic-heading'/>
+				<property name='output.orientation.heading.magnetic' path='/heading.magnetic'/>
 			</directory>
 			<directory path='/flags'>
 				<property name='output.flags.pitch-disagree' path='/pitch-disagree'/>

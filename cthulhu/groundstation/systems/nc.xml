@@ -11,7 +11,7 @@
 			<property name='position.input.source' path='/aircraft/sensors/gps/source'/>
 			<property name='orientation.input.pitch' path='/aircraft/sensors/ahrs/orientation/pitch'/>
 			<property name='orientation.input.roll' path='/aircraft/sensors/ahrs/orientation/roll'/>
-			<property name='orientation.input.heading.magnetic' path='/aircraft/sensors/ahrs/orientation/magnetic-heading'/>
+			<property name='orientation.input.heading.magnetic' path='/aircraft/sensors/ahrs/orientation/heading.magnetic'/>
 			<!-- Output -->
 			<directory path='/systems/nc'>
 				<property name='position.longitude' path='/position/longitude'/>

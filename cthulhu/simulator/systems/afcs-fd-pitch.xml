@@ -1,6 +1,19 @@
 <?xml version='1.0'?>
 <xefis-include>
-	<module name='systems/afcs-fd'>
+	<!--module name='systems/afcs-fd-pitch'>
+		<properties>
+			<property name='autonomous' path='/systems/autonomous'/>
+			<property name='roll-limit' path='/settings/fd-roll/limits/roll' default='25 deg'/>
+			<property name='cmd.roll-mode' path='/settings/cmd/roll-mode'/>
+			<property name='cmd.heading.magnetic' path='/settings/cmd/heading.magnetic'/>
+			<property name='cmd.track.magnetic' path='/settings/cmd/track.magnetic'/>
+			<property name='measured.heading.magnetic' path='/systems/nc/orientation/heading/magnetic'/>
+			<property name='measured.track.magnetic' path='/systems/nc/track/lateral/magnetic'/>
+			<property name='output.roll' path='/systems/afcs/fd-roll/roll'/>
+			<property name='output.operative' path='/systems/afcs/fd-roll/operative'/>
+		</properties>
+	</module-->
+	<!--module name='systems/afcs-fd'>
 		<properties>
 			<property name='output.operative' path='/systems/afcs/fd/operative'/>
 			<directory path='/systems/afcs/fd'>
@@ -33,6 +46,6 @@
 				<property name='measured.fpa' path='/fpm/alpha'/>
 			</directory>
 		</properties>
-	</module>
+	</module-->
 </xefis-include>
 

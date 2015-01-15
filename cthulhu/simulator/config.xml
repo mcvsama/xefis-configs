@@ -13,7 +13,8 @@
 		<include name='sensors/flightgear.xml'/>
 		<include name='systems/adc.xml'/>
 		<include name='systems/afcs.xml'/>
-		<include name='systems/afcs-fd.xml'/>
+		<include name='systems/afcs-fd-roll.xml'/>
+		<include name='systems/afcs-fd-pitch.xml'/>
 		<include name='systems/afcs-ap.xml'/>
 		<include name='systems/afcs-eac-yd.xml'/>
 		<include name='systems/afcs-prot.xml'/>

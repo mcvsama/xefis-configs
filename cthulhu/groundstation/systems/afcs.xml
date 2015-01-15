@@ -18,8 +18,8 @@
 		<properties>
 			<property name='input.ias' path='/systems/adc/speed/ias'/>
 			<property name='input.mach' path='/systems/adc/speed/mach'/>
-			<property name='input.heading' path='/systems/nc/orientation/heading/magnetic'/>
-			<property name='input.track' path='/systems/nc/track/lateral/magnetic'/>
+			<property name='input.heading.magnetic' path='/systems/nc/orientation/heading/magnetic'/>
+			<property name='input.track.magnetic' path='/systems/nc/track/lateral/magnetic'/>
 			<property name='input.altitude.amsl' path='/systems/adc/altitude/amsl'/>
 			<property name='input.vs' path='/systems/adc/vertical-speed/speed'/>
 			<property name='input.fpa' path='/systems/nc/track/vertical'/>
@@ -40,7 +40,7 @@
 				<property name='input.mcp.button.spd-sel' path='/button.spd-sel'/>
 				<property name='input.mcp.button.spd-hold' path='/button.spd-hold'/>
 				<property name='input.mcp.button.xchg-heading-step' path='/button.xchg-heading-step'/>
-				<property name='input.mcp.button.xchg-hdg-trk' path='/button.heading-hdg-trk'/>
+				<property name='input.mcp.button.xchg-hdg-trk' path='/button.xchg-hdg-trk'/>
 				<property name='input.mcp.button.hdgtrk-sel' path='/button.hdgtrk-sel'/>
 				<property name='input.mcp.button.hdgtrk-hold' path='/button.hdgtrk-hold'/>
 				<property name='input.mcp.button.wng-lvl' path='/button.wng-lvl'/>
@@ -88,13 +88,14 @@
 				<property name='output.cmd.pitch-mode' path='/pitch-mode'/>
 				<property name='output.cmd.ias' path='/ias'/>
 				<property name='output.cmd.mach' path='/mach'/>
-				<property name='output.cmd.heading' path='/heading'/>
-				<property name='output.cmd.track' path='/track'/>
+				<property name='output.cmd.heading.magnetic' path='/heading.magnetic'/>
+				<property name='output.cmd.track.magnetic' path='/track.magnetic'/>
 				<property name='output.cmd.altitude' path='/altitude'/>
 				<property name='output.cmd.vs' path='/vertical-speed'/>
 				<property name='output.cmd.fpa' path='/fpa'/>
 				<property name='output.thr-ref' path='/thr-ref'/>
 				<property name='output.spd-ref' path='/spd-ref'/>
+				<property name='output.cmd-use-trk' path='/use-trk'/>
 			</directory>
 			<directory path='/systems/afcs/fma'>
 				<property name='output.fma.hint' path='/flight-mode-hint'/>
