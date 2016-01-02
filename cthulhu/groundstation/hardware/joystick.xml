@@ -1,8 +1,11 @@
 <?xml version='1.0'?>
 <xefis-include>
 	<module name='io/joystick' instance='throttle'>
-		<device>/dev/input/by-id/usb-Thrustmaster_Throttle_-_HOTAS_Warthog-joystick</device>
-		<path>/input/throttle</path>
+		<settings>
+			<setting name='device' value='/dev/input/by-id/usb-Thrustmaster_Throttle_-_HOTAS_Warthog-joystick'/>
+			<setting name='path' value='/input/throttle'/>
+			<setting name='restart-on-failure' value='false'/>
+		</settings>
 		<!-- Throttle R -->
 		<axis id='2'>
 			<path>/controls/throttle-right</path>
@@ -38,8 +41,11 @@
 		</button>
 	</module>
 	<module name='io/joystick' instance='joystick'>
-		<device>/dev/input/by-id/usb-Thustmaster_Joystick_-_HOTAS_Warthog-joystick</device>
-		<path>/input/joystick</path>
+		<settings>
+			<setting name='device' value='/dev/input/by-id/usb-Thustmaster_Joystick_-_HOTAS_Warthog-joystick'/>
+			<setting name='path' value='/input/joystick'/>
+			<setting name='restart-on-failure' value='false'/>
+		</settings>
 		<!-- Roll -->
 		<axis id='0'>
 			<path>/controls/ailerons-stick</path>
@@ -66,8 +72,11 @@
 		</axis>
 	</module>
 	<module name='io/joystick' instance='pedals'>
-		<device>/dev/input/by-id/saitek-rudder-pedals</device>
-		<path>/input/pedals</path>
+		<settings>
+			<setting name='device' value='/dev/input/by-id/saitek-rudder-pedals'/>
+			<setting name='path' value='/input/pedals'/>
+			<setting name='restart-on-failure' value='false'/>
+		</settings>
 		<!-- Pedals -->
 		<axis id='2'>
 			<path>/controls/rudder-pedals</path>

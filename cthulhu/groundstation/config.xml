@@ -5,6 +5,8 @@
 		<setting name='navaids.enable' value='false'/>
 		<setting name='scale.pen' value='0.92'/>
 		<setting name='scale.font' value='1.0'/>
+		<setting name='scale.master' value='1.3'/>
+		<setting name='scale.windows' value='1.3'/>
 	</settings>
 	<airframe>
 		<include name='../simulator/airframe.xml'/>

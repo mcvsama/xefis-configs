@@ -34,6 +34,8 @@
 				<property name='vertical-speed' path='/vertical-speed/speed'/>
 				<property name='air-temperature.static' path='/air-temperature/static'/>
 				<property name='air-density-static' path='/air-density/static'/>
+				<property name='dynamic-viscosity' path='/viscosity/dynamic'/>
+				<property name='reynolds-number' path='/reynolds-number'/>
 			</directory>
 		</properties>
 	</module>

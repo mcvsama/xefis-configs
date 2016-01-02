@@ -6,8 +6,8 @@
 			<property name='position.input.longitude' path='/aircraft/sensors/gps/longitude'/>
 			<property name='position.input.latitude' path='/aircraft/sensors/gps/latitude'/>
 			<property name='position.input.altitude.amsl' path='/aircraft/sensors/gps/altitude-amsl'/>
-			<property name='position.input.accuracy.lateral' path='/aircraft/sensors/gps/accuracy.lateral'/>
-			<property name='position.input.accuracy.vertical' path='/aircraft/sensors/gps/accuracy.vertical'/>
+			<property name='position.input.lateral.stddev' path='/aircraft/sensors/gps/lateral.stddev'/>
+			<property name='position.input.vertical.stddev' path='/aircraft/sensors/gps/vertical.stddev'/>
 			<property name='position.input.source' path='/aircraft/sensors/gps/source'/>
 			<property name='orientation.input.pitch' path='/aircraft/sensors/ahrs/orientation/pitch'/>
 			<property name='orientation.input.roll' path='/aircraft/sensors/ahrs/orientation/roll'/>
@@ -17,8 +17,9 @@
 				<property name='position.longitude' path='/position/longitude'/>
 				<property name='position.latitude' path='/position/latitude'/>
 				<property name='position.altitude.amsl' path='/position/altitude.amsl'/>
-				<property name='position.accuracy.lateral' path='/position/accuracy.lateral'/>
-				<property name='position.accuracy.vertical' path='/position/accuracy.vertical'/>
+				<property name='position.lateral.stddev' path='/position/lateral.stddev'/>
+				<property name='position.vertical.stddev' path='/position/vertical.stddev'/>
+				<property name='position.stddev' path='/position/position.stddev'/>
 				<property name='position.source' path='/position/source'/>
 				<property name='orientation.pitch' path='/orientation/pitch'/>
 				<property name='orientation.roll' path='/orientation/roll'/>

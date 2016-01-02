@@ -37,6 +37,13 @@
 				<property name='output.v-s.0_deg' path='/speeds/v-s-0_deg'/>
 				<property name='output.v-s.5_deg' path='/speeds/v-s-5_deg'/>
 				<property name='output.v-s.30_deg' path='/speeds/v-s-30_deg'/>
+				<property name='output.v-1' path='/speeds/v-1'/>
+				<property name='output.v-be' path='/speeds/v-be'/>
+				<property name='output.v-bg' path='/speeds/v-bg'/>
+				<property name='output.v-br' path='/speeds/v-br'/>
+				<property name='output.v-md' path='/speeds/v-md'/>
+				<property name='output.v-x' path='/speeds/v-x'/>
+				<property name='output.v-y' path='/speeds/v-y'/>
 				<property name='output.critical-aoa' path='/aoa.alpha.critical'/>
 				<property name='output.lift-coefficient' path='/lift-coefficient'/>
 				<property name='output.stall' path='/stall'/>

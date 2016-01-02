@@ -7,9 +7,9 @@
 			<property bytes='2' type='float' path-gs='/controls/rudder-pedals' path-aircraft='/controls/rudder-pedals'/>
 			<property bytes='2' type='float' path-gs='/controls/throttle-left' path-aircraft='/controls/throttle-left'/>
 			<property bytes='2' type='float' path-gs='/controls/throttle-right' path-aircraft='/controls/throttle-right'/>
-			<property bytes='2' type='float' path-gs='/systems/trim-control/elevator-trim' path-aircraft='/controls/elevator-trim' retained='true'/>
-			<property bytes='2' type='float' path-gs='/systems/trim-control/ailerons-trim' path-aircraft='/controls/ailerons-trim' retained='true'/>
-			<property bytes='2' type='float' path-gs='/systems/trim-control/rudder-trim' path-aircraft='/controls/rudder-trim' retained='true'/>
+			<property bytes='2' type='float' path-gs='/systems/trim-control/elevator-trim' path-aircraft='/systems/trim-control/elevator-trim' retained='true'/>
+			<property bytes='2' type='float' path-gs='/systems/trim-control/ailerons-trim' path-aircraft='/systems/trim-control/ailerons-trim' retained='true'/>
+			<property bytes='2' type='float' path-gs='/systems/trim-control/rudder-trim' path-aircraft='/systems/trim-control/rudder-trim' retained='true'/>
 			<property bytes='4' type='pressure' path-gs='/settings/pressure/qnh' path-aircraft='/settings/pressure/qnh' retained='true'/>
 			<property bytes='4' type='angle' path-gs='/settings/course/magnetic' path-aircraft='/settings/course/magnetic' retained='true'/>
 			<property bytes='2' type='speed' path-gs='/settings/cmd/ias' path-aircraft='/settings/cmd/ias' retained='true'/>

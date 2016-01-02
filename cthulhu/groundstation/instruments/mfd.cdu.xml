@@ -136,9 +136,9 @@
 					<page id='rth' title='RTH'>
 						<left>
 							<setting title='SPD REF' path='/settings/rth/speed-reference' unit='kt' format='%d kt'/>
-							<setting title='MIN GS' path='/settings/rth/minimum-groundspeed' unit='kt' format='%d kt'/>
-							<setting title='ALTITUDE' path='/settings/rth/altitude' unit='ft' format='%d ft'/>
-							<setting title='HOME ALTITUDE' path='/settings/rth/home-altitude' unit='ft' format='%d ft'/>
+							<setting title='MIN GS' path='/settings/rth/minimum-ground-speed' unit='kt' format='%d kt'/>
+							<setting title='ALTITUDE AGL' path='/settings/rth/altitude' unit='ft' format='%d ft'/>
+							<setting title='HOME ALTITUDE AGL' path='/settings/rth/home-altitude' unit='ft' format='%d ft'/>
 							<setting title='HOME RADIUS' path='/settings/rth/home-radius' unit='nmi' format='%.1f nmi'/>
 							<fill/>
 							<goto page-id='index' title='◂ INDEX'/>

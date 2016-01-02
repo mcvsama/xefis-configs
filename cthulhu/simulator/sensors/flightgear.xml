@@ -1,6 +1,10 @@
 <?xml version='1.0'?>
 <xefis-include>
 	<module name='io/flightgear'>
+		<settings>
+			<setting name='gps-position-stddev.lateral' value='2 m'/>
+			<setting name='gps-position-stddev.vertical' value='8 m'/>
+		</settings>
 		<input disabled='false'>
 			<host>0.0.0.0</host>
 			<port>9000</port>
@@ -22,8 +26,8 @@
 					<property name='gps.longitude' path='/gps/longitude'/>
 					<property name='gps.latitude' path='/gps/latitude'/>
 					<property name='gps.amsl' path='/gps/altitude-amsl'/>
-					<property name='gps.accuracy.lateral' path='/gps/accuracy.lateral'/>
-					<property name='gps.accuracy.vertical' path='/gps/accuracy.vertical'/>
+					<property name='gps.lateral.stddev' path='/gps/lateral.stddev'/>
+					<property name='gps.vertical.stddev' path='/gps/vertical.stddev'/>
 					<property name='gps.serviceable' path='/gps/serviceable'/>
 					<property name='gps.source' path='/gps/source'/>
 					<!-- ahrs -->
@@ -97,11 +101,13 @@
 			<host>127.0.0.1</host>
 			<port>9001</port>
 			<properties path='/controls'>
-				<property name='ailerons' path='/ailerons'/>
-				<property name='elevator' path='/elevator'/>
+				<property name='ailerons' path='//systems/afcs/ap/controls/ailerons'/>
+				<property name='elevator' path='//systems/afcs/ap/controls/elevator'/>
+				<!--property name='ailerons' path='/ailerons'/>
+				<property name='elevator' path='/elevator'/-->
 				<property name='throttle.1' path='/throttle-left'/>
 				<property name='throttle.2' path='/throttle-right'/>
-				<property name='rudder' path='/coordinated-rudder'/>
+				<property name='rudder' path='//systems/afcs/yd/coordinated-rudder'/>
 			</properties>
 		</output>
 	</module>

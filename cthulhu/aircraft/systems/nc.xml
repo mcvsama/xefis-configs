@@ -7,8 +7,8 @@
 				<property name='position.input.longitude' path='/longitude'/>
 				<property name='position.input.latitude' path='/latitude'/>
 				<property name='position.input.altitude.amsl' path='/altitude-amsl'/>
-				<property name='position.input.accuracy.lateral' path='/lateral-accuracy' default='1 m'/>
-				<property name='position.input.accuracy.vertical' path='/vertical-accuracy' default='1 m'/>
+				<property name='position.input.lateral.stddev' path='/lateral.stddev' default='1 m'/>
+				<property name='position.input.vertical.stddev' path='/vertical.stddev' default='1 m'/>
 				<property name='position.input.source' path='//systems/nc/internal/position.source' default='GPS'/>
 			</directory>
 			<directory path='//sensors/ahrs'>
@@ -22,8 +22,8 @@
 					<property name='position.longitude' path='/longitude'/>
 					<property name='position.latitude' path='/latitude'/>
 					<property name='position.altitude.amsl' path='/altitude.amsl'/>
-					<property name='position.accuracy.lateral' path='/accuracy.lateral'/>
-					<property name='position.accuracy.vertical' path='/accuracy.vertical'/>
+					<property name='position.lateral.stddev' path='/lateral.stddev'/>
+					<property name='position.vertical.stddev' path='/vertical.stddev'/>
 					<property name='position.source' path='/source'/>
 				</directory>
 				<directory path='/orientation'>

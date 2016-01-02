@@ -30,7 +30,6 @@
 			<property name='input.spd-ref.climbout' path='/settings/cruise/speed-reference'/>
 			<property name='input.spd-ref.cruise' path='/settings/cruise/speed-reference'/>
 			<property name='input.spd-ref.approach' path='/settings/approach/speed-reference'/>
-			<!-- TODO synchronize naming from here to MCP -->
 			<directory path='/panels/mcp/afcs'>
 				<property name='input.mcp.button.ap' path='/button.ap'/>
 				<property name='input.mcp.button.at' path='/button.at'/>

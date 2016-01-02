@@ -60,13 +60,13 @@
 						</item>
 						<stretch/>
 						<item>
-							<widget type='button' top-label='FLAP INH.' toggle-property='/settings/gpws/flap-inhibit' led-property='/settings/gpws/flap-inhibit' led-color='amber'/>
+							<widget type='button' top-label='FLAP OVRD' toggle-property='/settings/gpws/flap-inhibit' led-property='/settings/gpws/flap-inhibit' led-color='amber'/>
 						</item>
 						<item>
-							<widget type='button' top-label='GEAR INH.' toggle-property='/settings/gpws/gear-inhibit' led-property='/settings/gpws/gear-inhibit' led-color='amber'/>
+							<widget type='button' top-label='GEAR OVRD' toggle-property='/settings/gpws/gear-inhibit' led-property='/settings/gpws/gear-inhibit' led-color='amber'/>
 						</item>
 						<item>
-							<widget type='button' top-label='TERR INH.' toggle-property='/settings/gpws/terrain-inhibit' led-property='/settings/gpws/terrain-inhibit' led-color='amber'/>
+							<widget type='button' top-label='TERR OVRD' toggle-property='/settings/gpws/terrain-inhibit' led-property='/settings/gpws/terrain-inhibit' led-color='amber'/>
 						</item>
 					</layout>
 				</group>
@@ -118,6 +118,16 @@
 						</item>
 						<item>
 							<widget type='button' top-label='WPT' toggle-property='/settings/hsi/show-wpt' led-property='/settings/hsi/show-wpt' led-color='green'/>
+						</item>
+						<stretch/>
+					</layout>
+				</group>
+			</item>
+			<item>
+				<group label='CORRECTIONS'>
+					<layout type='horizontal' spacing='5'>
+						<item>
+							<widget type='rotary-encoder' top-label='MAG' click-label='RST' click-property='/panels/corrections/mag.reset' value-property='/panels/corrections/mag'/>
 						</item>
 						<stretch/>
 					</layout>

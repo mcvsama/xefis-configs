@@ -2,6 +2,7 @@
 <xefis-include>
 	<settings>
 		<setting name='wings-area' value='16.3 m2'/>
+		<setting name='wings-chord' value='2.0 m'/>
 		<setting name='safe-aoa-correction' value='-1.5 deg'/>
 		<setting name='max-negative-load-factor' value='-2.5'/>
 		<setting name='max-positive-load-factor' value='+3.5'/>

@@ -59,6 +59,8 @@
 			<property name='position.latitude' path='/systems/nc/position/latitude'/>
 			<property name='position.longitude' path='/systems/nc/position/longitude'/>
 			<property name='position.source' path='/systems/nc/position/source'/>
+			<property name='navigation.required-performance' path='/systems/nc/position/position.stddev'/>
+			<property name='navigation.actual-performance' path='/systems/nc/position/position.stddev'/>
 			<property name='track.lateral.magnetic' path='/systems/nc/track/lateral/magnetic'/>
 			<property name='track.lateral.rotation' path='/systems/nc/track/lateral/rotation'/>
 			<property name='wind.from.magnetic' path='/systems/pc/wind/from/magnetic'/>

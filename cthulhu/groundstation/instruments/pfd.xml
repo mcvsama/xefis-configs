@@ -2,7 +2,7 @@
 <xefis-include>
 	<layout type='vertical'>
 		<item stretch-factor='8'>
-			<instrument name='instruments/efis'>
+			<instrument name='instruments/adi'>
 				<settings>
 					<setting name='speed-ladder.line-every' value='10'/>
 					<setting name='speed-ladder.number-every' value='20'/>
@@ -17,6 +17,7 @@
 					<setting name='altitude.landing.warning.lo' value='500 ft'/>
 					<setting name='aoa.visibility-threshold' value='17.5 deg'/>
 					<setting name='show-mach-above' value='0.4'/>
+					<setting name='energy-variometer.1000-fpm-power' value='100 W'/>
 				</settings>
 				<properties>
 					<property name='orientation.heading.numbers-visible' path='/settings/efis/heading-numbers-visible'/>
@@ -60,7 +61,7 @@
 					<property name='altitude.landing.amsl' path='/settings/approach/landing-altitude-amsl'/>
 					<property name='vertical-speed.serviceable' path='/systems/adc/vertical-speed/serviceable'/>
 					<property name='vertical-speed' path='/systems/adc/vertical-speed/speed'/>
-					<property name='vertical-speed.variometer' path='/systems/pc/total-energy-variometer'/>
+					<property name='vertical-speed.energy-variometer' path='/systems/pc/total-energy-variometer'/>
 					<property name='pressure.qnh' path='/settings/pressure/qnh'/>
 					<property name='pressure.display-hpa' path='/settings/efis/display-hpa'/>
 					<property name='pressure.use-std' path='/settings/pressure/use-std'/>
@@ -178,6 +179,8 @@
 					<property name='position.latitude' path='/systems/nc/position/latitude'/>
 					<property name='position.longitude' path='/systems/nc/position/longitude'/>
 					<property name='position.source' path='/systems/nc/position/source'/>
+					<property name='navigation.required-performance' path='/systems/nc/position/position.stddev'/>
+					<property name='navigation.actual-performance' path='/systems/nc/position/position.stddev'/>
 					<property name='track.lateral.magnetic' path='/systems/nc/track/lateral/magnetic'/>
 					<property name='track.lateral.rotation' path='/systems/nc/track/lateral/rotation'/>
 					<property name='wind.from.magnetic' path='/systems/pc/wind/from/magnetic'/>

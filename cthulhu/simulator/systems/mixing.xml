@@ -19,7 +19,7 @@
 		<properties>
 			<property name='input.0.value' path='/controls/rudder-anti-adverse-yaw'/>
 			<property name='input.1.value' path='/systems/afcs/eac/yd/rudder'/>
-			<property name='output.value' path='/controls/coordinated-rudder'/>
+			<property name='output.value' path='/systems/afcs/yd/coordinated-rudder'/>
 		</properties>
 	</module>
 	<module name='systems/mixer' instance='roll-autotrim'>

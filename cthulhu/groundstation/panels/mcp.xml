@@ -82,7 +82,7 @@
 								</item>
 								<stretch/>
 								<item>
-									<widget type='button' top-label='HOME' click-property='/panels/mcp/navaid-left/button.home' led-property='/panels/mcp/navaid-left/led.home' led-color='green'/>
+									<disabled-widget type='button' top-label='FNLG' click-property='/panels/mcp/navaid-left/button.fnlg' led-property='/panels/mcp/navaid-left/led.fnlg' led-color='green' comment='Final leg'/>
 								</item>
 							</layout>
 						</item>
@@ -143,7 +143,7 @@
 			<separator/>
 			<stretch/>
 			<item>
-				<group label='EAC'>
+				<group label='AFCS/EAC'>
 					<layout type='horizontal' spacing='5'>
 						<item>
 							<layout type='vertical' spacing='5'>
@@ -159,7 +159,7 @@
 						<item>
 							<layout type='vertical' spacing='5'>
 								<item>
-									<widget type='button' top-label='PROT' click-property='/panels/mcp/afcs/button.prot' led-property='/panels/mcp/afcs/led.prot' led-color='amber'/>
+									<disabled-widget type='button' top-label='PROT' click-property='/panels/mcp/afcs/button.prot' led-property='/panels/mcp/afcs/led.prot' led-color='amber'/>
 								</item>
 								<item>
 									<widget type='button' top-label='YD' click-property='/panels/mcp/afcs/button.yd' led-property='/panels/mcp/afcs/led.yd' led-color='amber'/>

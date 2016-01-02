@@ -18,8 +18,8 @@
 			<property bytes='8' type='angle' path-gs='/aircraft/sensors/gps/latitude' path-aircraft='/sensors/gps/latitude' retained='true'/>
 			<property bytes='8' type='angle' path-gs='/aircraft/sensors/gps/longitude' path-aircraft='/sensors/gps/longitude' retained='true'/>
 			<property bytes='4' type='length' path-gs='/aircraft/sensors/gps/altitude-amsl' path-aircraft='/sensors/gps/altitude-amsl'/>
-			<property bytes='2' type='length' path-gs='/aircraft/sensors/gps/accuracy.lateral' path-aircraft='/sensors/gps/accuracy.lateral'/>
-			<property bytes='2' type='length' path-gs='/aircraft/sensors/gps/accuracy.vertical' path-aircraft='/sensors/gps/accuracy.vertical'/>
+			<property bytes='2' type='length' path-gs='/aircraft/sensors/gps/lateral.stddev' path-aircraft='/sensors/gps/lateral.stddev'/>
+			<property bytes='2' type='length' path-gs='/aircraft/sensors/gps/vertical.stddev' path-aircraft='/sensors/gps/vertical.stddev'/>
 			<property bytes='4' type='pressure' path-gs='/aircraft/sensors/pressure/static' path-aircraft='/sensors/pressure/static'/>
 			<property bytes='4' type='pressure' path-gs='/aircraft/sensors/pressure/total' path-aircraft='/sensors/pressure/total'/>
 			<property bytes='4' type='speed' path-gs='/aircraft/sensors/airspeed/ias' path-aircraft='/sensors/airspeed/ias'/>

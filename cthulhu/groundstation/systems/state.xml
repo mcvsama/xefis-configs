@@ -38,7 +38,7 @@
 			<variable id='autoland.touchdown.altitude-amsl' path='/settings/autoland/touchdown/altitude-amsl' type='length'/>
 			<variable id='autoland.runway.heading-magnetic' path='/settings/autoland/runway/heading.magnetic' type='angle'/>
 			<variable id='rth.speed-reference' path='/settings/rth/speed-reference' type='speed'/>
-			<variable id='rth.minimum-groundspeed' path='/settings/rth/minimum-groundspeed' type='speed'/>
+			<variable id='rth.minimum-ground-speed' path='/settings/rth/minimum-ground-speed' type='speed'/>
 			<variable id='rth.altitude' path='/settings/rth/altitude' type='length'/>
 			<variable id='rth.home-altitude' path='/settings/rth/home-altitude' type='length'/>
 			<variable id='rth.home-radius' path='/settings/rth/home-radius' type='length'/>

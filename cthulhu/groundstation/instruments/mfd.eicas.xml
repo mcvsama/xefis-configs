@@ -233,16 +233,16 @@
 											<value path='/aircraft/sensors/gps/satellites' format='%f' nil='--'/>
 										</row>
 										<row>
-											<label>ACCURACY HORZ</label>
-											<value path='/aircraft/sensors/gps/accuracy.lateral' unit='m' format='%.1f' nil='--'/>
+											<label>VERT STDDEV</label>
+											<value path='/aircraft/sensors/gps/vertical.stddev' unit='m' format='%.1f' nil='--'/>
 										</row>
 										<row>
-											<label>ACCURACY VERT</label>
-											<value path='/aircraft/sensors/gps/accuracy.vertical' unit='m' format='%.1f' nil='--'/>
+											<label>HORZ STDDEV</label>
+											<value path='/aircraft/sensors/gps/lateral.stddev' unit='m' format='%.1f' nil='--'/>
 										</row>
 										<row>
 											<label>FIX</label>
-											<value path='/aircraft/sensors/gps/type-of-fix' nil='--'/> <!-- -|2D|3D DGPS|PPS|... -->
+											<value path='/aircraft/sensors/gps/fix-mode' nil='--'/> <!-- -|2D|3D DGPS|PPS|... -->
 										</row>
 										<row>
 											<label>LATITUDE</label>
@@ -297,9 +297,6 @@
 							</message>
 							<message message='ADC V/SPD SYS' severity='warning'>
 								<observe path='/aircraft/systems/adc/vertical-speed/serviceable' fail-on='false'/>
-							</message>
-							<message message='NC POS ACCURACY SYS' severity='warning'>
-								<observe path='/aircraft/systems/nc/position/accuracy.serviceable' fail-on='false'/>
 							</message>
 							<message message='AP SYS' severity='warning'>
 								<observe path='/aircraft/systems/afcs/ap/serviceable' fail-on='false'/>
