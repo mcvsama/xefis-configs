@@ -15,7 +15,7 @@
 			<property name='input.orientation.heading.true' path='/systems/nc/orientation/heading/true'/>
 			<property name='input.magnetic.declination' path='/systems/nc/magnetic/declination'/>
 			<property name='input.air-density-static' path='/systems/adc/air-density/static'/>
-			<property name='input.aircraft-weight' path='/settings/aircraft/total-weight'/>
+			<property name='input.aircraft-mass' path='/settings/aircraft/total-mass'/>
 			<property name='input.flaps-angle' path='/systems/flaps/current'/>
 			<property name='input.spoilers-angle' path='/systems/spoilers/current'/>
 			<property name='input.aoa.alpha' path='/sensors/aoa/alpha'/>

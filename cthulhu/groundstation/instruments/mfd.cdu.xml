@@ -41,7 +41,7 @@
 					</page>
 					<page id='takeoff' title='TAKEOFF'>
 						<left>
-							<setting title='TOTAL WEIGHT' path='/settings/aircraft/total-weight' unit='kg' format='%.3f kg'/>
+							<setting title='TOTAL WEIGHT' path='/settings/aircraft/total-mass' unit='kg' format='%.3f kg'/>
 							<setting title='FLAPS' path='/settings/takeoff/flaps-setting' unit='deg' format='%d°'/>
 							<fill/>
 							<goto page-id='index' title='◂ INDEX'/>
@@ -179,18 +179,18 @@
 					</page>
 					<page id='power' title='POWER SOURCES'>
 						<left>
-							<setting title='L ENG BATT CAP' path='/settings/power/battery.engine.left.capacity' unit='mah' format='%d mAh'/>
-							<setting title='VTX BATT 1 CAP' path='/settings/power/battery.vtx.1.capacity' unit='mah' format='%d mAh'/>
-							<setting title='LOGIC BATT 1 CAP' path='/settings/power/battery.logic.1.capacity' unit='mah' format='%d mAh'/>
-							<setting title='SERVO BATT 1 CAP' path='/settings/power/battery.servo.1.capacity' unit='mah' format='%d mAh'/>
+							<setting title='L ENG BATT CAP' path='/settings/power/battery.engine.left.charge' unit='mAh' format='%d mAh'/>
+							<setting title='VTX BATT 1 CAP' path='/settings/power/battery.vtx.1.charge' unit='mAh' format='%d mAh'/>
+							<setting title='LOGIC BATT 1 CAP' path='/settings/power/battery.logic.1.charge' unit='mAh' format='%d mAh'/>
+							<setting title='SERVO BATT 1 CAP' path='/settings/power/battery.servo.1.charge' unit='mAh' format='%d mAh'/>
 							<fill/>
 							<goto page-id='index' title='◂ INDEX'/>
 						</left>
 						<right>
-							<setting title='R ENG BATT CAP' path='/settings/power/battery.engine.right.capacity' unit='mah' format='%d mAh'/>
-							<setting title='VTX BATT 2 CAP' path='/settings/power/battery.vtx.2.capacity' unit='mah' format='%d mAh'/>
-							<setting title='LOGIC BATT 2 CAP' path='/settings/power/battery.logic.2.capacity' unit='mah' format='%d mAh'/>
-							<setting title='SERVO BATT 2 CAP' path='/settings/power/battery.servo.2.capacity' unit='mah' format='%d mAh'/>
+							<setting title='R ENG BATT CAP' path='/settings/power/battery.engine.right.charge' unit='mAh' format='%d mAh'/>
+							<setting title='VTX BATT 2 CAP' path='/settings/power/battery.vtx.2.charge' unit='mAh' format='%d mAh'/>
+							<setting title='LOGIC BATT 2 CAP' path='/settings/power/battery.logic.2.charge' unit='mAh' format='%d mAh'/>
+							<setting title='SERVO BATT 2 CAP' path='/settings/power/battery.servo.2.charge' unit='mAh' format='%d mAh'/>
 							<fill/>
 						</right>
 					</page>

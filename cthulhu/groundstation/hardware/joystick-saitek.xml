@@ -1,0 +1,64 @@
+<?xml version='1.0'?>
+<xefis-include>
+	<module name='io/joystick' instance='saitek'>
+		<settings>
+			<setting name='device' value='/dev/input/by-id/usb-Saitek_Saitek_X52_Pro_Flight_Control_System-joystick'/>
+			<setting name='path' value='/input'/>
+			<setting name='restart-on-failure' value='false'/>
+		</settings>
+		<!-- Throttle R -->
+		<axis id='2'>
+			<path>/controls/throttle-right</path>
+			<reverse/>
+			<output>
+				<minimum>0</minimum>
+				<maximum>1</maximum>
+			</output>
+		</axis>
+		<!-- Throttle L -->
+		<axis id='2'>
+			<path>/controls/throttle-left</path>
+			<reverse/>
+			<output>
+				<minimum>0</minimum>
+				<maximum>1</maximum>
+			</output>
+		</axis>
+		<button id='8'>
+			<path>/controls/flaps-up</path>
+		</button>
+		<button id='9'>
+			<path>/controls/flaps-down</path>
+		</button>
+		<!-- Roll -->
+		<axis id='0'>
+			<path>/controls/ailerons-stick</path>
+			<center>0.0</center>
+			<dead-zone>0.005</dead-zone>
+			<power>1.5</power>
+		</axis>
+		<!-- Pitch -->
+		<axis id='1'>
+			<path>/controls/elevator-stick</path>
+			<reverse/>
+			<center>0.0</center>
+			<dead-zone>0.005</dead-zone>
+			<power>1.5</power>
+		</axis>
+		<!-- Roll trim -->
+		<axis up-button-id='20' down-button-id='22'>
+			<path>/controls/ailerons-trim</path>
+		</axis>
+		<!-- Pitch trim -->
+		<axis up-button-id='19' down-button-id='21'>
+			<path>/controls/elevator-trim</path>
+			<reverse/>
+		</axis>
+		<!-- Pedals -->
+		<axis id='5'>
+			<path>/controls/rudder-pedals</path>
+			<power>3</power>
+		</axis>
+	</module>
+</xefis-include>
+

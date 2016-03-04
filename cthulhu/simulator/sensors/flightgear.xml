@@ -6,7 +6,7 @@
 			<setting name='gps-position-stddev.vertical' value='8 m'/>
 		</settings>
 		<input disabled='false'>
-			<host>0.0.0.0</host>
+			<host>10.0.0.115</host>
 			<port>9000</port>
 			<properties>
 				<directory path='/sensors'>
@@ -98,11 +98,15 @@
 			</properties>
 		</input>
 		<output disabled='false'>
-			<host>127.0.0.1</host>
+			<host>10.0.0.105</host>
 			<port>9001</port>
 			<properties path='/controls'>
-				<property name='ailerons' path='//systems/afcs/ap/controls/ailerons'/>
-				<property name='elevator' path='//systems/afcs/ap/controls/elevator'/>
+				<!-- Direct input -->
+				<property name='ailerons' path='//controls/ailerons'/>
+				<property name='elevator' path='//controls/elevator'/>
+				<!-- AP input -->
+				<!--property name='ailerons' path='//systems/afcs/ap/controls/ailerons'/>
+				<property name='elevator' path='//systems/afcs/ap/controls/elevator'/-->
 				<!--property name='ailerons' path='/ailerons'/>
 				<property name='elevator' path='/elevator'/-->
 				<property name='throttle.1' path='/throttle-left'/>

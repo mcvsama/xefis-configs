@@ -1,12 +1,12 @@
 <?xml version='1.0'?>
 <xefis-config version='1.0'>
 	<settings>
-		<setting name='update-frequency' value='100 Hz'/>
+		<setting name='update-frequency' value='48 Hz'/>
 		<setting name='navaids.enable' value='false'/>
 		<setting name='scale.pen' value='0.92'/>
 		<setting name='scale.font' value='1.0'/>
-		<setting name='scale.master' value='1.3'/>
-		<setting name='scale.windows' value='1.3'/>
+		<setting name='scale.master' value='1.2'/>
+		<setting name='scale.windows' value='1.2'/>
 	</settings>
 	<airframe>
 		<include name='../simulator/airframe.xml'/>
@@ -14,7 +14,7 @@
 	<modules>
 		<include name='comm/link.xml'/>
 		<include name='comm/udp.xml'/>
-		<include name='hardware/joystick.xml'/>
+		<include name='hardware/joystick-saitek.xml'/>
 		<include name='systems/state.xml'/>
 		<include name='systems/afcs.xml'/>
 		<include name='systems/adc.xml'/>

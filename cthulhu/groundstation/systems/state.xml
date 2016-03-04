@@ -10,7 +10,7 @@
 			<variable id='efis.old-style' path='/settings/efis/old-style' type='boolean' default='false'/>
 			<variable id='efis.heading-numbers-visible' path='/settings/efis/heading-numbers-visible' type='boolean' default='false'/>
 			<variable id='fbw.bank-limit' path='/settings/afcs/ap/bank-limit' type='angle' default='30 deg'/>
-			<variable id='aircraft.total-weight' path='/settings/aircraft/total-weight' type='weight' default='1.5 kg'/>
+			<variable id='aircraft.total-mass' path='/settings/aircraft/total-mass' type='mass' default='1000 kg'/>
 			<variable id='takeoff.flaps-setting' path='/settings/takeoff/flaps-setting' type='angle' default='15 deg'/>
 			<variable id='takeoff.trim.minimum' path='/settings/takeoff/trim.minimum' type='integer' default='-15'/>
 			<variable id='takeoff.trim.minimum' path='/settings/takeoff/trim.reference' type='integer' default='0'/>
@@ -55,14 +55,14 @@
 			<variable id='vor.2.latitude' path='/settings/vor/2/latitude' type='angle'/>
 			<variable id='vor.2.longitude' path='/settings/vor/2/longitude' type='angle'/>
 			<variable id='vor.2.altitude-amsl' path='/settings/vor/2/altitude-amsl' type='length'/>
-			<variable id='battery.engine.left' path='/settings/power/battery.engine.left.capacity' type='capacity'/>
-			<variable id='battery.vtx.1' path='/settings/power/battery.vtx.1.capacity' type='capacity'/>
-			<variable id='battery.logic.1' path='/settings/power/battery.logic.1.capacity' type='capacity'/>
-			<variable id='battery.servo.1' path='/settings/power/battery.servo.1.capacity' type='capacity'/>
-			<variable id='battery.engine.right' path='/settings/power/battery.engine.right.capacity' type='capacity'/>
-			<variable id='battery.vtx.2' path='/settings/power/battery.vtx.2.capacity' type='capacity'/>
-			<variable id='battery.logic.2' path='/settings/power/battery.logic.2.capacity' type='capacity'/>
-			<variable id='battery.servo.2' path='/settings/power/battery.servo.2.capacity' type='capacity'/>
+			<variable id='battery.engine.left' path='/settings/power/battery.engine.left.charge' type='charge'/>
+			<variable id='battery.vtx.1' path='/settings/power/battery.vtx.1.charge' type='charge'/>
+			<variable id='battery.logic.1' path='/settings/power/battery.logic.1.charge' type='charge'/>
+			<variable id='battery.servo.1' path='/settings/power/battery.servo.1.charge' type='charge'/>
+			<variable id='battery.engine.right' path='/settings/power/battery.engine.right.charge' type='charge'/>
+			<variable id='battery.vtx.2' path='/settings/power/battery.vtx.2.charge' type='charge'/>
+			<variable id='battery.logic.2' path='/settings/power/battery.logic.2.charge' type='charge'/>
+			<variable id='battery.servo.2' path='/settings/power/battery.servo.2.charge' type='charge'/>
 		</state>
 	</module>
 </xefis-include>
