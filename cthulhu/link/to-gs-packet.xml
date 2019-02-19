@@ -27,14 +27,14 @@
 			<property bytes='4' type='length' path-gs='/aircraft/sensors/radar-altimeter/altitude.agl' path-aircraft='/sensors/radar-altimeter/altitude.agl'/>
 			<property bytes='2' type='float' path-gs='/aircraft/sensors/slip-skid/slip-skid' path-aircraft='/sensors/slip-skid/slip-skid'/>
 			<property bytes='2' type='force' path-gs='/aircraft/sensors/engines/1/thrust' path-aircraft='/sensors/engines/1/thrust'/>
-			<property bytes='2' type='frequency' path-gs='/aircraft/sensors/engines/1/rpm' path-aircraft='/sensors/engines/1/rpm'/>
+			<property bytes='2' type='angular-velocity' path-gs='/aircraft/sensors/engines/1/rpm' path-aircraft='/sensors/engines/1/rpm'/>
 			<property bytes='2' type='float' path-gs='/aircraft/sensors/engines/1/n1' path-aircraft='/sensors/engines/1/n1'/>
 			<property bytes='2' type='float' path-gs='/aircraft/sensors/engines/1/n2' path-aircraft='/sensors/engines/1/n2'/>
 			<property bytes='2' type='float' path-gs='/aircraft/sensors/engines/1/epr' path-aircraft='/sensors/engines/1/epr'/>
 			<property bytes='2' type='angle' path-gs='/aircraft/sensors/engines/1/pitch' path-aircraft='/sensors/engines/1/pitch'/>
 			<property bytes='2' type='temperature' path-gs='/aircraft/sensors/engines/1/temperature' path-aircraft='/sensors/engines/1/temperature'/>
 			<property bytes='2' type='force' path-gs='/aircraft/sensors/engines/2/thrust' path-aircraft='/sensors/engines/2/thrust'/>
-			<property bytes='2' type='frequency' path-gs='/aircraft/sensors/engines/2/rpm' path-aircraft='/sensors/engines/2/rpm'/>
+			<property bytes='2' type='angular-velocity' path-gs='/aircraft/sensors/engines/2/rpm' path-aircraft='/sensors/engines/2/rpm'/>
 			<property bytes='2' type='float' path-gs='/aircraft/sensors/engines/2/n1' path-aircraft='/sensors/engines/2/n1'/>
 			<property bytes='2' type='float' path-gs='/aircraft/sensors/engines/2/n2' path-aircraft='/sensors/engines/2/n2'/>
 			<property bytes='2' type='float' path-gs='/aircraft/sensors/engines/2/epr' path-aircraft='/sensors/engines/2/epr'/>

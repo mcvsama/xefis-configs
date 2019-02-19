@@ -6,13 +6,13 @@
 			<setting name='reacquire-after' value='150 ms'/>
 		</settings>
 		<properties>
-			<property name='input' path='/link/data/to-groundstation'/>
-			<property name='link-valid' path='/link/local/valid'/>
-			<property name='failsafes' path='/link/local/failsafes'/>
-			<property name='reacquires' path='/link/local/reacquires'/>
-			<property name='error-bytes' path='/link/local/error-bytes'/>
-			<property name='valid-bytes' path='/link/local/valid-bytes'/>
-			<property name='valid-packets' path='/link/local/valid-packets'/>
+			<property name='input' path='/link/data/to-groundstation' type='string'/>
+			<property name='link-valid' path='/link/local/valid' type='boolean'/>
+			<property name='failsafes' path='/link/local/failsafes' type='integer'/>
+			<property name='reacquires' path='/link/local/reacquires' type='integer'/>
+			<property name='error-bytes' path='/link/local/error-bytes' type='integer'/>
+			<property name='valid-bytes' path='/link/local/valid-bytes' type='integer'/>
+			<property name='valid-packets' path='/link/local/valid-packets' type='integer'/>
 		</properties>
 		<protocol path-attribute-name='path-gs'>
 			<include name='../../link/to-gs-packet.xml'/>
@@ -23,7 +23,7 @@
 			<setting name='frequency' value='100 Hz'/>
 		</settings>
 		<properties>
-			<property name='output' path='/link/data/to-aircraft'/>
+			<property name='output' path='/link/data/to-aircraft' type='string'/>
 		</properties>
 		<protocol path-attribute-name='path-gs'>
 			<include name='../../link/to-aircraft-packet.xml'/>

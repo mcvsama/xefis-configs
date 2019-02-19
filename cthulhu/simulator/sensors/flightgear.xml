@@ -6,112 +6,112 @@
 			<setting name='gps-position-stddev.vertical' value='8 m'/>
 		</settings>
 		<input disabled='false'>
-			<host>10.0.0.115</host>
+			<host>127.0.0.1</host>
 			<port>9000</port>
 			<properties>
 				<directory path='/sensors'>
 					<!-- gyro -->
-					<property name='rotation.x' path='/ahrs/rotation/x'/>
-					<property name='rotation.y' path='/ahrs/rotation/y'/>
-					<property name='rotation.z' path='/ahrs/rotation/z'/>
+					<property name='rotation.x' type='angle' path='/ahrs/rotation/x'/>
+					<property name='rotation.y' type='angle' path='/ahrs/rotation/y'/>
+					<property name='rotation.z' type='angle' path='/ahrs/rotation/z'/>
 					<!-- accel -->
-					<property name='acceleration.x' path='/ahrs/acceleration/x'/>
-					<property name='acceleration.y' path='/ahrs/acceleration/y'/>
-					<property name='acceleration.z' path='/ahrs/acceleration/z'/>
+					<property name='acceleration.x' type='acceleration' path='/ahrs/acceleration/x'/>
+					<property name='acceleration.y' type='acceleration' path='/ahrs/acceleration/y'/>
+					<property name='acceleration.z' type='acceleration' path='/ahrs/acceleration/z'/>
 					<!-- aoa -->
-					<property name='aoa.alpha.maximum' path='/aoa/alpha.maximum'/>
-					<property name='aoa.alpha.minimum' path='/aoa/alpha.minimum'/>
-					<property name='aoa.alpha' path='/aoa/alpha'/>
+					<property name='aoa.alpha.maximum' type='angle' path='/aoa/alpha.maximum'/>
+					<property name='aoa.alpha.minimum' type='angle' path='/aoa/alpha.minimum'/>
+					<property name='aoa.alpha' type='angle' path='/aoa/alpha'/>
 					<!-- gps -->
-					<property name='gps.longitude' path='/gps/longitude'/>
-					<property name='gps.latitude' path='/gps/latitude'/>
-					<property name='gps.amsl' path='/gps/altitude-amsl'/>
-					<property name='gps.lateral.stddev' path='/gps/lateral.stddev'/>
-					<property name='gps.vertical.stddev' path='/gps/vertical.stddev'/>
-					<property name='gps.serviceable' path='/gps/serviceable'/>
-					<property name='gps.source' path='/gps/source'/>
+					<property name='gps.longitude' type='angle' path='/gps/longitude'/>
+					<property name='gps.latitude' type='angle' path='/gps/latitude'/>
+					<property name='gps.amsl' type='length' path='/gps/altitude-amsl'/>
+					<property name='gps.lateral.stddev' type='length' path='/gps/lateral.stddev'/>
+					<property name='gps.vertical.stddev' type='length' path='/gps/vertical.stddev'/>
+					<property name='gps.serviceable' type='boolean' path='/gps/serviceable'/>
+					<property name='gps.source' type='string' path='/gps/source'/>
 					<!-- ahrs -->
-					<property name='ahrs.serviceable' path='/ahrs/serviceable'/>
-					<property name='ahrs.pitch' path='/ahrs/orientation/pitch'/>
-					<property name='ahrs.roll' path='/ahrs/orientation/roll'/>
-					<property name='ahrs.heading.magnetic' path='/ahrs/orientation/heading.magnetic'/>
+					<property name='ahrs.serviceable' type='boolean' path='/ahrs/serviceable'/>
+					<property name='ahrs.pitch' type='angle' path='/ahrs/orientation/pitch'/>
+					<property name='ahrs.roll' type='angle' path='/ahrs/orientation/roll'/>
+					<property name='ahrs.heading.magnetic' type='angle' path='/ahrs/orientation/heading.magnetic'/>
 					<!-- airspeed -->
-					<property name='ias' path='/airspeed/ias'/>
-					<property name='ias.serviceable' path='/airspeed/serviceable'/>
+					<property name='ias' type='speed' path='/airspeed/ias'/>
+					<property name='ias.serviceable' type='boolean' path='/airspeed/serviceable'/>
 					<!-- pressure -->
-					<property name='pressure' path='/pressure/static'/>
-					<property name='pressure.serviceable' path='/pressure/serviceable'/>
+					<property name='pressure' type='pressure' path='/pressure/static'/>
+					<property name='pressure.serviceable' type='boolean' path='/pressure/serviceable'/>
 					<!-- temperature -->
-					<property name='total-air-temperature' path='/air-temperature/total'/>
+					<property name='total-air-temperature' type='temperature' path='/air-temperature/total'/>
 					<!-- radar altimeter -->
-					<property name='radar-altimeter.altitude.agl' path='/radar-altimeter/altitude.agl'/>
-					<property name='radar-altimeter.serviceable' path='/radar-altimeter/serviceable'/>
+					<property name='radar-altimeter.altitude.agl' type='length' path='/radar-altimeter/altitude.agl'/>
+					<property name='radar-altimeter.serviceable' type='boolean' path='/radar-altimeter/serviceable'/>
 					<!-- slip-skid -->
-					<property name='slip-skid' path='/slip-skid/slip-skid'/>
+					<property name='slip-skid' type='float' path='/slip-skid/slip-skid'/>
 					<!-- engines -->
-					<property name='engine.1.thrust' path='/engines/1/thrust'/>
+					<property name='engine.1.thrust' type='force' path='/engines/1/thrust'/>
 					<property name='engine.1.rpm' path='/engines/1/rpm'/>
-					<property name='engine.1.n1' path='/engines/1/n1'/>
-					<property name='engine.1.n2' path='/engines/1/n2'/>
-					<property name='engine.1.egt' path='/engines/1/temperature'/>
-					<property name='engine.1.epr' path='/engines/1/epr'/>
-					<property name='engine.1.pitch' path='/engines/1/pitch'/>
-					<property name='engine.2.thrust' path='/engines/2/thrust'/>
+					<property name='engine.1.n1' type='float' path='/engines/1/n1'/>
+					<property name='engine.1.n2' type='float' path='/engines/1/n2'/>
+					<property name='engine.1.egt' type='temperature' path='/engines/1/temperature'/>
+					<property name='engine.1.epr' type='float' path='/engines/1/epr'/>
+					<property name='engine.1.pitch' type='angle' path='/engines/1/pitch'/>
+					<property name='engine.2.thrust' type='force' path='/engines/2/thrust'/>
 					<property name='engine.2.rpm' path='/engines/2/rpm'/>
-					<property name='engine.2.n1' path='/engines/2/n1'/>
-					<property name='engine.2.n2' path='/engines/2/n2'/>
-					<property name='engine.2.egt' path='/engines/2/temperature'/>
-					<property name='engine.2.epr' path='/engines/2/epr'/>
-					<property name='engine.2.pitch' path='/engines/2/pitch'/>
+					<property name='engine.2.n1' type='float' path='/engines/2/n1'/>
+					<property name='engine.2.n2' type='float' path='/engines/2/n2'/>
+					<property name='engine.2.egt' type='temperature' path='/engines/2/temperature'/>
+					<property name='engine.2.epr' type='float' path='/engines/2/epr'/>
+					<property name='engine.2.pitch' type='angle' path='/engines/2/pitch'/>
 					<!-- gear -->
-					<property name='gear.setting.down' path='/gear/setting.down'/>
-					<property name='gear.nose.up' path='/gear/nose.up'/>
-					<property name='gear.nose.down' path='/gear/nose.down'/>
-					<property name='gear.left.up' path='/gear/left.up'/>
-					<property name='gear.left.down' path='/gear/left.down'/>
-					<property name='gear.right.up' path='/gear/right.up'/>
-					<property name='gear.right.down' path='/gear/right.down'/>
+					<property name='gear.setting.down' type='boolean' path='/gear/setting.down'/>
+					<property name='gear.nose.up' type='boolean' path='/gear/nose.up'/>
+					<property name='gear.nose.down' type='boolean' path='/gear/nose.down'/>
+					<property name='gear.left.up' type='boolean' path='/gear/left.up'/>
+					<property name='gear.left.down' type='boolean' path='/gear/left.down'/>
+					<property name='gear.right.up' type='boolean' path='/gear/right.up'/>
+					<property name='gear.right.down' type='boolean' path='/gear/right.down'/>
 				</directory>
 				<directory path='/sensors/flightgear-other'>
-					<property name='gs' path='/speed/ground-speed'/>
-					<property name='tas' path='/speed/true-airspeed'/>
-					<property name='mach' path='/speed/mach'/>
-					<property name='wind-from-mag-heading' path='/wind/magnetic-orientation'/>
-					<property name='wind-tas' path='/wind/speed'/>
-					<property name='flight-path-marker-alpha' path='/flight-path/alpha'/>
-					<property name='flight-path-marker-beta' path='/flight-path/beta'/>
-					<property name='track.magnetic' path='/flight-path/magnetic-track'/>
-					<property name='cbr' path='/altitude/vertical-speed'/>
-					<property name='altitude' path='/altitude/amsl'/>
-					<property name='ahrs.true-heading' path='/orientation/true-heading'/>
-					<property name='ias-minimum' path='/speed/ias-minimum'/>
-					<property name='ias-maximum' path='/speed/ias-maximum'/>
-					<property name='ias-lookahead' path='/speed/ias-lookahead'/>
-					<property name='dme-distance' path='/localizer/distance'/>
-					<property name='vertical-deviation' path='/localizer/vertical-deviation'/>
-					<property name='lateral-deviation' path='/localizer/lateral-deviation'/>
-					<property name='cmd-setting-altitude' path='/cmd-altitude'/>
-					<property name='cmd-setting-heading' path='/cmd-magnetic-heading-and-track'/>
-					<property name='cmd-setting-cbr' path='/cmd-vertical-speed'/>
-					<property name='cmd-setting-ias' path='/cmd-ias'/>
+					<property name='gs' type='speed' path='/speed/ground-speed'/>
+					<property name='tas' type='speed' path='/speed/true-airspeed'/>
+					<property name='mach' type='float' path='/speed/mach'/>
+					<property name='wind-from-mag-heading' type='angle' path='/wind/magnetic-orientation'/>
+					<property name='wind-tas' type='speed' path='/wind/speed'/>
+					<property name='flight-path-marker-alpha' type='angle' path='/flight-path/alpha'/>
+					<property name='flight-path-marker-beta' type='angle' path='/flight-path/beta'/>
+					<property name='track.magnetic' type='angle' path='/flight-path/magnetic-track'/>
+					<property name='cbr' type='speed' path='/altitude/vertical-speed'/>
+					<property name='altitude' type='length' path='/altitude/amsl'/>
+					<property name='ahrs.true-heading' type='angle' path='/orientation/true-heading'/>
+					<property name='ias-minimum' type='speed' path='/speed/ias-minimum'/>
+					<property name='ias-maximum' type='speed' path='/speed/ias-maximum'/>
+					<property name='ias-lookahead' type='time' path='/speed/ias-lookahead'/>
+					<property name='dme-distance' type='length' path='/localizer/distance'/>
+					<property name='vertical-deviation' type='angle' path='/localizer/vertical-deviation'/>
+					<property name='lateral-deviation' type='angle' path='/localizer/lateral-deviation'/>
+					<property name='cmd-setting-altitude' type='length' path='/cmd-altitude'/>
+					<property name='cmd-setting-heading' type='angle' path='/cmd-magnetic-heading-and-track'/>
+					<property name='cmd-setting-cbr' type='speed' path='/cmd-vertical-speed'/>
+					<property name='cmd-setting-ias' type='speed' path='/cmd-ias'/>
 				</directory>
 			</properties>
 		</input>
 		<output disabled='false'>
-			<host>10.0.0.105</host>
+			<host>127.0.0.1</host>
 			<port>9001</port>
 			<properties path='/controls'>
 				<!-- Direct input -->
-				<property name='ailerons' path='//controls/ailerons'/>
-				<property name='elevator' path='//controls/elevator'/>
+				<property name='ailerons' type='float' path='//controls/ailerons'/>
+				<property name='elevator' type='float' path='//controls/elevator'/>
 				<!-- AP input -->
 				<!--property name='ailerons' path='//systems/afcs/ap/controls/ailerons'/>
 				<property name='elevator' path='//systems/afcs/ap/controls/elevator'/-->
 				<!--property name='ailerons' path='/ailerons'/>
 				<property name='elevator' path='/elevator'/-->
-				<property name='throttle.1' path='/throttle-left'/>
-				<property name='throttle.2' path='/throttle-right'/>
-				<property name='rudder' path='//systems/afcs/yd/coordinated-rudder'/>
+				<property name='throttle.1' type='float' path='/throttle-left'/>
+				<property name='throttle.2' type='float' path='/throttle-right'/>
+				<property name='rudder' type='float' path='//systems/afcs/yd/coordinated-rudder'/>
 			</properties>
 		</output>
 	</module>

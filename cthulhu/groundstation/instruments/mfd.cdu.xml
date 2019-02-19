@@ -196,7 +196,7 @@
 					</page>
 				</pages>
 				<properties>
-					<property name='time.utc' path='/system/time.utc'/>
+					<property name='time.utc' path='/system/time.utc' type='time'/>
 				</properties>
 			</instrument>
 		</item>

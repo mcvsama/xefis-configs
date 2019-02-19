@@ -16,7 +16,7 @@
 			<property name='input-errors' path='/link/xbee/input-errors'/>
 			<property name='rssi-dbm' path='/link/xbee/rssi.dbm'/>
 			<property name='failures' path='/link/xbee/failures'/>
-			<property name='cca-failures' path='/link/xbee/clear-channel-assessment-failuires'/>
+			<property name='cca-failures' path='/link/xbee/clear-channel-assessment-failures'/>
 			<property name='send' path='/link/data/to-groundstation'/>
 			<property name='receive' path='/link/data/from-groundstation'/>
 		</properties>
